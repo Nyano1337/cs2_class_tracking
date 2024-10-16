@@ -24,21 +24,25 @@ class CAI_ExpresserHost<CBasePlayerPawn> : CBasePlayerPawn, CAI_ExpresserSink {}
 class CAI_ExpresserHost<CHostageExpresserShim> : CHostageExpresserShim, CAI_ExpresserSink {}
 class CAI_ExpresserSink {}
 class CAI_ExpresserWithFollowup : CAI_Expresser {}
-class CAK47 : CCSWeaponBaseGun { void* vtable[429]; }
+class CAK47 : CCSWeaponBaseGun { void* vtable[432]; }
 class CAimTargetManager : CAutoGameSystem { void* vtable[56]; }
 class CAmbientGeneric : CPointEntity { void* vtable[231]; }
 class CAmmoDef : IVDataResourceListener { void* vtable[12]; }
 class CAmmoDefTyped<GameAmmoTypeInfo_t> : CAmmoDef { void* vtable[12]; }
 class CAnchorList : CAutoGameSystem { void* vtable[56]; }
-class CAnimGraphControllerBase {}
+class CAnimGraphControllerBase { void* vtable[13]; }
 class CAnimGraphGameSystem : IGameSystem, IToolsResourceListener { void* vtable[56]; }
 class CAnimGraphNetworkedVariables : IAnimGraphNetworkedVariables { void* vtable[63]; }
+class CAnimGraphParamOptionalRef<char const * __ptr64> : CAnimGraphParamRefBase<char const * __ptr64,IAnimParameterInstance,IAnimationGraphInstance,1> { void* vtable[3]; }
+class CAnimGraphParamOptionalRef<int> : CAnimGraphParamRefBase<int,IAnimParameterInstance,IAnimationGraphInstance,1> { void* vtable[3]; }
 class CAnimGraphParamRef<bool> : CAnimGraphParamRefBase<bool,IAnimParameterInstance,IAnimationGraphInstance,0> { void* vtable[3]; }
 class CAnimGraphParamRef<char const * __ptr64> : CAnimGraphParamRefBase<char const * __ptr64,IAnimParameterInstance,IAnimationGraphInstance,0> { void* vtable[3]; }
 class CAnimGraphParamRef<float> : CAnimGraphParamRefBase<float,IAnimParameterInstance,IAnimationGraphInstance,0> { void* vtable[3]; }
 class CAnimGraphParamRefBase<bool,IAnimParameterInstance,IAnimationGraphInstance,0> { void* vtable[3]; }
 class CAnimGraphParamRefBase<char const * __ptr64,IAnimParameterInstance,IAnimationGraphInstance,0> { void* vtable[3]; }
+class CAnimGraphParamRefBase<char const * __ptr64,IAnimParameterInstance,IAnimationGraphInstance,1> { void* vtable[3]; }
 class CAnimGraphParamRefBase<float,IAnimParameterInstance,IAnimationGraphInstance,0> { void* vtable[3]; }
+class CAnimGraphParamRefBase<int,IAnimParameterInstance,IAnimationGraphInstance,1> { void* vtable[3]; }
 class CAnimGraphSaveRestoreOps : CDefSaveRestoreOps { void* vtable[6]; }
 class CAnimGraphTraceFilter : CTraceFilterSkipPlayersAndNPCsAndChildren { void* vtable[2]; }
 class CAnimGraphTraceProvider : IAnimGraphTraceProvider, CMutableRefCounted<CMutableRefCountBase<CRefMT> > { void* vtable[1]; }
@@ -61,12 +65,12 @@ class CAttributeIterator_GetTypedAttributeValue<unsigned int,unsigned int> : IEc
 class CAttributeIterator_HasAttribute : IEconItemUntypedAttributeIterator { void* vtable[6]; }
 class CAttributeList { void* vtable[4]; }
 class CAttributeManager { void* vtable[9]; }
-class CAttribute_String : google::protobuf::Message { void* vtable[21]; }
+class CAttribute_String : google::protobuf::Message { void* vtable[33]; }
 class CAudioEventTagListener : IAnimTagListener { void* vtable[2]; }
 class CAutoGameSystem : IGameSystem {}
 class CAvatarOverrideMgr : CAutoGameSystem, CGameEventListener { void* vtable[56]; }
-class CBarnLight : CBaseModelEntity { void* vtable[254]; }
-class CBaseAnimGraph : CBaseModelEntity { void* vtable[284]; }
+class CBarnLight : CBaseModelEntity { void* vtable[257]; }
+class CBaseAnimGraph : CBaseModelEntity { void* vtable[287]; }
 class CBaseAnimGraph::NetworkVar_m_RagdollPose : PhysicsRagdollPose_t { void* vtable[4]; }
 class CBaseAnimGraphController : CSkeletonAnimationController, IAnimGraphSequenceFinishedListener { void* vtable[34]; }
 class CBaseAnimGraphController::NetworkVar_m_animGraphNetworkedVars : CAnimGraphNetworkedVariables { void* vtable[63]; }
@@ -79,58 +83,58 @@ class CBaseAppSystem<IServerToolsInfo> : IServerToolsInfo {}
 class CBaseAppSystem<ISource2GameClients> : ISource2GameClients {}
 class CBaseAppSystem<ISource2GameEntities> : ISource2GameEntities {}
 class CBaseAppSystem<ISource2Server> : ISource2Server {}
-class CBaseButton : CBaseToggle { void* vtable[261]; }
-class CBaseCSGrenade : CCSWeaponBase { void* vtable[432]; }
-class CBaseCSGrenadeProjectile : CBaseGrenade { void* vtable[315]; }
+class CBaseButton : CBaseToggle { void* vtable[264]; }
+class CBaseCSGrenade : CCSWeaponBase { void* vtable[435]; }
+class CBaseCSGrenadeProjectile : CBaseGrenade { void* vtable[318]; }
 class CBaseCSIssue : CBaseIssue {}
-class CBaseClientUIEntity : CBaseModelEntity { void* vtable[254]; }
+class CBaseClientUIEntity : CBaseModelEntity { void* vtable[257]; }
 class CBaseCmdKeyValues<CClientMsg_CustomGameEvent> : CClientMsg_CustomGameEvent { void* vtable[17]; }
 class CBaseCmdKeyValues<CClientMsg_CustomGameEventBounce> : CClientMsg_CustomGameEventBounce { void* vtable[17]; }
 class CBaseCmdKeyValues<CSVCMsg_GameSessionConfiguration> : CSVCMsg_GameSessionConfiguration { void* vtable[17]; }
 class CBaseCmdKeyValues<CUserMsg_CustomGameEvent> : CUserMsg_CustomGameEvent { void* vtable[17]; }
-class CBaseCombatCharacter : CBaseFlex { void* vtable[332]; }
+class CBaseCombatCharacter : CBaseFlex { void* vtable[335]; }
 class CBaseCubemap : IToolObject { void* vtable[8]; }
 class CBaseDMStart : CPointEntity { void* vtable[228]; }
-class CBaseDoor : CBaseToggle, CGameEventListener { void* vtable[254]; }
+class CBaseDoor : CBaseToggle, CGameEventListener { void* vtable[257]; }
 class CBaseDynamicIOSignature { void* vtable[1]; }
 class CBaseEngineService<IEngineService> : CTier4AppSystem<IEngineService,0> { void* vtable[23]; }
 class CBaseEntity : CEntityInstance { void* vtable[228]; }
 class CBaseEntity::Cm_vecVelocityInitializer : INetworkStateChangedRouter { void* vtable[2]; }
 class CBaseFilter : CLogicalEntity { void* vtable[230]; }
 class CBaseFire : CBaseEntity { void* vtable[231]; }
-class CBaseFlex : CBaseAnimGraph { void* vtable[299]; }
-class CBaseFlexAlias_funCBaseFlex : CBaseFlex { void* vtable[299]; }
+class CBaseFlex : CBaseAnimGraph { void* vtable[302]; }
+class CBaseFlexAlias_funCBaseFlex : CBaseFlex { void* vtable[302]; }
 class CBaseGameStats { void* vtable[54]; }
 class CBaseGameStats_Driver : CAutoGameSystem { void* vtable[56]; }
 class CBaseGameSystemFactory : IGameSystemFactory { void* vtable[10]; }
-class CBaseGrenade : CBaseFlex, CDefaultPlayerPickupVPhysics { void* vtable[311]; }
+class CBaseGrenade : CBaseFlex, CDefaultPlayerPickupVPhysics { void* vtable[314]; }
 class CBaseIssue { void* vtable[33]; }
 class CBaseLightProbeVolume : IToolObject { void* vtable[8]; }
-class CBaseModelEntity : CBaseEntity { void* vtable[251]; }
+class CBaseModelEntity : CBaseEntity { void* vtable[254]; }
 class CBaseModelEntity::Cm_vecViewOffsetInitializer : INetworkStateChangedRouter { void* vtable[2]; }
 class CBaseModelEntity::NetworkVar_m_Collision : CCollisionProperty { void* vtable[4]; }
 class CBaseModelEntity::NetworkVar_m_Glow : CGlowProperty { void* vtable[4]; }
 class CBaseMoveBehavior : CPathKeyFrame { void* vtable[230]; }
-class CBasePlatTrain : CBaseToggle { void* vtable[252]; }
+class CBasePlatTrain : CBaseToggle { void* vtable[255]; }
 class CBasePlayerController : CBaseEntity { void* vtable[257]; }
-class CBasePlayerPawn : CBaseCombatCharacter { void* vtable[389]; }
+class CBasePlayerPawn : CBaseCombatCharacter { void* vtable[392]; }
 class CBasePlayerPawn::NetworkVar_m_skybox3d : sky3dparams_t { void* vtable[4]; }
 class CBasePlayerVData : CEntitySubclassVDataBase { void* vtable[4]; }
-class CBasePlayerWeapon : CEconEntity { void* vtable[344]; }
+class CBasePlayerWeapon : CEconEntity { void* vtable[347]; }
 class CBasePlayerWeaponVData : CEntitySubclassVDataBase { void* vtable[6]; }
-class CBaseProp : CBaseAnimGraph { void* vtable[287]; }
-class CBasePropDoor : CDynamicProp, CGameEventListener { void* vtable[321]; }
+class CBaseProp : CBaseAnimGraph { void* vtable[290]; }
+class CBasePropDoor : CDynamicProp, CGameEventListener { void* vtable[324]; }
 class CBasePulseGameSystem : CAutoGameSystem, IEntityIONotify, IPulseCursorListener { void* vtable[56]; }
 class CBasePulseGraphInstance : IGapHost_Unknown { void* vtable[27]; }
 class CBaseTempEntity : CUtlSlot { void* vtable[4]; }
-class CBaseToggle : CBaseModelEntity { void* vtable[251]; }
-class CBaseTrigger : CBaseToggle { void* vtable[263]; }
+class CBaseToggle : CBaseModelEntity { void* vtable[254]; }
+class CBaseTrigger : CBaseToggle { void* vtable[266]; }
 class CBaseUserCmdPB : google::protobuf::Message { void* vtable[19]; }
 class CBaseVDataFileManager : IVDataResourceListener { void* vtable[5]; }
-class CBaseViewModel : CBaseAnimGraph, IAttachmentOverride { void* vtable[292]; }
-class CBeam : CBaseModelEntity { void* vtable[252]; }
+class CBaseViewModel : CBaseAnimGraph, IAttachmentOverride { void* vtable[295]; }
+class CBeam : CBaseModelEntity { void* vtable[255]; }
 class CBidirMsg_RebroadcastGameEvent : google::protobuf::Message { void* vtable[19]; }
-class CBidirMsg_RebroadcastSource : google::protobuf::Message { void* vtable[17]; }
+class CBidirMsg_RebroadcastSource : google::protobuf::Message { void* vtable[29]; }
 class CBlood : CPointEntity { void* vtable[228]; }
 class CBodyComponent : CEntityComponent { void* vtable[4]; }
 class CBodyComponentBaseAnimGraph : CBodyComponentSkeletonInstance { void* vtable[4]; }
@@ -141,7 +145,7 @@ class CBodyComponentPoint::NetworkVar_m_sceneNode : CGameSceneNode { void* vtabl
 class CBodyComponentSkeletonInstance : CBodyComponent { void* vtable[4]; }
 class CBodyComponentSkeletonInstance::NetworkVar_m_skeletonInstance : CSkeletonInstance { void* vtable[28]; }
 class CBodyGameSystem : IGameSystem, IToolsResourceListener, IToolsResourcePreReloadListener { void* vtable[56]; }
-class CBombTarget : CBombTargetShim { void* vtable[266]; }
+class CBombTarget : CBombTargetShim { void* vtable[269]; }
 class CBombTargetShim : CBaseTrigger {}
 class CBoneSetup : EBoneSetup { void* vtable[6]; }
 class CBot : CMemZeroOnNew { void* vtable[27]; }
@@ -149,10 +153,10 @@ class CBotBreakableEnumerator : CTraceFilterHitEntitiesOnly { void* vtable[2]; }
 class CBotDoorEnumerator : CTraceFilterHitEntitiesOnly { void* vtable[2]; }
 class CBotGameSystem : IGameSystem { void* vtable[56]; }
 class CBotManager { void* vtable[10]; }
-class CBreachCharge : CCSWeaponBase { void* vtable[426]; }
-class CBreachChargeProjectile : CBaseGrenade { void* vtable[311]; }
-class CBreakable : CBaseModelEntity, CDefaultPlayerPickupVPhysics { void* vtable[252]; }
-class CBreakableProp : CBaseProp, CDefaultPlayerPickupVPhysics { void* vtable[294]; }
+class CBreachCharge : CCSWeaponBase { void* vtable[429]; }
+class CBreachChargeProjectile : CBaseGrenade { void* vtable[314]; }
+class CBreakable : CBaseModelEntity, CDefaultPlayerPickupVPhysics { void* vtable[255]; }
+class CBreakableProp : CBaseProp, CDefaultPlayerPickupVPhysics { void* vtable[297]; }
 class CBroadcastRecipientFilter : CRecipientFilter { void* vtable[5]; }
 class CBtActionAcquireItems : CBtNode { void* vtable[10]; }
 class CBtActionAim : CBtNode { void* vtable[10]; }
@@ -261,29 +265,29 @@ class CBtSensorShape { void* vtable[2]; }
 class CBtSensorShapeFov : CBtSensorShape { void* vtable[2]; }
 class CBtSensorShapeSphere : CBtSensorShape { void* vtable[2]; }
 class CBtTree : CGameEventListener { void* vtable[2]; }
-class CBubbling : CBaseModelEntity { void* vtable[251]; }
-class CBumpMine : CCSWeaponBase { void* vtable[426]; }
-class CBumpMineProjectile : CBaseGrenade { void* vtable[311]; }
+class CBubbling : CBaseModelEntity { void* vtable[254]; }
+class CBumpMine : CCSWeaponBase { void* vtable[429]; }
+class CBumpMineProjectile : CBaseGrenade { void* vtable[314]; }
 class CBuoyancyHelper : IMotionEvent { void* vtable[8]; }
-class CBuyZone : CBaseTrigger { void* vtable[263]; }
-class CC4 : CCSWeaponBase { void* vtable[429]; }
+class CBuyZone : CBaseTrigger { void* vtable[266]; }
+class CC4 : CCSWeaponBase { void* vtable[432]; }
 class CC4::NetworkVar_m_entitySpottedState : EntitySpottedState_t { void* vtable[4]; }
 class CCLCMsg_BaselineAck : google::protobuf::Message { void* vtable[19]; }
-class CCLCMsg_ClientInfo : google::protobuf::Message { void* vtable[17]; }
+class CCLCMsg_ClientInfo : google::protobuf::Message { void* vtable[21]; }
 class CCLCMsg_CmdKeyValues : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_Diagnostic : google::protobuf::Message { void* vtable[21]; }
-class CCLCMsg_FileCRCCheck : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_HltvFixupOperatorTick : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_HltvReplay : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_Diagnostic : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_FileCRCCheck : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_HltvFixupOperatorTick : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_HltvReplay : google::protobuf::Message { void* vtable[27]; }
 class CCLCMsg_ListenEvents : google::protobuf::Message { void* vtable[19]; }
-class CCLCMsg_LoadingProgress : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_Move : google::protobuf::Message { void* vtable[19]; }
-class CCLCMsg_RconServerDetails : google::protobuf::Message { void* vtable[29]; }
-class CCLCMsg_RequestPause : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_LoadingProgress : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_Move : google::protobuf::Message { void* vtable[17]; }
+class CCLCMsg_RconServerDetails : google::protobuf::Message { void* vtable[17]; }
+class CCLCMsg_RequestPause : google::protobuf::Message { void* vtable[23]; }
 class CCLCMsg_RespondCvarValue : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_ServerStatus : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_SplitPlayerConnect : google::protobuf::Message { void* vtable[19]; }
-class CCLCMsg_SplitPlayerDisconnect : google::protobuf::Message { void* vtable[17]; }
+class CCLCMsg_ServerStatus : google::protobuf::Message { void* vtable[19]; }
+class CCLCMsg_SplitPlayerConnect : google::protobuf::Message { void* vtable[17]; }
+class CCLCMsg_SplitPlayerDisconnect : google::protobuf::Message { void* vtable[21]; }
 class CCLCMsg_VoiceData : google::protobuf::Message { void* vtable[17]; }
 class CCSAddonManager : CAutoGameSystem { void* vtable[56]; }
 class CCSAmmoDef : CAmmoDefTyped<GameAmmoTypeInfo_t> { void* vtable[12]; }
@@ -332,7 +336,7 @@ class CCSGOPlayerAnimGraphState { void* vtable[1]; }
 class CCSGOSteamWorksGameStatsServer : CSteamWorksGameStatsServer { void* vtable[63]; }
 class CCSGOUserCmd : CUserCmdBaseHost<CSGOUserCmdPB> { void* vtable[10]; }
 class CCSGOVScriptGameSystem : CVScriptGameSystem { void* vtable[59]; }
-class CCSGOViewModel : CPredictedViewModel { void* vtable[292]; }
+class CCSGOViewModel : CPredictedViewModel { void* vtable[295]; }
 class CCSGOViewModel_GraphController : CAnimGraphControllerBase { void* vtable[13]; }
 class CCSGO_TeamIntroCharacterPosition : CCSGO_TeamPreviewCharacterPosition {}
 class CCSGO_TeamIntroCounterTerroristPosition : CCSGO_TeamIntroCharacterPosition { void* vtable[229]; }
@@ -363,7 +367,7 @@ class CCSInventoryManager : CInventoryManager { void* vtable[60]; }
 class CCSMapEntityFilter : ISpawnGroupEntityFilter { void* vtable[2]; }
 class CCSMinimapBoundary : CBaseEntity { void* vtable[228]; }
 class CCSNavArea : CNavAreaExtended { void* vtable[26]; }
-class CCSObserverPawn : CCSPlayerPawnBase { void* vtable[402]; }
+class CCSObserverPawn : CCSPlayerPawnBase { void* vtable[405]; }
 class CCSObserverStatePickingTeam : CCSPlayerState { void* vtable[3]; }
 class CCSObserver_CameraServices : CCSPlayerBase_CameraServices { void* vtable[28]; }
 class CCSObserver_MovementServices : CPlayer_MovementServices { void* vtable[38]; }
@@ -371,7 +375,7 @@ class CCSObserver_ObserverServices : CPlayer_ObserverServices { void* vtable[32]
 class CCSObserver_UseServices : CPlayer_UseServices { void* vtable[23]; }
 class CCSObserver_ViewModelServices : CPlayer_ViewModelServices { void* vtable[18]; }
 class CCSPhysicsPushEntities : CPhysicsPushedEntities { void* vtable[3]; }
-class CCSPlace : CServerOnlyModelEntity, ICSPlace { void* vtable[251]; }
+class CCSPlace : CServerOnlyModelEntity, ICSPlace { void* vtable[254]; }
 class CCSPlayerBase_CameraServices : CPlayer_CameraServices { void* vtable[28]; }
 class CCSPlayerController : CBasePlayerController, CGameEventListener { void* vtable[259]; }
 class CCSPlayerController_ActionTrackingServices : CPlayerControllerComponent { void* vtable[10]; }
@@ -380,10 +384,10 @@ class CCSPlayerController_DamageServices : CPlayerControllerComponent { void* vt
 class CCSPlayerController_InGameMoneyServices : CPlayerControllerComponent { void* vtable[10]; }
 class CCSPlayerController_InventoryServices : CPlayerControllerComponent { void* vtable[10]; }
 class CCSPlayerInventory : CPlayerInventory { void* vtable[24]; }
-class CCSPlayerPawn : CCSPlayerPawnBase, IRenderBoundsWorldSpaceOverride { void* vtable[402]; }
+class CCSPlayerPawn : CCSPlayerPawnBase, IRenderBoundsWorldSpaceOverride { void* vtable[405]; }
 class CCSPlayerPawn::NetworkVar_m_EconGloves : CEconItemView { void* vtable[32]; }
 class CCSPlayerPawn::NetworkVar_m_entitySpottedState : EntitySpottedState_t { void* vtable[4]; }
-class CCSPlayerPawnBase : CAI_ExpresserHost<CBasePlayerPawn>, IHasAttributes { void* vtable[402]; }
+class CCSPlayerPawnBase : CAI_ExpresserHost<CBasePlayerPawn>, IHasAttributes { void* vtable[405]; }
 class CCSPlayerPawnStateActive : CCSPlayerState { void* vtable[3]; }
 class CCSPlayerResource : CBaseEntity { void* vtable[228]; }
 class CCSPlayerState {}
@@ -415,55 +419,56 @@ class CCSPointPulseSystem : CAutoGameSystem, CGameEventListener { void* vtable[5
 class CCSPointScript : CBasePulseGraphInstance { void* vtable[27]; }
 class CCSPointScriptEntity : CBaseEntity { void* vtable[228]; }
 class CCSServerPointScriptEntity : CCSPointScriptEntity { void* vtable[228]; }
-class CCSSprite : CSprite { void* vtable[251]; }
+class CCSSprite : CSprite { void* vtable[254]; }
 class CCSTeam : CTeam { void* vtable[231]; }
 class CCSTraceFilterSimple : CTraceFilter { void* vtable[2]; }
-class CCSUsrMsgPreMatchSayText : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_AchievementEvent : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsgPreMatchSayText : google::protobuf::Message { void* vtable[25]; }
+class CCSUsrMsg_AchievementEvent : google::protobuf::Message { void* vtable[21]; }
 class CCSUsrMsg_AdjustMoney : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_AdjustMoney_t : CUserMessagePB<327,CCSUsrMsg_AdjustMoney,1> { void* vtable[5]; }
-class CCSUsrMsg_AmmoDenied : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_BarTime : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_AmmoDenied : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_BarTime : google::protobuf::Message { void* vtable[21]; }
 class CCSUsrMsg_CallVoteFailed : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_CallVoteFailed_t : CUserMessagePB<345,CCSUsrMsg_CallVoteFailed,1> { void* vtable[5]; }
 class CCSUsrMsg_ClientInfo : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_CloseCaption : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_CloseCaptionDirect : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsg_CloseCaption : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_CloseCaptionDirect : google::protobuf::Message { void* vtable[25]; }
 class CCSUsrMsg_CounterStrafe : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_CounterStrafe_t : CUserMessagePB<385,CCSUsrMsg_CounterStrafe,1> { void* vtable[5]; }
-class CCSUsrMsg_CurrentRoundOdds : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_CurrentRoundOdds : google::protobuf::Message { void* vtable[23]; }
 class CCSUsrMsg_CurrentRoundOdds_t : CUserMessagePB<380,CCSUsrMsg_CurrentRoundOdds,1> { void* vtable[5]; }
 class CCSUsrMsg_CurrentTimescale : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_Damage : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsg_Damage : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_DamagePrediction : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_Damage_t : CUserMessagePB<321,CCSUsrMsg_Damage,1> { void* vtable[5]; }
 class CCSUsrMsg_DeepStats : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_DesiredTimescale : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_DisconnectToLobby : google::protobuf::Message { void* vtable[27]; }
+class CCSUsrMsg_DesiredTimescale : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_DisconnectToLobby : google::protobuf::Message { void* vtable[23]; }
 class CCSUsrMsg_DisconnectToLobby_t : CUserMessagePB<335,CCSUsrMsg_DisconnectToLobby,1> { void* vtable[5]; }
-class CCSUsrMsg_EndOfMatchAllPlayersData : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_EndOfMatchAllPlayersData : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_EndOfMatchAllPlayersData_Accolade : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_EndOfMatchAllPlayersData_PlayerData : google::protobuf::Message { void* vtable[27]; }
+class CCSUsrMsg_EndOfMatchAllPlayersData_PlayerData : google::protobuf::Message { void* vtable[23]; }
 class CCSUsrMsg_EndOfMatchAllPlayersData_t : CUserMessagePB<375,CCSUsrMsg_EndOfMatchAllPlayersData,1> { void* vtable[5]; }
-class CCSUsrMsg_EntityOutlineHighlight : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_EntityOutlineHighlight : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_EntityOutlineHighlight_t : CUserMessagePB<371,CCSUsrMsg_EntityOutlineHighlight,1> { void* vtable[5]; }
-class CCSUsrMsg_Fade : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_GameTitle : google::protobuf::Message { void* vtable[25]; }
-class CCSUsrMsg_Geiger : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_GlowPropTurnOff : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_HintText : google::protobuf::Message { void* vtable[21]; }
+class CCSUsrMsg_Fade : google::protobuf::Message { void* vtable[25]; }
+class CCSUsrMsg_GameTitle : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_Geiger : google::protobuf::Message { void* vtable[25]; }
+class CCSUsrMsg_GlowPropTurnOff : google::protobuf::Message { void* vtable[21]; }
+class CCSUsrMsg_HintText : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_HintText_t : CUserMessagePB<323,CCSUsrMsg_HintText,1> { void* vtable[5]; }
-class CCSUsrMsg_HudMsg : google::protobuf::Message { void* vtable[21]; }
+class CCSUsrMsg_HudMsg : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_HudText : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_ItemDrop : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_ItemPickup : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_KeyHintText : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_ItemPickup : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_KeyHintText : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_KeyHintText_t : CUserMessagePB<324,CCSUsrMsg_KeyHintText,1> { void* vtable[5]; }
 class CCSUsrMsg_KillCam : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_MarkAchievement : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_MatchEndConditions : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsg_MarkAchievement : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_MatchEndConditions : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_MatchEndConditions_t : CUserMessagePB<334,CCSUsrMsg_MatchEndConditions,1> { void* vtable[5]; }
 class CCSUsrMsg_MatchStatsUpdate : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_PlayerDecalDigitalSignature : google::protobuf::Message { void* vtable[25]; }
+class CCSUsrMsg_PlayerDecalDigitalSignature : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_PlayerDecalDigitalSignature_t : CUserMessagePB<368,CCSUsrMsg_PlayerDecalDigitalSignature,1> { void* vtable[5]; }
 class CCSUsrMsg_PlayerStatsUpdate : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_PlayerStatsUpdate_Stat : google::protobuf::Message { void* vtable[17]; }
@@ -471,75 +476,75 @@ class CCSUsrMsg_PlayerStatsUpdate_t : CUserMessagePB<336,CCSUsrMsg_PlayerStatsUp
 class CCSUsrMsg_PostRoundDamageReport : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_PostRoundDamageReport_t : CUserMessagePB<376,CCSUsrMsg_PostRoundDamageReport,1> { void* vtable[5]; }
 class CCSUsrMsg_ProcessSpottedEntityUpdate : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_ProcessSpottedEntityUpdate_SpottedEntityUpdate : google::protobuf::Message { void* vtable[25]; }
+class CCSUsrMsg_ProcessSpottedEntityUpdate_SpottedEntityUpdate : google::protobuf::Message { void* vtable[23]; }
 class CCSUsrMsg_ProcessSpottedEntityUpdate_t : CUserMessagePB<325,CCSUsrMsg_ProcessSpottedEntityUpdate,1> { void* vtable[5]; }
 class CCSUsrMsg_QuestProgress : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_RadioText : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_RadioText : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_RadioText_t : CUserMessagePB<322,CCSUsrMsg_RadioText,1> { void* vtable[5]; }
-class CCSUsrMsg_RawAudio : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_RawAudio : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_RawAudio_t : CUserMessagePB<318,CCSUsrMsg_RawAudio,1> { void* vtable[5]; }
-class CCSUsrMsg_ReloadEffect : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_ReloadEffect : google::protobuf::Message { void* vtable[21]; }
 class CCSUsrMsg_ReportHit : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_ReportHit_t : CUserMessagePB<364,CCSUsrMsg_ReportHit,1> { void* vtable[5]; }
-class CCSUsrMsg_RequestState : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_ResetHud : google::protobuf::Message { void* vtable[21]; }
-class CCSUsrMsg_RoundBackupFilenames : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_RequestState : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_ResetHud : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_RoundBackupFilenames : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_RoundBackupFilenames_t : CUserMessagePB<362,CCSUsrMsg_RoundBackupFilenames,1> { void* vtable[5]; }
-class CCSUsrMsg_RoundEndReportData : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_RoundEndReportData : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_RoundEndReportData_InitialConditions : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_RoundEndReportData_RerEvent : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_RoundEndReportData_RerEvent_Damage : google::protobuf::Message { void* vtable[21]; }
+class CCSUsrMsg_RoundEndReportData_RerEvent : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_RoundEndReportData_RerEvent_Damage : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_RoundEndReportData_RerEvent_Objective : google::protobuf::Message { void* vtable[23]; }
-class CCSUsrMsg_RoundEndReportData_RerEvent_Victim : google::protobuf::Message { void* vtable[27]; }
+class CCSUsrMsg_RoundEndReportData_RerEvent_Victim : google::protobuf::Message { void* vtable[21]; }
 class CCSUsrMsg_RoundEndReportData_t : CUserMessagePB<379,CCSUsrMsg_RoundEndReportData,1> { void* vtable[5]; }
 class CCSUsrMsg_Rumble : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_SSUI : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_SSUI : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_ScoreLeaderboardData : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_SendAudio : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_SendAudio : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_SendAudio_t : CUserMessagePB<317,CCSUsrMsg_SendAudio,1> { void* vtable[5]; }
-class CCSUsrMsg_SendLastKillerDamageToClient : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_SendLastKillerDamageToClient : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_SendLastKillerDamageToClient_t : CUserMessagePB<351,CCSUsrMsg_SendLastKillerDamageToClient,1> { void* vtable[5]; }
-class CCSUsrMsg_SendPlayerItemDrops : google::protobuf::Message { void* vtable[27]; }
+class CCSUsrMsg_SendPlayerItemDrops : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_SendPlayerItemDrops_t : CUserMessagePB<361,CCSUsrMsg_SendPlayerItemDrops,1> { void* vtable[5]; }
 class CCSUsrMsg_SendPlayerItemFound : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_SendPlayerItemFound_t : CUserMessagePB<363,CCSUsrMsg_SendPlayerItemFound,1> { void* vtable[5]; }
-class CCSUsrMsg_ServerRankRevealAll : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsg_ServerRankRevealAll : google::protobuf::Message { void* vtable[25]; }
 class CCSUsrMsg_ServerRankRevealAll_t : CUserMessagePB<350,CCSUsrMsg_ServerRankRevealAll,1> { void* vtable[5]; }
 class CCSUsrMsg_ServerRankUpdate : google::protobuf::Message { void* vtable[21]; }
-class CCSUsrMsg_ServerRankUpdate_RankUpdate : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_ServerRankUpdate_RankUpdate : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_Shake : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_ShootInfo : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_ShootInfo : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_ShootInfo_t : CUserMessagePB<383,CCSUsrMsg_ShootInfo,1> { void* vtable[5]; }
 class CCSUsrMsg_ShowMenu : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_StopSpectatorMode : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_StopSpectatorMode : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_SurvivalStats : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_SurvivalStats_Damage : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_SurvivalStats_Fact : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_SurvivalStats_Placement : google::protobuf::Message { void* vtable[21]; }
-class CCSUsrMsg_Train : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_UpdateScreenHealthBar : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_VGUIMenu : google::protobuf::Message { void* vtable[17]; }
-class CCSUsrMsg_VGUIMenu_Keys : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_SurvivalStats_Placement : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_Train : google::protobuf::Message { void* vtable[21]; }
+class CCSUsrMsg_UpdateScreenHealthBar : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_VGUIMenu : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_VGUIMenu_Keys : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_VGUIMenu_t : CUserMessagePB<301,CCSUsrMsg_VGUIMenu,1> { void* vtable[5]; }
-class CCSUsrMsg_VoiceMask : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_VoiceMask_PlayerMask : google::protobuf::Message { void* vtable[19]; }
+class CCSUsrMsg_VoiceMask : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_VoiceMask_PlayerMask : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_VoteFailed : google::protobuf::Message { void* vtable[17]; }
 class CCSUsrMsg_VoteFailed_t : CUserMessagePB<348,CCSUsrMsg_VoteFailed,1> { void* vtable[5]; }
-class CCSUsrMsg_VotePass : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsg_VotePass : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_VotePass_t : CUserMessagePB<347,CCSUsrMsg_VotePass,1> { void* vtable[5]; }
-class CCSUsrMsg_VoteSetup : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_VoteSetup : google::protobuf::Message { void* vtable[41]; }
 class CCSUsrMsg_VoteSetup_t : CUserMessagePB<349,CCSUsrMsg_VoteSetup,1> { void* vtable[5]; }
-class CCSUsrMsg_VoteStart : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_VoteStart : google::protobuf::Message { void* vtable[21]; }
 class CCSUsrMsg_VoteStart_t : CUserMessagePB<346,CCSUsrMsg_VoteStart,1> { void* vtable[5]; }
-class CCSUsrMsg_WarmupHasEnded : google::protobuf::Message { void* vtable[21]; }
+class CCSUsrMsg_WarmupHasEnded : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_WarmupHasEnded_t : CUserMessagePB<338,CCSUsrMsg_WarmupHasEnded,1> { void* vtable[5]; }
-class CCSUsrMsg_WeaponSound : google::protobuf::Message { void* vtable[23]; }
+class CCSUsrMsg_WeaponSound : google::protobuf::Message { void* vtable[19]; }
 class CCSUsrMsg_WeaponSound_t : CUserMessagePB<369,CCSUsrMsg_WeaponSound,1> { void* vtable[5]; }
-class CCSUsrMsg_XRankGet : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_XRankUpd : google::protobuf::Message { void* vtable[19]; }
-class CCSUsrMsg_XpUpdate : google::protobuf::Message { void* vtable[21]; }
-class CCSWeaponBase : CBasePlayerWeapon { void* vtable[426]; }
-class CCSWeaponBaseGun : CCSWeaponBase { void* vtable[429]; }
+class CCSUsrMsg_XRankGet : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_XRankUpd : google::protobuf::Message { void* vtable[17]; }
+class CCSUsrMsg_XpUpdate : google::protobuf::Message { void* vtable[19]; }
+class CCSWeaponBase : CBasePlayerWeapon { void* vtable[429]; }
+class CCSWeaponBaseGun : CCSWeaponBase { void* vtable[432]; }
 class CCSWeaponBaseVData : CBasePlayerWeaponVData { void* vtable[6]; }
 class CCSWeaponSystem : CAutoGameSystem, ICSWeaponSystem { void* vtable[56]; }
 class CCStrike15ItemDefinition : CEconItemDefinition { void* vtable[51]; }
@@ -563,13 +568,13 @@ class CCallbackImpl<1> : CCallbackBase { void* vtable[4]; }
 class CCallbackImpl<24> : CCallbackBase { void* vtable[4]; }
 class CCallbackImpl<4> : CCallbackBase { void* vtable[4]; }
 class CCallbackImpl<8> : CCallbackBase { void* vtable[4]; }
-class CChangeLevel : CBaseTrigger { void* vtable[263]; }
+class CChangeLevel : CBaseTrigger { void* vtable[266]; }
 class CChangeLevelIssue : CBaseCSIssue { void* vtable[33]; }
 class CCheckClient : CAutoGameSystem { void* vtable[56]; }
-class CChicken : CDynamicProp, CGameEventListener, CImprovLocomotor, IHasAttributes { void* vtable[297]; }
+class CChicken : CDynamicProp, CGameEventListener, CImprovLocomotor, IHasAttributes { void* vtable[300]; }
 class CChicken::NetworkVar_m_AttributeManager : CAttributeContainer { void* vtable[9]; }
 class CChicken_GraphController : CAnimGraphControllerBase { void* vtable[13]; }
-class CChinaAgreementSessions_StartAgreementSessionInGame_Request : google::protobuf::Message { void* vtable[17]; }
+class CChinaAgreementSessions_StartAgreementSessionInGame_Request : google::protobuf::Message { void* vtable[19]; }
 class CChinaAgreementSessions_StartAgreementSessionInGame_Response : google::protobuf::Message { void* vtable[17]; }
 class CChoreoActor : CChoreoObjectBase { void* vtable[3]; }
 class CChoreoChannel : CChoreoObjectBase { void* vtable[3]; }
@@ -581,32 +586,32 @@ class CCitadelSoundOpvarSetOBB : CBaseEntity { void* vtable[228]; }
 class CClassAutoAllocatePtrSaveRestoreOps<CPulseGraphComponentPointServer> : CDefSaveRestoreOps { void* vtable[6]; }
 class CClassPtrSaveRestoreOps : CDefSaveRestoreOps {}
 class CCleanupRelationshipsGameSystem : CAutoGameSystem { void* vtable[56]; }
-class CClientHeaderOverwatchEvidence : google::protobuf::Message { void* vtable[19]; }
-class CClientMsg_ClientUIEvent : google::protobuf::Message { void* vtable[19]; }
+class CClientHeaderOverwatchEvidence : google::protobuf::Message { void* vtable[17]; }
+class CClientMsg_ClientUIEvent : google::protobuf::Message { void* vtable[21]; }
 class CClientMsg_CustomGameEvent : google::protobuf::Message { void* vtable[17]; }
-class CClientMsg_CustomGameEventBounce : google::protobuf::Message { void* vtable[21]; }
-class CClientMsg_DevPaletteVisibilityChangedEvent : google::protobuf::Message { void* vtable[19]; }
+class CClientMsg_CustomGameEventBounce : google::protobuf::Message { void* vtable[23]; }
+class CClientMsg_DevPaletteVisibilityChangedEvent : google::protobuf::Message { void* vtable[21]; }
 class CClientMsg_ListenForResponseFound : google::protobuf::Message { void* vtable[17]; }
-class CClientMsg_RotateAnchor : google::protobuf::Message { void* vtable[17]; }
-class CClientMsg_WorldUIControllerHasPanelChangedEvent : google::protobuf::Message { void* vtable[19]; }
+class CClientMsg_RotateAnchor : google::protobuf::Message { void* vtable[39]; }
+class CClientMsg_WorldUIControllerHasPanelChangedEvent : google::protobuf::Message { void* vtable[21]; }
 class CClientUIDialogManager : CAutoGameSystem { void* vtable[56]; }
 class CCoJob { void* vtable[11]; }
 class CCollisionProperty { void* vtable[4]; }
 class CCollisionProperty::NetworkVar_m_collisionAttribute : VPhysicsCollisionAttribute_t { void* vtable[4]; }
 class CColorCorrection : CBaseEntity { void* vtable[228]; }
 class CColorCorrectionSystem : CAutoGameSystem, CGameEventListener { void* vtable[56]; }
-class CColorCorrectionVolume : CBaseTrigger { void* vtable[263]; }
+class CColorCorrectionVolume : CBaseTrigger { void* vtable[266]; }
 class CCommandQueueTester : CAutoGameSystem { void* vtable[56]; }
 class CCommentaryAuto : CBaseEntity { void* vtable[228]; }
 class CCommentarySystem : CAutoGameSystem { void* vtable[58]; }
-class CCommentaryViewPosition : CSprite { void* vtable[251]; }
-class CCommunity_GamePersonalDataCategoryInfo : google::protobuf::Message { void* vtable[19]; }
-class CCommunity_GetGamePersonalDataCategories_Request : google::protobuf::Message { void* vtable[19]; }
-class CCommunity_GetGamePersonalDataCategories_Response : google::protobuf::Message { void* vtable[19]; }
-class CCommunity_GetGamePersonalDataEntries_Request : google::protobuf::Message { void* vtable[21]; }
+class CCommentaryViewPosition : CSprite { void* vtable[254]; }
+class CCommunity_GamePersonalDataCategoryInfo : google::protobuf::Message { void* vtable[17]; }
+class CCommunity_GetGamePersonalDataCategories_Request : google::protobuf::Message { void* vtable[17]; }
+class CCommunity_GetGamePersonalDataCategories_Response : google::protobuf::Message { void* vtable[27]; }
+class CCommunity_GetGamePersonalDataEntries_Request : google::protobuf::Message { void* vtable[19]; }
 class CCommunity_GetGamePersonalDataEntries_Response : google::protobuf::Message { void* vtable[19]; }
-class CCommunity_TerminateGamePersonalDataEntries_Request : google::protobuf::Message { void* vtable[17]; }
-class CCommunity_TerminateGamePersonalDataEntries_Response : google::protobuf::Message { void* vtable[23]; }
+class CCommunity_TerminateGamePersonalDataEntries_Request : google::protobuf::Message { void* vtable[19]; }
+class CCommunity_TerminateGamePersonalDataEntries_Response : google::protobuf::Message { void* vtable[17]; }
 class CCompressedAnim<Color> : ICompressorService {}
 class CCompressedAnim<QuaternionStorage> : ICompressorService {}
 class CCompressedAnim<Vec2D<float> > : ICompressorService {}
@@ -662,18 +667,18 @@ class CConCommandMemberAccessor<CSoundOpGameSystem> : ConCommand, ICommandCallba
 class CConCommandMemberAccessor<CSpawnGroupMgrGameSystem> : ConCommand, ICommandCallback, ICommandCompletionCallback { void* vtable[1]; }
 class CConceptCooldownsDataOps : CDefSaveRestoreOps { void* vtable[6]; }
 class CConstantForceController : IMotionEvent { void* vtable[5]; }
-class CConstraintAnchor : CBaseAnimGraph { void* vtable[284]; }
+class CConstraintAnchor : CBaseAnimGraph { void* vtable[287]; }
 class CCopyRecipientFilter : IRecipientFilter { void* vtable[9]; }
 class CCredits : CPointEntity { void* vtable[228]; }
 class CCustomGameEventManager : CAutoGameSystem { void* vtable[56]; }
 class CCustomNavGenSystem : CTier3AppSystem<ICustomNavGen,0> { void* vtable[13]; }
-class CDEagle : CCSWeaponBaseGun { void* vtable[429]; }
-class CDataGCCStrike15_v2_MatchInfo : google::protobuf::Message { void* vtable[19]; }
-class CDataGCCStrike15_v2_TournamentGroup : google::protobuf::Message { void* vtable[21]; }
+class CDEagle : CCSWeaponBaseGun { void* vtable[432]; }
+class CDataGCCStrike15_v2_MatchInfo : google::protobuf::Message { void* vtable[17]; }
+class CDataGCCStrike15_v2_TournamentGroup : google::protobuf::Message { void* vtable[19]; }
 class CDataGCCStrike15_v2_TournamentGroupTeam : google::protobuf::Message { void* vtable[17]; }
 class CDataGCCStrike15_v2_TournamentGroup_Picks : google::protobuf::Message { void* vtable[17]; }
 class CDataGCCStrike15_v2_TournamentInfo : google::protobuf::Message { void* vtable[19]; }
-class CDataGCCStrike15_v2_TournamentMatchDraft : google::protobuf::Message { void* vtable[19]; }
+class CDataGCCStrike15_v2_TournamentMatchDraft : google::protobuf::Message { void* vtable[17]; }
 class CDataGCCStrike15_v2_TournamentMatchDraft_Entry : google::protobuf::Message { void* vtable[17]; }
 class CDataGCCStrike15_v2_TournamentSection : google::protobuf::Message { void* vtable[17]; }
 class CDebugHistory : CBaseEntity { void* vtable[228]; }
@@ -700,8 +705,8 @@ class CDebugOverlayWindow : CAutoGameSystem { void* vtable[59]; }
 class CDebugSnapshotCache : CFixedSizeCircularBuffer<CDebugSnapshotFrame_t,2000,int> { void* vtable[2]; }
 class CDebugVisualizerAbsTime : IDebugVisualizer { void* vtable[6]; }
 class CDecalEmitterSystem : IDecalEmitterSystem, CAutoGameSystem { void* vtable[2]; }
-class CDecoyGrenade : CBaseCSGrenade { void* vtable[432]; }
-class CDecoyProjectile : CBaseCSGrenadeProjectile, IDecoyProjectile { void* vtable[315]; }
+class CDecoyGrenade : CBaseCSGrenade { void* vtable[435]; }
+class CDecoyProjectile : CBaseCSGrenadeProjectile, IDecoyProjectile { void* vtable[318]; }
 class CDedicatedServerWorkshopManager : CAutoGameSystem, IUGCAddonPathResolver { void* vtable[56]; }
 class CDefSaveRestoreBlockHandler : ISaveRestoreBlockHandler {}
 class CDefSaveRestoreOps : ISaveRestoreOps {}
@@ -716,35 +721,35 @@ class CDemoAnimationHeader : google::protobuf::Message { void* vtable[17]; }
 class CDemoClassInfo : google::protobuf::Message { void* vtable[17]; }
 class CDemoClassInfo_class_t : google::protobuf::Message { void* vtable[17]; }
 class CDemoConsoleCmd : google::protobuf::Message { void* vtable[17]; }
-class CDemoCustomData : google::protobuf::Message { void* vtable[17]; }
-class CDemoCustomDataCallbacks : google::protobuf::Message { void* vtable[29]; }
-class CDemoFileHeader : google::protobuf::Message { void* vtable[17]; }
+class CDemoCustomData : google::protobuf::Message { void* vtable[19]; }
+class CDemoCustomDataCallbacks : google::protobuf::Message { void* vtable[19]; }
+class CDemoFileHeader : google::protobuf::Message { void* vtable[19]; }
 class CDemoFileInfo : google::protobuf::Message { void* vtable[17]; }
 class CDemoFullPacket : google::protobuf::Message { void* vtable[17]; }
 class CDemoMessagePB<16,CDemoAnimationData> : IDemoMessage, CDemoAnimationData { void* vtable[6]; }
 class CDemoMessagePB<17,CDemoAnimationHeader> : IDemoMessage, CDemoAnimationHeader { void* vtable[6]; }
-class CDemoPacket : google::protobuf::Message { void* vtable[17]; }
-class CDemoSaveGame : google::protobuf::Message { void* vtable[25]; }
-class CDemoSendTables : google::protobuf::Message { void* vtable[19]; }
-class CDemoSpawnGroups : google::protobuf::Message { void* vtable[17]; }
+class CDemoPacket : google::protobuf::Message { void* vtable[21]; }
+class CDemoSaveGame : google::protobuf::Message { void* vtable[23]; }
+class CDemoSendTables : google::protobuf::Message { void* vtable[27]; }
+class CDemoSpawnGroups : google::protobuf::Message { void* vtable[19]; }
 class CDemoStop : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CDemoStringTables : google::protobuf::Message { void* vtable[17]; }
+class CDemoStringTables : google::protobuf::Message { void* vtable[29]; }
 class CDemoStringTables_items_t : google::protobuf::Message { void* vtable[17]; }
-class CDemoStringTables_table_t : google::protobuf::Message { void* vtable[21]; }
+class CDemoStringTables_table_t : google::protobuf::Message { void* vtable[17]; }
 class CDemoSyncTick : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CDemoUserCmd : google::protobuf::Message { void* vtable[19]; }
+class CDemoUserCmd : google::protobuf::Message { void* vtable[17]; }
 class CDirtySpatialPartitionEntityList : CAutoGameSystem { void* vtable[56]; }
 class CDontUseThisGameSystem : IGameSystem { void* vtable[56]; }
-class CDynamicLight : CBaseModelEntity { void* vtable[251]; }
+class CDynamicLight : CBaseModelEntity { void* vtable[254]; }
 class CDynamicOutputList_RestoreGame : IKV3TransferInterface_EHandle_Load { void* vtable[1]; }
 class CDynamicOutputList_SaveGame : IKV3TransferInterface_EHandle_Save { void* vtable[1]; }
-class CDynamicProp : CBreakableProp { void* vtable[295]; }
-class CDynamicPropAlias_cable_dynamic : CDynamicProp { void* vtable[295]; }
-class CDynamicPropAlias_dynamic_prop : CDynamicProp { void* vtable[295]; }
-class CDynamicPropAlias_prop_dynamic_override : CDynamicProp { void* vtable[295]; }
+class CDynamicProp : CBreakableProp { void* vtable[298]; }
+class CDynamicPropAlias_cable_dynamic : CDynamicProp { void* vtable[298]; }
+class CDynamicPropAlias_dynamic_prop : CDynamicProp { void* vtable[298]; }
+class CDynamicPropAlias_prop_dynamic_override : CDynamicProp { void* vtable[298]; }
 class CEconAccountSeasonalOperationGS : GCSDK::CProtoBufSharedObject<CSOAccountSeasonalOperation,41> { void* vtable[10]; }
 class CEconCraftingRecipeDefinition { void* vtable[3]; }
-class CEconEntity : CBaseFlex, IHasAttributes, IAttachmentOverride { void* vtable[308]; }
+class CEconEntity : CBaseFlex, IHasAttributes, IAttachmentOverride { void* vtable[311]; }
 class CEconEntity::NetworkVar_m_AttributeManager : CAttributeContainer { void* vtable[9]; }
 class CEconEquipSlot : GCSDK::CProtoBufSharedObject<CSOEconEquipSlot,3> { void* vtable[10]; }
 class CEconItem : GCSDK::CSharedObject, IEconItemInterface { void* vtable[13]; }
@@ -752,7 +757,7 @@ class CEconItemAttribute { void* vtable[1]; }
 class CEconItemAttributeDefinition : IEconItemAttributeDefinition { void* vtable[5]; }
 class CEconItemAttributeIterator_ApplyAttributeFloat : IEconItemAttributeIterator { void* vtable[5]; }
 class CEconItemDefinition : IEconItemDefinition { void* vtable[51]; }
-class CEconItemPreviewDataBlock : google::protobuf::Message { void* vtable[17]; }
+class CEconItemPreviewDataBlock : google::protobuf::Message { void* vtable[19]; }
 class CEconItemPreviewDataBlock_Sticker : google::protobuf::Message { void* vtable[17]; }
 class CEconItemSchema : IEconItemSchema { void* vtable[64]; }
 class CEconItemSetDefinition : IEconItemSetDefinition { void* vtable[12]; }
@@ -791,7 +796,7 @@ class CEconTool_WeddingRing : IEconTool { void* vtable[6]; }
 class CEconTool_WrappedGift : IEconTool { void* vtable[6]; }
 class CEconTool_XpGrant : IEconTool { void* vtable[6]; }
 class CEconTool_XpShopTicket : CEconTool_SeasonPass { void* vtable[6]; }
-class CEconWearable : CEconEntity { void* vtable[319]; }
+class CEconWearable : CEconEntity { void* vtable[322]; }
 class CEffectData { void* vtable[4]; }
 class CEmptySequence : ISequence { void* vtable[60]; }
 class CEmptyWorldService : CBaseEngineService<IEngineService> { void* vtable[23]; }
@@ -802,7 +807,7 @@ class CEntFireOutputAutoCompletionFunctor : CEntFireAutoCompletionFunctor { void
 class CEntity2NetworkClasses : IEntity2Networkables, IEntityListener { void* vtable[6]; }
 class CEntity2SaveRestore : IEntity2SaveRestore { void* vtable[44]; }
 class CEntityAutoCompletionFunctor : ICommandCompletionCallback { void* vtable[2]; }
-class CEntityBlocker : CBaseModelEntity { void* vtable[251]; }
+class CEntityBlocker : CBaseModelEntity { void* vtable[254]; }
 class CEntityComponent {}
 class CEntityComponentDataOps<CBodyComponent> : CDefSaveRestoreOps { void* vtable[6]; }
 class CEntityComponentDataOps<CHitboxComponent> : CDefSaveRestoreOps { void* vtable[6]; }
@@ -838,7 +843,7 @@ class CEntityDataInstantiator<CWatcherList> : IEntityDataInstantiator { void* vt
 class CEntityDataInstantiator<groundlink_t> : IEntityDataInstantiator { void* vtable[4]; }
 class CEntityDataInstantiator<physicspushlist_t> : IEntityDataInstantiator { void* vtable[4]; }
 class CEntityDebugGameSystem : CAutoGameSystem, CUtlSlot { void* vtable[56]; }
-class CEntityDissolve : CBaseModelEntity { void* vtable[251]; }
+class CEntityDissolve : CBaseModelEntity { void* vtable[254]; }
 class CEntityFlame : CBaseEntity { void* vtable[228]; }
 class CEntityIONotify : IEntityIONotify { void* vtable[4]; }
 class CEntityIOOutput { void* vtable[2]; }
@@ -847,17 +852,17 @@ class CEntityInstancePolymorphicMetadataHelper : IPolymorphicMetadataHelper { vo
 class CEntityKeyValuesSaveRestoreOps : CEntityKeyValuesSaveRestoreOpsBase, CDefSaveRestoreOps { void* vtable[6]; }
 class CEntityKeyValuesSaveRestoreOpsBase {}
 class CEntityLumpRequest : IComputeWorldOriginCallback { void* vtable[1]; }
-class CEntityMessageDoSpark : google::protobuf::Message { void* vtable[19]; }
+class CEntityMessageDoSpark : google::protobuf::Message { void* vtable[23]; }
 class CEntityMessageFixAngle : google::protobuf::Message { void* vtable[17]; }
 class CEntityMessagePB<138,CEntityMessageRemoveAllDecals,1> : CUserMessagePB<138,CEntityMessageRemoveAllDecals,1> {}
 class CEntityMessagePB<139,CEntityMessagePropagateForce,1> : CUserMessagePB<139,CEntityMessagePropagateForce,1> {}
 class CEntityMessagePlayJingle : google::protobuf::Message { void* vtable[19]; }
-class CEntityMessagePropagateForce : google::protobuf::Message { void* vtable[25]; }
+class CEntityMessagePropagateForce : google::protobuf::Message { void* vtable[17]; }
 class CEntityMessagePropagateForce_t : CEntityMessagePB<139,CEntityMessagePropagateForce,1> { void* vtable[5]; }
-class CEntityMessageRemoveAllDecals : google::protobuf::Message { void* vtable[33]; }
+class CEntityMessageRemoveAllDecals : google::protobuf::Message { void* vtable[17]; }
 class CEntityMessageRemoveAllDecals_t : CEntityMessagePB<138,CEntityMessageRemoveAllDecals,1> { void* vtable[5]; }
-class CEntityMessageScreenOverlay : google::protobuf::Message { void* vtable[23]; }
-class CEntityMsg : google::protobuf::Message { void* vtable[17]; }
+class CEntityMessageScreenOverlay : google::protobuf::Message { void* vtable[21]; }
+class CEntityMsg : google::protobuf::Message { void* vtable[19]; }
 class CEntityOutputTemplate<CUtlSymbolLarge> : CEntityIOOutput { void* vtable[2]; }
 class CEntityOutputTemplate<CVariantBase<CVariantDefaultAllocator> > : CEntityIOOutput { void* vtable[2]; }
 class CEntityOutputTemplate<Color> : CEntityIOOutput { void* vtable[2]; }
@@ -947,18 +952,18 @@ class CEntitySpawnerBase<CWorld> { void* vtable[2]; }
 class CEntitySubclassGameSystem : CAutoGameSystem, IVDataResourceListener { void* vtable[56]; }
 class CEntitySubclassVDataBase : CMemZeroOnNew { void* vtable[4]; }
 class CEntitySystem : IEntityResourceManifestBuilder { void* vtable[23]; }
-class CEnvBeam : CBeam { void* vtable[252]; }
+class CEnvBeam : CBeam { void* vtable[255]; }
 class CEnvBeverage : CBaseEntity { void* vtable[228]; }
 class CEnvCombinedLightProbeVolume : CBaseEntity, CBaseCubemap, CBaseLightProbeVolume { void* vtable[228]; }
 class CEnvCubemap : CBaseEntity, CBaseCubemap { void* vtable[228]; }
 class CEnvCubemapBox : CEnvCubemap { void* vtable[228]; }
 class CEnvCubemapFog : CBaseEntity { void* vtable[228]; }
 class CEnvCubemapToolsResourceListener : IToolsResourceListener { void* vtable[2]; }
-class CEnvDecal : CBaseModelEntity { void* vtable[251]; }
+class CEnvDecal : CBaseModelEntity { void* vtable[254]; }
 class CEnvDetailController : CBaseEntity { void* vtable[228]; }
 class CEnvEntityIgniter : CBaseEntity { void* vtable[228]; }
 class CEnvEntityMaker : CPointEntity { void* vtable[228]; }
-class CEnvExplosion : CModelPointEntity { void* vtable[251]; }
+class CEnvExplosion : CModelPointEntity { void* vtable[254]; }
 class CEnvFade : CLogicalEntity { void* vtable[228]; }
 class CEnvFireSensor : CBaseEntity { void* vtable[228]; }
 class CEnvFireSource : CBaseEntity { void* vtable[228]; }
@@ -967,15 +972,15 @@ class CEnvGlobal : CLogicalEntity { void* vtable[228]; }
 class CEnvHudHint : CPointEntity { void* vtable[228]; }
 class CEnvInstructorHint : CPointEntity { void* vtable[228]; }
 class CEnvInstructorVRHint : CPointEntity { void* vtable[228]; }
-class CEnvLaser : CBeam { void* vtable[252]; }
+class CEnvLaser : CBeam { void* vtable[255]; }
 class CEnvLightProbeVolume : CBaseEntity, CBaseLightProbeVolume { void* vtable[228]; }
 class CEnvMicrophone : CPointEntity { void* vtable[228]; }
 class CEnvMuzzleFlash : CPointEntity { void* vtable[228]; }
-class CEnvParticleGlow : CParticleSystem { void* vtable[251]; }
-class CEnvProjectedTexture : CModelPointEntity { void* vtable[251]; }
+class CEnvParticleGlow : CParticleSystem { void* vtable[254]; }
+class CEnvProjectedTexture : CModelPointEntity { void* vtable[254]; }
 class CEnvScreenOverlay : CPointEntity { void* vtable[228]; }
 class CEnvShake : CPointEntity { void* vtable[228]; }
-class CEnvSky : CBaseModelEntity { void* vtable[251]; }
+class CEnvSky : CBaseModelEntity { void* vtable[254]; }
 class CEnvSoundscape : CServerOnlyEntity { void* vtable[228]; }
 class CEnvSoundscapeAlias_snd_soundscape : CEnvSoundscape { void* vtable[228]; }
 class CEnvSoundscapeProxy : CEnvSoundscape { void* vtable[228]; }
@@ -1005,19 +1010,19 @@ class CFilterModel : CBaseFilter { void* vtable[230]; }
 class CFilterMultiple : CBaseFilter { void* vtable[230]; }
 class CFilterName : CBaseFilter { void* vtable[230]; }
 class CFilterProximity : CBaseFilter { void* vtable[230]; }
-class CFire : CBaseModelEntity { void* vtable[252]; }
+class CFire : CBaseModelEntity { void* vtable[255]; }
 class CFireBulletTakeDamageListener : CCSPlayer_DamageReactServices::ITakeDamageListener { void* vtable[2]; }
-class CFireCrackerBlast : CInferno { void* vtable[258]; }
+class CFireCrackerBlast : CInferno { void* vtable[261]; }
 class CFireSmoke : CBaseFire { void* vtable[231]; }
-class CFish : CBaseAnimGraph { void* vtable[284]; }
+class CFish : CBaseAnimGraph { void* vtable[287]; }
 class CFishPool : CBaseEntity, CGameEventListener { void* vtable[228]; }
-class CFists : CCSWeaponBase { void* vtable[427]; }
+class CFists : CCSWeaponBase { void* vtable[430]; }
 class CFixedSizeCircularBuffer<CCSPlayer_WeaponServices::ShootPositionHistoryEntry_t,32,int> { void* vtable[2]; }
 class CFixedSizeCircularBuffer<CDebugSnapshotFrame_t,2000,int> { void* vtable[2]; }
 class CFixedSizeCircularBuffer<CSGOInputHistoryEntryPB,32,int> { void* vtable[2]; }
 class CFixedSizeCircularBuffer<Vec3D<float>,16,int> { void* vtable[2]; }
-class CFlashbang : CBaseCSGrenade { void* vtable[432]; }
-class CFlashbangProjectile : CBaseCSGrenadeProjectile { void* vtable[315]; }
+class CFlashbang : CBaseCSGrenade { void* vtable[435]; }
+class CFlashbangProjectile : CBaseCSGrenadeProjectile { void* vtable[318]; }
 class CFlashlightReceiver_Manager : CAutoGameSystem, IEntityListener { void* vtable[56]; }
 class CFlattenedSerializerSpewFunc_Log : IFlattenedSerializerSpewFunc { void* vtable[3]; }
 class CFlexAnimationTrack : ICurveDataAccessor { void* vtable[7]; }
@@ -1025,54 +1030,54 @@ class CFlexSceneFileManager : CAutoGameSystem, IFlexSceneFileManager { void* vta
 class CFogController : CBaseEntity { void* vtable[228]; }
 class CFogController::NetworkVar_m_fog : fogparams_t { void* vtable[4]; }
 class CFogSystem : CAutoGameSystem { void* vtable[56]; }
-class CFogTrigger : CBaseTrigger { void* vtable[263]; }
-class CFogVolume : CServerOnlyModelEntity { void* vtable[251]; }
-class CFootstepControl : CBaseTrigger { void* vtable[263]; }
+class CFogTrigger : CBaseTrigger { void* vtable[266]; }
+class CFogVolume : CServerOnlyModelEntity { void* vtable[254]; }
+class CFootstepControl : CBaseTrigger { void* vtable[266]; }
 class CFunFact_GenericEvalFunction : FunFactEvaluator { void* vtable[2]; }
 class CFunFact_PlayerEvalFunction : FunFactEvaluator { void* vtable[2]; }
 class CFunFact_StatBest : FunFactEvaluator { void* vtable[2]; }
 class CFunFact_StatSum : FunFactEvaluator { void* vtable[2]; }
-class CFuncBrush : CBaseModelEntity { void* vtable[254]; }
-class CFuncConveyor : CBaseModelEntity { void* vtable[251]; }
-class CFuncElectrifiedVolume : CFuncBrush { void* vtable[254]; }
-class CFuncIllusionary : CBaseModelEntity { void* vtable[251]; }
-class CFuncInteractionLayerClip : CBaseModelEntity { void* vtable[251]; }
-class CFuncLadder : CBaseModelEntity { void* vtable[251]; }
-class CFuncLadderAlias_func_useableladder : CFuncLadder { void* vtable[251]; }
-class CFuncMonitor : CFuncBrush { void* vtable[254]; }
-class CFuncMoveLinear : CBaseToggle { void* vtable[252]; }
-class CFuncMoveLinearAlias_momentary_door : CFuncMoveLinear { void* vtable[252]; }
-class CFuncMover : CBaseModelEntity { void* vtable[251]; }
-class CFuncNavBlocker : CBaseModelEntity { void* vtable[251]; }
-class CFuncNavObstruction : CBaseModelEntity, INavObstacle { void* vtable[251]; }
-class CFuncPlat : CBasePlatTrain { void* vtable[256]; }
-class CFuncPlatRot : CFuncPlat { void* vtable[256]; }
+class CFuncBrush : CBaseModelEntity { void* vtable[257]; }
+class CFuncConveyor : CBaseModelEntity { void* vtable[254]; }
+class CFuncElectrifiedVolume : CFuncBrush { void* vtable[257]; }
+class CFuncIllusionary : CBaseModelEntity { void* vtable[254]; }
+class CFuncInteractionLayerClip : CBaseModelEntity { void* vtable[254]; }
+class CFuncLadder : CBaseModelEntity { void* vtable[254]; }
+class CFuncLadderAlias_func_useableladder : CFuncLadder { void* vtable[254]; }
+class CFuncMonitor : CFuncBrush { void* vtable[257]; }
+class CFuncMoveLinear : CBaseToggle { void* vtable[255]; }
+class CFuncMoveLinearAlias_momentary_door : CFuncMoveLinear { void* vtable[255]; }
+class CFuncMover : CBaseModelEntity { void* vtable[254]; }
+class CFuncNavBlocker : CBaseModelEntity { void* vtable[254]; }
+class CFuncNavObstruction : CBaseModelEntity, INavObstacle { void* vtable[254]; }
+class CFuncPlat : CBasePlatTrain { void* vtable[259]; }
+class CFuncPlatRot : CFuncPlat { void* vtable[259]; }
 class CFuncPropRespawnZone : CBaseEntity { void* vtable[228]; }
-class CFuncRotating : CBaseModelEntity { void* vtable[251]; }
-class CFuncShatterglass : CBaseModelEntity { void* vtable[251]; }
-class CFuncTankTrain : CFuncTrackTrain { void* vtable[251]; }
+class CFuncRotating : CBaseModelEntity { void* vtable[254]; }
+class CFuncShatterglass : CBaseModelEntity { void* vtable[254]; }
+class CFuncTankTrain : CFuncTrackTrain { void* vtable[254]; }
 class CFuncTimescale : CBaseEntity { void* vtable[228]; }
-class CFuncTrackAuto : CFuncTrackChange { void* vtable[257]; }
-class CFuncTrackChange : CFuncPlatRot { void* vtable[257]; }
-class CFuncTrackTrain : CBaseModelEntity { void* vtable[251]; }
-class CFuncTrain : CBasePlatTrain { void* vtable[252]; }
-class CFuncTrainControls : CBaseModelEntity { void* vtable[251]; }
-class CFuncVPhysicsClip : CBaseModelEntity { void* vtable[251]; }
-class CFuncVehicleClip : CBaseModelEntity { void* vtable[251]; }
-class CFuncWall : CBaseModelEntity { void* vtable[251]; }
-class CFuncWallToggle : CFuncWall { void* vtable[251]; }
-class CFuncWater : CBaseModelEntity { void* vtable[251]; }
+class CFuncTrackAuto : CFuncTrackChange { void* vtable[260]; }
+class CFuncTrackChange : CFuncPlatRot { void* vtable[260]; }
+class CFuncTrackTrain : CBaseModelEntity { void* vtable[254]; }
+class CFuncTrain : CBasePlatTrain { void* vtable[255]; }
+class CFuncTrainControls : CBaseModelEntity { void* vtable[254]; }
+class CFuncVPhysicsClip : CBaseModelEntity { void* vtable[254]; }
+class CFuncVehicleClip : CBaseModelEntity { void* vtable[254]; }
+class CFuncWall : CBaseModelEntity { void* vtable[254]; }
+class CFuncWallToggle : CFuncWall { void* vtable[254]; }
+class CFuncWater : CBaseModelEntity { void* vtable[254]; }
 class CGCClientJobServerUpdateVersion : GCSDK::CGCClientJob { void* vtable[6]; }
 class CGCClientJobServerWelcome : GCSDK::CGCClientJob { void* vtable[6]; }
 class CGCClientSystem : CAutoGameSystem, IMobileEventListener { void* vtable[61]; }
 class CGCDev_NewItemRequestResponse : GCSDK::CGCClientJob { void* vtable[6]; }
 class CGCItemAcknowledged : GCSDK::CGCClientJob { void* vtable[6]; }
-class CGCStorePurchaseInit_LineItem : google::protobuf::Message { void* vtable[19]; }
+class CGCStorePurchaseInit_LineItem : google::protobuf::Message { void* vtable[23]; }
 class CGCToGCMsgMasterAck : google::protobuf::Message { void* vtable[17]; }
-class CGCToGCMsgMasterAck_Response : google::protobuf::Message { void* vtable[17]; }
-class CGCToGCMsgMasterStartupComplete : google::protobuf::internal::ZeroFieldsBase { void* vtable[27]; }
-class CGCToGCMsgRouted : google::protobuf::Message { void* vtable[19]; }
-class CGCToGCMsgRoutedReply : google::protobuf::Message { void* vtable[21]; }
+class CGCToGCMsgMasterAck_Response : google::protobuf::Message { void* vtable[23]; }
+class CGCToGCMsgMasterStartupComplete : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
+class CGCToGCMsgRouted : google::protobuf::Message { void* vtable[23]; }
+class CGCToGCMsgRoutedReply : google::protobuf::Message { void* vtable[25]; }
 class CGameAppSystem<IServerEntitySubclassUtils,0> : CTier3AppSystem<IServerEntitySubclassUtils,0> {}
 class CGameAppSystem<IServerToolsInfo,0> : CTier3AppSystem<IServerToolsInfo,0> {}
 class CGameAppSystem<ISource2GameClients,0> : CTier3AppSystem<ISource2GameClients,0> {}
@@ -1080,7 +1085,7 @@ class CGameAppSystem<ISource2GameEntities,0> : CTier3AppSystem<ISource2GameEntit
 class CGameAppSystem<ISource2Server,0> : CTier3AppSystem<ISource2Server,0> {}
 class CGameChoreoServices : IChoreoServices { void* vtable[17]; }
 class CGameConfiguration : CTier4AppSystem<IGameConfiguration,0> { void* vtable[33]; }
-class CGameEnd : CRulePointEntity { void* vtable[251]; }
+class CGameEnd : CRulePointEntity { void* vtable[254]; }
 class CGameEntitySystem : CEntitySystem { void* vtable[23]; }
 class CGameEvent : IGameEvent { void* vtable[34]; }
 class CGameEventListener : IGameEventListener2 { void* vtable[2]; }
@@ -1093,12 +1098,12 @@ class CGameInfo_CDotaGameInfo_CHeroSelectEvent : google::protobuf::Message { voi
 class CGameInfo_CDotaGameInfo_CPlayerInfo : google::protobuf::Message { void* vtable[17]; }
 class CGameJobSystem : CAutoGameSystem { void* vtable[56]; }
 class CGameMessageDelegateHook<CUserMsg_ParticleManager_t> : CUtlSlot, IGameMessageDelegateHook { void* vtable[6]; }
-class CGameMoney : CRulePointEntity { void* vtable[251]; }
+class CGameMoney : CRulePointEntity { void* vtable[254]; }
 class CGameNetworkStringTables : IGameNetworkStringTables { void* vtable[4]; }
 class CGameParticleManager { void* vtable[11]; }
 class CGameParticleManagerSystem : CAutoGameSystem { void* vtable[56]; }
-class CGamePlayerEquip : CRulePointEntity { void* vtable[251]; }
-class CGamePlayerZone : CRuleBrushEntity { void* vtable[251]; }
+class CGamePlayerEquip : CRulePointEntity { void* vtable[254]; }
+class CGamePlayerZone : CRuleBrushEntity { void* vtable[254]; }
 class CGameRules { void* vtable[115]; }
 class CGameRulesGameSystem : IGameSystem { void* vtable[56]; }
 class CGameRulesProxy : CBaseEntity { void* vtable[228]; }
@@ -1106,9 +1111,9 @@ class CGameSceneNode { void* vtable[28]; }
 class CGameSceneNode::Cm_vecOriginInitializer : INetworkStateChangedRouter { void* vtable[2]; }
 class CGameSceneNode::NetworkVar_m_hParent : CGameSceneNodeHandle { void* vtable[4]; }
 class CGameSceneNodeHandle { void* vtable[4]; }
-class CGameServers_AggregationQuery_Request : google::protobuf::Message { void* vtable[19]; }
-class CGameServers_AggregationQuery_Response : google::protobuf::Message { void* vtable[17]; }
-class CGameServers_AggregationQuery_Response_Group : google::protobuf::Message { void* vtable[21]; }
+class CGameServers_AggregationQuery_Request : google::protobuf::Message { void* vtable[17]; }
+class CGameServers_AggregationQuery_Response : google::protobuf::Message { void* vtable[21]; }
+class CGameServers_AggregationQuery_Response_Group : google::protobuf::Message { void* vtable[25]; }
 class CGameSurfacePropertiesList : CSurfacePropReloadableDataTable<CGameSurfaceProperties> { void* vtable[4]; }
 class CGameSystemAbstractFactory<CVScriptGameSystem,IVScriptGameSystem> : IGameSystemFactory { void* vtable[10]; }
 class CGameSystemEventDispatcher : IGameSystemEventDispatcher { void* vtable[2]; }
@@ -1142,7 +1147,7 @@ class CGameSystemReallocatingFactory<CPVSManager,IPVSManager> : CBaseGameSystemF
 class CGameSystemReallocatingFactory<CPhysicsGameSystem,CPhysicsGameSystem> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemReallocatingFactory<CPrecacheRegister,CPrecacheRegister> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemReallocatingFactory<CPropData,CPropData> : CBaseGameSystemFactory { void* vtable[10]; }
-class CGameSystemReallocatingFactory<CRagdollLowViolenceManager,CRagdollLowViolenceManager> : CBaseGameSystemFactory { void* vtable[10]; }
+class CGameSystemReallocatingFactory<CRagdollGameSystem,CRagdollGameSystem> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemReallocatingFactory<CRenderGameSystem,CRenderGameSystem> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemReallocatingFactory<CSceneManager,ISceneManager> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemReallocatingFactory<CScenePrecacheSystem,CScenePrecacheSystem> : CBaseGameSystemFactory { void* vtable[10]; }
@@ -1213,7 +1218,7 @@ class CGameSystemStaticFactory<CViewModelPredictedSimulationTimeGameSystem,CView
 class CGameSystemStaticFactory<CVisibilityMonitor,CVisibilityMonitor> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemStaticFactory<CWeaponList,CWeaponList> : CBaseGameSystemFactory { void* vtable[10]; }
 class CGameSystemStaticFactory<ChangeLogger,ChangeLogger> : CBaseGameSystemFactory { void* vtable[10]; }
-class CGameText : CRulePointEntity { void* vtable[251]; }
+class CGameText : CRulePointEntity { void* vtable[254]; }
 class CGameTimescale : CAutoGameSystem { void* vtable[56]; }
 class CGenericConstraint : CPhysConstraint, IVPhysicsWatcher { void* vtable[231]; }
 class CGenericExprPart { void* vtable[4]; }
@@ -1230,27 +1235,27 @@ class CGenericExpr_VariableReference : CGenericExprPart { void* vtable[4]; }
 class CGlobalState : CAutoGameSystem, IGlobalEntityMgr { void* vtable[56]; }
 class CGlowProperty { void* vtable[4]; }
 class CGradientFog : CBaseEntity { void* vtable[228]; }
-class CGunTarget : CBaseToggle { void* vtable[251]; }
-class CHEGrenade : CBaseCSGrenade { void* vtable[432]; }
-class CHEGrenadeProjectile : CBaseCSGrenadeProjectile { void* vtable[317]; }
+class CGunTarget : CBaseToggle { void* vtable[254]; }
+class CHEGrenade : CBaseCSGrenade { void* vtable[435]; }
+class CHEGrenadeProjectile : CBaseCSGrenadeProjectile { void* vtable[320]; }
 class CHLTVDirector : CGameEventListener, IGameSystem, IHLTVDirector { void* vtable[20]; }
 class CHandleDummy : CBaseEntity { void* vtable[228]; }
 class CHandleTest : CBaseEntity { void* vtable[228]; }
 class CHitboxComponent : CEntityComponent { void* vtable[5]; }
 class CHitboxSystem {}
-class CHostage : CAI_ExpresserHost<CHostageExpresserShim>, CImprovLocomotor { void* vtable[339]; }
+class CHostage : CAI_ExpresserHost<CHostageExpresserShim>, CImprovLocomotor { void* vtable[342]; }
 class CHostage::NetworkVar_m_entitySpottedState : EntitySpottedState_t { void* vtable[4]; }
 class CHostage::NetworkVar_m_reuseTimer : CountdownTimer { void* vtable[4]; }
-class CHostageAlias_info_hostage_spawn : CHostage { void* vtable[339]; }
-class CHostageCarriableProp : CBaseAnimGraph { void* vtable[284]; }
-class CHostageExpresserShim : CBaseCombatCharacter { void* vtable[332]; }
-class CHostageRescueZone : CHostageRescueZoneShim, IHostageRescueZone { void* vtable[265]; }
-class CHostageRescueZoneShim : CBaseTrigger { void* vtable[264]; }
+class CHostageAlias_info_hostage_spawn : CHostage { void* vtable[342]; }
+class CHostageCarriableProp : CBaseAnimGraph { void* vtable[287]; }
+class CHostageExpresserShim : CBaseCombatCharacter { void* vtable[335]; }
+class CHostageRescueZone : CHostageRescueZoneShim, IHostageRescueZone { void* vtable[268]; }
+class CHostageRescueZoneShim : CBaseTrigger { void* vtable[267]; }
 class CImprovLocomotor {}
 class CInButtonState { void* vtable[1]; }
 class CInButtonStatePB : google::protobuf::Message { void* vtable[19]; }
-class CIncendiaryGrenade : CMolotovGrenade { void* vtable[432]; }
-class CInferno : CBaseModelEntity, CGameEventListener { void* vtable[258]; }
+class CIncendiaryGrenade : CMolotovGrenade { void* vtable[435]; }
+class CInferno : CBaseModelEntity, CGameEventListener { void* vtable[261]; }
 class CInfernoLOSTraceFilter : CTraceFilterSlowWithCallback { void* vtable[2]; }
 class CInfoData : CServerOnlyEntity { void* vtable[228]; }
 class CInfoDeathmatchSpawn : SpawnPoint { void* vtable[228]; }
@@ -1287,23 +1292,23 @@ class CInterpolatedVarProceduralBase<EnableRenderingInfo_t,0,1,CGlobalInterpolat
 class CInterpolatedVarProceduralBase<MeshGroupMaskInfo_t,0,1,CGlobalInterpolationLerpFuncs<MeshGroupMaskInfo_t> > : CInterpolatedVarArrayBase<MeshGroupMaskInfo_t,0,1,CGlobalInterpolationLerpFuncs<MeshGroupMaskInfo_t> > {}
 class CInventoryManager : CAutoGameSystem { void* vtable[59]; }
 class CIronSightController { void* vtable[1]; }
-class CItem : CBaseAnimGraph, CDefaultPlayerPickupVPhysics { void* vtable[292]; }
-class CItemAssaultSuit : CItem { void* vtable[292]; }
+class CItem : CBaseAnimGraph, CDefaultPlayerPickupVPhysics { void* vtable[295]; }
+class CItemAssaultSuit : CItem { void* vtable[295]; }
 class CItemDataCache {}
-class CItemDefuser : CItem { void* vtable[292]; }
-class CItemDefuserAlias_item_defuser : CItemDefuser { void* vtable[292]; }
-class CItemDogtags : CItem { void* vtable[293]; }
+class CItemDefuser : CItem { void* vtable[295]; }
+class CItemDefuserAlias_item_defuser : CItemDefuser { void* vtable[295]; }
+class CItemDogtags : CItem { void* vtable[296]; }
 class CItemGeneration : CAutoGameSystem { void* vtable[56]; }
-class CItemGeneric : CItem { void* vtable[294]; }
-class CItemGenericTriggerHelper : CBaseModelEntity { void* vtable[251]; }
-class CItemHeavyAssaultSuit : CItemAssaultSuit { void* vtable[292]; }
-class CItemKevlar : CItem { void* vtable[292]; }
+class CItemGeneric : CItem { void* vtable[297]; }
+class CItemGenericTriggerHelper : CBaseModelEntity { void* vtable[254]; }
+class CItemHeavyAssaultSuit : CItemAssaultSuit { void* vtable[295]; }
+class CItemKevlar : CItem { void* vtable[295]; }
 class CItemSelectionCriteria::CCondition { void* vtable[5]; }
 class CItemSelectionCriteria::CFloatCondition : CItemSelectionCriteria::CCondition { void* vtable[5]; }
 class CItemSelectionCriteria::CSetCondition : CItemSelectionCriteria::CCondition { void* vtable[5]; }
 class CItemSelectionCriteria::CStringCondition : CItemSelectionCriteria::CCondition { void* vtable[5]; }
-class CItemSoda : CBaseAnimGraph { void* vtable[284]; }
-class CItem_Healthshot : CWeaponBaseItem { void* vtable[432]; }
+class CItemSoda : CBaseAnimGraph { void* vtable[287]; }
+class CItem_Healthshot : CWeaponBaseItem { void* vtable[435]; }
 class CKV3TransferContextBase : IErrorListener { void* vtable[6]; }
 class CKV3TransferInterface_EHandle_Load_NoOp : IKV3TransferInterface_EHandle_Load { void* vtable[1]; }
 class CKV3TransferInterface_EHandle_Save_NoOp : IKV3TransferInterface_EHandle_Save { void* vtable[1]; }
@@ -1316,19 +1321,19 @@ class CKV3Transfer_UtlSymbolLargeInterface<CUtlSymbolTableLargeBase<1,2048,CThre
 class CKV3Transfer_UtlSymbolLargeInterface<CUtlSymbolTableLargeBase<1,2048,CThreadNullMutex> > : IKV3TransferInterface_UtlSymbolLarge { void* vtable[1]; }
 class CKeepUpright : CPointEntity, IMotionEvent { void* vtable[228]; }
 class CKickIssue : CBaseCSIssue { void* vtable[33]; }
-class CKnife : CCSWeaponBase { void* vtable[427]; }
+class CKnife : CCSWeaponBase { void* vtable[430]; }
 class CLabelledDebugHelper : CDebugVisualizerAbsTime, IAnimationDebugRenderer { void* vtable[6]; }
 class CLadderConnectPhysicsInterface : INavPhysicsInterface { void* vtable[7]; }
 class CLagCompensationManager : CAutoGameSystem, ILagCompensationManager { void* vtable[56]; }
 class CLegacyCollisionData : IPhysicsCollisionData { void* vtable[3]; }
 class CLightComponent : CEntityComponent, CUtlSlot { void* vtable[3]; }
-class CLightDirectionalEntity : CLightEntity { void* vtable[251]; }
-class CLightEntity : CBaseModelEntity { void* vtable[251]; }
-class CLightEnvironmentEntity : CLightDirectionalEntity { void* vtable[251]; }
-class CLightGlow : CBaseModelEntity { void* vtable[251]; }
-class CLightOrthoEntity : CLightEntity { void* vtable[251]; }
+class CLightDirectionalEntity : CLightEntity { void* vtable[254]; }
+class CLightEntity : CBaseModelEntity { void* vtable[254]; }
+class CLightEnvironmentEntity : CLightDirectionalEntity { void* vtable[254]; }
+class CLightGlow : CBaseModelEntity { void* vtable[254]; }
+class CLightOrthoEntity : CLightEntity { void* vtable[254]; }
 class CLightQueryGameSystem : IGameSystem { void* vtable[56]; }
-class CLightSpotEntity : CLightEntity { void* vtable[251]; }
+class CLightSpotEntity : CLightEntity { void* vtable[254]; }
 class CLightStyle : IToolsResourceListener { void* vtable[2]; }
 class CLoadBackupIssue : CBaseCSIssue { void* vtable[33]; }
 class CLoadingEntityListener : IEntityListener { void* vtable[4]; }
@@ -1365,251 +1370,251 @@ class CMapInfo : CPointEntity { void* vtable[228]; }
 class CMapLoadEntityFilter : ISpawnGroupEntityFilter { void* vtable[2]; }
 class CMapVetoPickController : CBaseEntity { void* vtable[228]; }
 class CMarkupManager : CAutoGameSystem { void* vtable[56]; }
-class CMarkupVolume : CBaseModelEntity { void* vtable[251]; }
-class CMarkupVolumeTagged : CMarkupVolume { void* vtable[252]; }
-class CMarkupVolumeTagged_Nav : CMarkupVolumeTagged { void* vtable[252]; }
-class CMarkupVolumeTagged_NavGame : CMarkupVolumeWithRef { void* vtable[252]; }
-class CMarkupVolumeWithRef : CMarkupVolumeTagged { void* vtable[252]; }
+class CMarkupVolume : CBaseModelEntity { void* vtable[254]; }
+class CMarkupVolumeTagged : CMarkupVolume { void* vtable[255]; }
+class CMarkupVolumeTagged_Nav : CMarkupVolumeTagged { void* vtable[255]; }
+class CMarkupVolumeTagged_NavGame : CMarkupVolumeWithRef { void* vtable[255]; }
+class CMarkupVolumeWithRef : CMarkupVolumeTagged { void* vtable[255]; }
 class CMathColorBlend : CLogicalEntity { void* vtable[228]; }
 class CMathCounter : CLogicalEntity { void* vtable[228]; }
 class CMathRemap : CLogicalEntity { void* vtable[228]; }
-class CMelee : CCSWeaponBase { void* vtable[427]; }
+class CMelee : CCSWeaponBase { void* vtable[430]; }
 class CMemZeroOnNew {}
 class CMessage : CPointEntity { void* vtable[228]; }
 class CMessageEntity : CPointEntity { void* vtable[228]; }
-class CModelPointEntity : CBaseModelEntity { void* vtable[251]; }
+class CModelPointEntity : CBaseModelEntity { void* vtable[254]; }
 class CModelState { void* vtable[4]; }
-class CMolotovGrenade : CBaseCSGrenade { void* vtable[432]; }
-class CMolotovProjectile : CBaseCSGrenadeProjectile { void* vtable[315]; }
-class CMomentaryRotButton : CRotButton { void* vtable[261]; }
+class CMolotovGrenade : CBaseCSGrenade { void* vtable[435]; }
+class CMolotovProjectile : CBaseCSGrenadeProjectile { void* vtable[318]; }
+class CMomentaryRotButton : CRotButton { void* vtable[264]; }
 class CMotorController { void* vtable[1]; }
 class CMoverPathNode : CPointEntity { void* vtable[228]; }
 class CMsgAccountDetails : google::protobuf::Message { void* vtable[17]; }
-class CMsgAcknowledgeRentalExpiration : google::protobuf::Message { void* vtable[21]; }
+class CMsgAcknowledgeRentalExpiration : google::protobuf::Message { void* vtable[17]; }
 class CMsgAdjustEquipSlot : google::protobuf::Message { void* vtable[17]; }
-class CMsgAdjustEquipSlots : google::protobuf::Message { void* vtable[17]; }
+class CMsgAdjustEquipSlots : google::protobuf::Message { void* vtable[21]; }
 class CMsgAdjustItemEquippedState : google::protobuf::Message { void* vtable[17]; }
-class CMsgAdjustItemEquippedStateMulti : google::protobuf::Message { void* vtable[17]; }
-class CMsgApplyEggEssence : google::protobuf::Message { void* vtable[17]; }
-class CMsgApplyPennantUpgrade : google::protobuf::Message { void* vtable[19]; }
-class CMsgApplyStatTrakSwap : google::protobuf::Message { void* vtable[21]; }
-class CMsgApplySticker : google::protobuf::Message { void* vtable[19]; }
-class CMsgApplyStrangePart : google::protobuf::Message { void* vtable[23]; }
+class CMsgAdjustItemEquippedStateMulti : google::protobuf::Message { void* vtable[23]; }
+class CMsgApplyEggEssence : google::protobuf::Message { void* vtable[25]; }
+class CMsgApplyPennantUpgrade : google::protobuf::Message { void* vtable[23]; }
+class CMsgApplyStatTrakSwap : google::protobuf::Message { void* vtable[17]; }
+class CMsgApplySticker : google::protobuf::Message { void* vtable[17]; }
+class CMsgApplyStrangePart : google::protobuf::Message { void* vtable[17]; }
 class CMsgCStrike15Welcome : google::protobuf::Message { void* vtable[17]; }
-class CMsgCasketItem : google::protobuf::Message { void* vtable[17]; }
-class CMsgClearDecalsForSkeletonInstanceEvent : google::protobuf::Message { void* vtable[23]; }
-class CMsgClearEntityDecalsEvent : google::protobuf::Message { void* vtable[21]; }
-class CMsgClearWorldDecalsEvent : google::protobuf::Message { void* vtable[23]; }
-class CMsgClientHello : google::protobuf::Message { void* vtable[21]; }
+class CMsgCasketItem : google::protobuf::Message { void* vtable[25]; }
+class CMsgClearDecalsForSkeletonInstanceEvent : google::protobuf::Message { void* vtable[19]; }
+class CMsgClearEntityDecalsEvent : google::protobuf::Message { void* vtable[17]; }
+class CMsgClearWorldDecalsEvent : google::protobuf::Message { void* vtable[31]; }
+class CMsgClientHello : google::protobuf::Message { void* vtable[19]; }
 class CMsgClientWelcome : google::protobuf::Message { void* vtable[17]; }
-class CMsgClientWelcome_Location : google::protobuf::Message { void* vtable[17]; }
+class CMsgClientWelcome_Location : google::protobuf::Message { void* vtable[23]; }
 class CMsgConVarValue : google::protobuf::Message { void* vtable[17]; }
 class CMsgConnectionStatus : google::protobuf::Message { void* vtable[19]; }
-class CMsgConsumableExhausted : google::protobuf::Message { void* vtable[19]; }
+class CMsgConsumableExhausted : google::protobuf::Message { void* vtable[17]; }
 class CMsgCsgoSteamUserStatChange : google::protobuf::Message { void* vtable[17]; }
-class CMsgDevNewItemRequest : google::protobuf::Message { void* vtable[17]; }
-class CMsgEffectData : google::protobuf::Message { void* vtable[19]; }
+class CMsgDevNewItemRequest : google::protobuf::Message { void* vtable[23]; }
+class CMsgEffectData : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCBannedWord : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCBannedWordListRequest : google::protobuf::Message { void* vtable[23]; }
-class CMsgGCBannedWordListResponse : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCBannedWordListRequest : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCBannedWordListResponse : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCCStrike15_ClientDeepStats : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_ClientDeepStats_DeepStatsMatch : google::protobuf::Message { void* vtable[29]; }
+class CMsgGCCStrike15_ClientDeepStats_DeepStatsMatch : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCCStrike15_ClientDeepStats_DeepStatsRange : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_GotvSyncPacket : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_GotvSyncPacket : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_AccountPrivacySettings : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_AccountPrivacySettings_Setting : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Account_RequestCoPlays : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_Account_RequestCoPlays_Player : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_AcknowledgePenalty : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_BetaEnrollment : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_Account_RequestCoPlays_Player : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCCStrike15_v2_AcknowledgePenalty : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_BetaEnrollment : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Client2GCStreamUnlock : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Client2GCTextMsg : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_Client2GcAckXPShopTracks : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
+class CMsgGCCStrike15_v2_Client2GcAckXPShopTracks : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
 class CMsgGCCStrike15_v2_ClientAccountBalance : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_ClientAuthKeyCode : google::protobuf::Message { void* vtable[27]; }
+class CMsgGCCStrike15_v2_ClientAuthKeyCode : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientCommendPlayer : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientGCRankUpdate : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_ClientLogonFatalError : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientNetworkConfig : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCCStrike15_v2_ClientPartyJoinRelay : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_ClientPartyWarning : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_ClientPartyWarning_Entry : google::protobuf::Message { void* vtable[29]; }
-class CMsgGCCStrike15_v2_ClientPerfReport : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCCStrike15_v2_ClientPartyWarning : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_ClientPartyWarning_Entry : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_ClientPerfReport : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientPerfReport_Entry : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_ClientPlayerDecalSign : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_ClientPollState : google::protobuf::Message { void* vtable[33]; }
+class CMsgGCCStrike15_v2_ClientPlayerDecalSign : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_ClientPollState : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientReportPlayer : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_ClientReportResponse : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCCStrike15_v2_ClientReportServer : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_ClientReportResponse : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCCStrike15_v2_ClientReportServer : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientReportValidation : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientRequestJoinFriendData : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientRequestJoinServerData : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientRequestOffers : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientRequestPlayersProfile : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientRequestSouvenir : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_ClientSubmitSurveyVote : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_ClientToGCChat : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_ClientToGCRequestElevate : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_ClientToGCRequestTicket : google::protobuf::Message { void* vtable[27]; }
-class CMsgGCCStrike15_v2_ClientVarValueNotificationInfo : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_Fantasy : google::protobuf::Message { void* vtable[25]; }
+class CMsgGCCStrike15_v2_ClientToGCRequestTicket : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_ClientVarValueNotificationInfo : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_Fantasy : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCCStrike15_v2_Fantasy_FantasySlot : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Fantasy_FantasyTeam : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_GC2ClientInitSystem : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCCStrike15_v2_GC2ClientInitSystem : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_GC2ClientInitSystem_Response : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCCStrike15_v2_GC2ClientNotifyXPShop : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCCStrike15_v2_GC2ClientNotifyXPShop : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_GC2ClientRequestValidation : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_GC2ClientTextMsg : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_GC2ClientRequestValidation : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_GC2ClientTextMsg : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_GC2ClientTournamentInfo : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_GC2ServerReservationUpdate : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_GCToClientChat : google::protobuf::Message { void* vtable[23]; }
-class CMsgGCCStrike15_v2_GetEventFavorites_Request : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_GC2ServerReservationUpdate : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCCStrike15_v2_GCToClientChat : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_GetEventFavorites_Request : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_GetEventFavorites_Response : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_GiftsLeaderboardRequest : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CMsgGCCStrike15_v2_GiftsLeaderboardResponse : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_GiftsLeaderboardResponse : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_GiftsLeaderboardResponse_GiftLeaderboardEntry : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchEndRewardDropsNotification : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_MatchEndRewardDropsNotification : google::protobuf::Message { void* vtable[23]; }
 class CMsgGCCStrike15_v2_MatchEndRunRewardDrops : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchList : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames : google::protobuf::internal::ZeroFieldsBase { void* vtable[21]; }
+class CMsgGCCStrike15_v2_MatchList : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
 class CMsgGCCStrike15_v2_MatchListRequestFullGameInfo : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser : google::protobuf::Message { void* vtable[23]; }
-class CMsgGCCStrike15_v2_MatchListRequestRecentUserGames : google::protobuf::Message { void* vtable[31]; }
-class CMsgGCCStrike15_v2_MatchListRequestTournamentGames : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCCStrike15_v2_MatchListRequestRecentUserGames : google::protobuf::Message { void* vtable[29]; }
+class CMsgGCCStrike15_v2_MatchListRequestTournamentGames : google::protobuf::Message { void* vtable[31]; }
 class CMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchmakingClient2GCHello : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
+class CMsgGCCStrike15_v2_MatchmakingClient2GCHello : google::protobuf::internal::ZeroFieldsBase { void* vtable[21]; }
 class CMsgGCCStrike15_v2_MatchmakingClient2ServerPing : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchmakingGC2ClientHello : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCCStrike15_v2_MatchmakingGC2ClientHello : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate_Note : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_MatchmakingServerReservationResponse : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchmakingServerRoundStats : google::protobuf::Message { void* vtable[25]; }
-class CMsgGCCStrike15_v2_MatchmakingServerRoundStats_DropInfo : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_MatchmakingServerReservationResponse : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_MatchmakingServerRoundStats : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_MatchmakingServerRoundStats_DropInfo : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_MatchmakingStart : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_MatchmakingStop : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCCStrike15_v2_MatchmakingStop : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Party_Invite : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Party_Register : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCCStrike15_v2_Party_Search : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_Party_Search : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_Party_SearchResults : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_Party_SearchResults_Entry : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_Party_SearchResults_Entry : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_PlayersProfile : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCCStrike15_v2_Predictions : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCStrike15_v2_Predictions_GroupMatchTeamPick : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_Predictions_GroupMatchTeamPick : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_Server2GCClientValidate : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_ServerNotificationForUserPenalty : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCStrike15_v2_ServerNotificationForUserPenalty : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCCStrike15_v2_ServerVarValueNotificationInfo : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_SetEventFavorite : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCStrike15_v2_SetPlayerLeaderboardSafeName : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCStrike15_v2_WatchInfoUsers : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCClientDisplayNotification : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCClientVersionUpdated : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCollectItem : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCCollectItem : google::protobuf::Message { void* vtable[23]; }
 class CMsgGCCstrike15_v2_ClientRedeemFreeReward : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCCstrike15_v2_ClientRedeemMissionReward : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCCstrike15_v2_ClientRedeemMissionReward : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCCstrike15_v2_ClientRequestNewMission : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCDev_SchemaReservationRequest : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCError : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCGiftedItems : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCHAccountPhoneNumberChange : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCHInviteUserToLobby : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCHRecurringSubscriptionStatusChange : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCHInviteUserToLobby : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCHRecurringSubscriptionStatusChange : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCHVacVerificationChange : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCIncrementKillCountResponse : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCItemCustomizationNotification : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCItemPreviewItemBoughtNotification : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCItemPreviewItemBoughtNotification : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCMultiplexMessage : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCMultiplexMessage_Response : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCNameItemNotification : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCReportAbuse : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCReportAbuseResponse : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCNameItemNotification : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCReportAbuse : google::protobuf::Message { void* vtable[25]; }
+class CMsgGCReportAbuseResponse : google::protobuf::Message { void* vtable[23]; }
 class CMsgGCRequestAnnouncements : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CMsgGCRequestAnnouncementsResponse : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCRequestSessionIP : google::protobuf::Message { void* vtable[31]; }
-class CMsgGCRequestSessionIPResponse : google::protobuf::Message { void* vtable[19]; }
-class CMsgGCServerVersionUpdated : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCShowItemsPickedUp : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCRequestAnnouncementsResponse : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCRequestSessionIP : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCRequestSessionIPResponse : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCServerVersionUpdated : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCShowItemsPickedUp : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCStorePurchaseCancel : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCStorePurchaseCancelResponse : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCStorePurchaseFinalize : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCStorePurchaseFinalizeResponse : google::protobuf::Message { void* vtable[23]; }
-class CMsgGCStorePurchaseInit : google::protobuf::Message { void* vtable[21]; }
-class CMsgGCStorePurchaseInitResponse : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCStorePurchaseFinalize : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCStorePurchaseFinalizeResponse : google::protobuf::Message { void* vtable[25]; }
+class CMsgGCStorePurchaseInit : google::protobuf::Message { void* vtable[17]; }
+class CMsgGCStorePurchaseInitResponse : google::protobuf::Message { void* vtable[21]; }
 class CMsgGCToClientSteamDatagramTicket : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCToGCBannedWordListBroadcast : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCToGCBannedWordListUpdated : google::protobuf::Message { void* vtable[21]; }
+class CMsgGCToGCBannedWordListUpdated : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCToGCBroadcastConsoleCommand : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCToGCDirtyMultipleSDOCache : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCToGCDirtyMultipleSDOCache : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCToGCDirtySDOCache : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCToGCIsTrustedServer : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCToGCIsTrustedServerResponse : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCToGCRequestPassportItemGrant : google::protobuf::Message { void* vtable[17]; }
 class CMsgGCToGCUpdateSQLKeyValue : google::protobuf::Message { void* vtable[19]; }
 class CMsgGCToGCWebAPIAccountChanged : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CMsgGCUpdateSessionIP : google::protobuf::Message { void* vtable[17]; }
-class CMsgGCUserTrackTimePlayedConsecutively : google::protobuf::Message { void* vtable[19]; }
-class CMsgGC_GlobalGame_Play : google::protobuf::Message { void* vtable[23]; }
+class CMsgGCUpdateSessionIP : google::protobuf::Message { void* vtable[19]; }
+class CMsgGCUserTrackTimePlayedConsecutively : google::protobuf::Message { void* vtable[17]; }
+class CMsgGC_GlobalGame_Play : google::protobuf::Message { void* vtable[25]; }
 class CMsgGC_GlobalGame_Subscribe : google::protobuf::Message { void* vtable[19]; }
-class CMsgGC_GlobalGame_Unsubscribe : google::protobuf::Message { void* vtable[17]; }
-class CMsgGC_ServerQuestUpdateData : google::protobuf::Message { void* vtable[19]; }
-class CMsgGameServerInfo : google::protobuf::Message { void* vtable[19]; }
-class CMsgIPCAddress : google::protobuf::Message { void* vtable[19]; }
-class CMsgIncrementKillCountAttribute : google::protobuf::Message { void* vtable[17]; }
+class CMsgGC_GlobalGame_Unsubscribe : google::protobuf::Message { void* vtable[19]; }
+class CMsgGC_ServerQuestUpdateData : google::protobuf::Message { void* vtable[21]; }
+class CMsgGameServerInfo : google::protobuf::Message { void* vtable[21]; }
+class CMsgIPCAddress : google::protobuf::Message { void* vtable[25]; }
+class CMsgIncrementKillCountAttribute : google::protobuf::Message { void* vtable[25]; }
 class CMsgInvitationCreated : google::protobuf::Message { void* vtable[17]; }
-class CMsgInviteToParty : google::protobuf::Message { void* vtable[17]; }
-class CMsgItemAcknowledged : google::protobuf::Message { void* vtable[19]; }
+class CMsgInviteToParty : google::protobuf::Message { void* vtable[19]; }
+class CMsgItemAcknowledged : google::protobuf::Message { void* vtable[21]; }
 class CMsgItemAcknowledged__DEPRECATED : google::protobuf::Message { void* vtable[17]; }
 class CMsgKickFromParty : google::protobuf::Message { void* vtable[17]; }
-class CMsgLANServerAvailable : google::protobuf::Message { void* vtable[21]; }
-class CMsgLeaveParty : google::protobuf::internal::ZeroFieldsBase { void* vtable[33]; }
+class CMsgLANServerAvailable : google::protobuf::Message { void* vtable[17]; }
+class CMsgLeaveParty : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
 class CMsgLegacySource1ClientWelcome : google::protobuf::Message { void* vtable[21]; }
-class CMsgLegacySource1ClientWelcome_Location : google::protobuf::Message { void* vtable[19]; }
-class CMsgModifyItemAttribute : google::protobuf::Message { void* vtable[21]; }
+class CMsgLegacySource1ClientWelcome_Location : google::protobuf::Message { void* vtable[23]; }
+class CMsgModifyItemAttribute : google::protobuf::Message { void* vtable[17]; }
 class CMsgOpenCrate : google::protobuf::Message { void* vtable[19]; }
-class CMsgPartyInviteResponse : google::protobuf::Message { void* vtable[17]; }
-class CMsgPlaceDecalEvent : google::protobuf::Message { void* vtable[17]; }
+class CMsgPartyInviteResponse : google::protobuf::Message { void* vtable[21]; }
+class CMsgPlaceDecalEvent : google::protobuf::Message { void* vtable[21]; }
 class CMsgPlayerInfo : google::protobuf::Message { void* vtable[17]; }
-class CMsgProtoBufHeader : google::protobuf::Message { void* vtable[17]; }
-class CMsgQAngle : google::protobuf::Message { void* vtable[17]; }
-class CMsgQuaternion : google::protobuf::Message { void* vtable[19]; }
-class CMsgRGBA : google::protobuf::Message { void* vtable[19]; }
+class CMsgProtoBufHeader : google::protobuf::Message { void* vtable[19]; }
+class CMsgQAngle : google::protobuf::Message { void* vtable[25]; }
+class CMsgQuaternion : google::protobuf::Message { void* vtable[17]; }
+class CMsgRGBA : google::protobuf::Message { void* vtable[33]; }
 class CMsgReplayUploadedToYouTube : google::protobuf::Message { void* vtable[17]; }
-class CMsgReplicateConVars : google::protobuf::Message { void* vtable[17]; }
+class CMsgReplicateConVars : google::protobuf::Message { void* vtable[19]; }
 class CMsgRequestInventoryRefresh : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
 class CMsgSDONoMemcached : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
-class CMsgSOCacheHaveVersion : google::protobuf::Message { void* vtable[23]; }
-class CMsgSOCacheSubscribed : google::protobuf::Message { void* vtable[21]; }
-class CMsgSOCacheSubscribed_SubscribedType : google::protobuf::Message { void* vtable[19]; }
+class CMsgSOCacheHaveVersion : google::protobuf::Message { void* vtable[17]; }
+class CMsgSOCacheSubscribed : google::protobuf::Message { void* vtable[17]; }
+class CMsgSOCacheSubscribed_SubscribedType : google::protobuf::Message { void* vtable[17]; }
 class CMsgSOCacheSubscriptionCheck : google::protobuf::Message { void* vtable[19]; }
 class CMsgSOCacheSubscriptionRefresh : google::protobuf::Message { void* vtable[17]; }
 class CMsgSOCacheUnsubscribed : google::protobuf::Message { void* vtable[17]; }
 class CMsgSOCacheVersion : google::protobuf::Message { void* vtable[19]; }
-class CMsgSOIDOwner : google::protobuf::Message { void* vtable[17]; }
-class CMsgSOMultipleObjects : google::protobuf::Message { void* vtable[19]; }
+class CMsgSOIDOwner : google::protobuf::Message { void* vtable[19]; }
+class CMsgSOMultipleObjects : google::protobuf::Message { void* vtable[17]; }
 class CMsgSOMultipleObjects_SingleObject : google::protobuf::Message { void* vtable[17]; }
-class CMsgSOSingleObject : google::protobuf::Message { void* vtable[19]; }
-class CMsgSerializedSOCache : google::protobuf::Message { void* vtable[17]; }
-class CMsgSerializedSOCache_Cache : google::protobuf::Message { void* vtable[17]; }
+class CMsgSOSingleObject : google::protobuf::Message { void* vtable[17]; }
+class CMsgSerializedSOCache : google::protobuf::Message { void* vtable[21]; }
+class CMsgSerializedSOCache_Cache : google::protobuf::Message { void* vtable[19]; }
 class CMsgSerializedSOCache_Cache_Version : google::protobuf::Message { void* vtable[19]; }
-class CMsgSerializedSOCache_TypeCache : google::protobuf::Message { void* vtable[17]; }
-class CMsgServerAvailable : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CMsgServerHello : google::protobuf::Message { void* vtable[21]; }
-class CMsgServerNetworkStats : google::protobuf::Message { void* vtable[19]; }
-class CMsgServerNetworkStats_Player : google::protobuf::Message { void* vtable[17]; }
-class CMsgServerNetworkStats_Port : google::protobuf::Message { void* vtable[23]; }
+class CMsgSerializedSOCache_TypeCache : google::protobuf::Message { void* vtable[19]; }
+class CMsgServerAvailable : google::protobuf::internal::ZeroFieldsBase { void* vtable[21]; }
+class CMsgServerHello : google::protobuf::Message { void* vtable[19]; }
+class CMsgServerNetworkStats : google::protobuf::Message { void* vtable[17]; }
+class CMsgServerNetworkStats_Player : google::protobuf::Message { void* vtable[19]; }
+class CMsgServerNetworkStats_Port : google::protobuf::Message { void* vtable[21]; }
 class CMsgServerPeer : google::protobuf::Message { void* vtable[17]; }
 class CMsgServerUserCmd : google::protobuf::Message { void* vtable[17]; }
 class CMsgSetItemPositions : google::protobuf::Message { void* vtable[17]; }
@@ -1626,51 +1631,51 @@ class CMsgSosStopSoundEventHash : google::protobuf::Message { void* vtable[17]; 
 class CMsgSosStopSoundEventHash_t : CNetMessagePB<212,CMsgSosStopSoundEventHash,4,1,1> { void* vtable[5]; }
 class CMsgSosStopSoundEvent_t : CNetMessagePB<209,CMsgSosStopSoundEvent,4,1,1> { void* vtable[5]; }
 class CMsgSource1LegacyGameEvent : google::protobuf::Message { void* vtable[19]; }
-class CMsgSource1LegacyGameEventList : google::protobuf::Message { void* vtable[19]; }
-class CMsgSource1LegacyGameEventList_descriptor_t : google::protobuf::Message { void* vtable[21]; }
-class CMsgSource1LegacyGameEventList_key_t : google::protobuf::Message { void* vtable[21]; }
+class CMsgSource1LegacyGameEventList : google::protobuf::Message { void* vtable[17]; }
+class CMsgSource1LegacyGameEventList_descriptor_t : google::protobuf::Message { void* vtable[17]; }
+class CMsgSource1LegacyGameEventList_key_t : google::protobuf::Message { void* vtable[17]; }
 class CMsgSource1LegacyGameEvent_key_t : google::protobuf::Message { void* vtable[17]; }
-class CMsgSource1LegacyListenEvents : google::protobuf::Message { void* vtable[19]; }
-class CMsgSource2SystemSpecs : google::protobuf::Message { void* vtable[17]; }
+class CMsgSource1LegacyListenEvents : google::protobuf::Message { void* vtable[17]; }
+class CMsgSource2SystemSpecs : google::protobuf::Message { void* vtable[23]; }
 class CMsgSource2VProfLiteReport : google::protobuf::Message { void* vtable[17]; }
 class CMsgSource2VProfLiteReportItem : google::protobuf::Message { void* vtable[17]; }
-class CMsgStoreGetUserData : google::protobuf::Message { void* vtable[27]; }
-class CMsgStoreGetUserDataResponse : google::protobuf::Message { void* vtable[17]; }
+class CMsgStoreGetUserData : google::protobuf::Message { void* vtable[25]; }
+class CMsgStoreGetUserDataResponse : google::protobuf::Message { void* vtable[23]; }
 class CMsgSystemBroadcast : google::protobuf::Message { void* vtable[19]; }
-class CMsgTEArmorRicochet : google::protobuf::Message { void* vtable[27]; }
+class CMsgTEArmorRicochet : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBSPDecal : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBaseBeam : google::protobuf::Message { void* vtable[17]; }
-class CMsgTEBeamEntPoint : google::protobuf::Message { void* vtable[19]; }
+class CMsgTEBeamEntPoint : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBeamEnts : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBeamPoints : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBeamRing : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBloodStream : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEBubbleTrail : google::protobuf::Message { void* vtable[21]; }
-class CMsgTEBubbles : google::protobuf::Message { void* vtable[21]; }
+class CMsgTEBubbles : google::protobuf::Message { void* vtable[19]; }
 class CMsgTEDecal : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEDust : google::protobuf::Message { void* vtable[19]; }
 class CMsgTEEffectDispatch : google::protobuf::Message { void* vtable[21]; }
 class CMsgTEEnergySplash : google::protobuf::Message { void* vtable[19]; }
-class CMsgTEExplosion : google::protobuf::Message { void* vtable[17]; }
-class CMsgTEFireBullets : google::protobuf::Message { void* vtable[25]; }
-class CMsgTEFizz : google::protobuf::Message { void* vtable[17]; }
+class CMsgTEExplosion : google::protobuf::Message { void* vtable[21]; }
+class CMsgTEFireBullets : google::protobuf::Message { void* vtable[17]; }
+class CMsgTEFizz : google::protobuf::Message { void* vtable[19]; }
 class CMsgTEGlowSprite : google::protobuf::Message { void* vtable[23]; }
 class CMsgTEImpact : google::protobuf::Message { void* vtable[17]; }
-class CMsgTELargeFunnel : google::protobuf::Message { void* vtable[21]; }
+class CMsgTELargeFunnel : google::protobuf::Message { void* vtable[19]; }
 class CMsgTEMuzzleFlash : google::protobuf::Message { void* vtable[17]; }
-class CMsgTEPhysicsProp : google::protobuf::Message { void* vtable[19]; }
+class CMsgTEPhysicsProp : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEPlayerAnimEvent : google::protobuf::Message { void* vtable[17]; }
-class CMsgTEPlayerDecal : google::protobuf::Message { void* vtable[23]; }
+class CMsgTEPlayerDecal : google::protobuf::Message { void* vtable[21]; }
 class CMsgTEProjectedDecal : google::protobuf::Message { void* vtable[17]; }
 class CMsgTERadioIcon : google::protobuf::Message { void* vtable[21]; }
-class CMsgTEShatterSurface : google::protobuf::Message { void* vtable[17]; }
-class CMsgTESmoke : google::protobuf::Message { void* vtable[17]; }
+class CMsgTEShatterSurface : google::protobuf::Message { void* vtable[21]; }
+class CMsgTESmoke : google::protobuf::Message { void* vtable[19]; }
 class CMsgTESparks : google::protobuf::Message { void* vtable[17]; }
 class CMsgTEWorldDecal : google::protobuf::Message { void* vtable[17]; }
 class CMsgTransform : google::protobuf::Message { void* vtable[17]; }
-class CMsgUpdateItemSchema : google::protobuf::Message { void* vtable[19]; }
-class CMsgUseItem : google::protobuf::Message { void* vtable[21]; }
-class CMsgVDebugGameSessionIDEvent : google::protobuf::Message { void* vtable[19]; }
+class CMsgUpdateItemSchema : google::protobuf::Message { void* vtable[17]; }
+class CMsgUseItem : google::protobuf::Message { void* vtable[17]; }
+class CMsgVDebugGameSessionIDEvent : google::protobuf::Message { void* vtable[17]; }
 class CMsgVector : google::protobuf::Message { void* vtable[19]; }
 class CMsgVector2D : google::protobuf::Message { void* vtable[17]; }
 class CMsgVoiceAudio : google::protobuf::Message { void* vtable[17]; }
@@ -1684,15 +1689,15 @@ class CMutableRefCountBase<CRefMT> {}
 class CMutableRefCounted<CMutableRefCountBase<CRefMT> > : CMutableRefCountBase<CRefMT> {}
 class CNETMsg_DebugOverlay : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_NOP : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CNETMsg_SetConVar : google::protobuf::Message { void* vtable[25]; }
-class CNETMsg_SignonState : google::protobuf::Message { void* vtable[21]; }
+class CNETMsg_SetConVar : google::protobuf::Message { void* vtable[17]; }
+class CNETMsg_SignonState : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_SpawnGroup_Load : google::protobuf::Message { void* vtable[17]; }
-class CNETMsg_SpawnGroup_LoadCompleted : google::protobuf::Message { void* vtable[21]; }
-class CNETMsg_SpawnGroup_ManifestUpdate : google::protobuf::Message { void* vtable[17]; }
-class CNETMsg_SpawnGroup_SetCreationTick : google::protobuf::Message { void* vtable[17]; }
-class CNETMsg_SpawnGroup_Unload : google::protobuf::Message { void* vtable[17]; }
+class CNETMsg_SpawnGroup_LoadCompleted : google::protobuf::Message { void* vtable[19]; }
+class CNETMsg_SpawnGroup_ManifestUpdate : google::protobuf::Message { void* vtable[19]; }
+class CNETMsg_SpawnGroup_SetCreationTick : google::protobuf::Message { void* vtable[19]; }
+class CNETMsg_SpawnGroup_Unload : google::protobuf::Message { void* vtable[19]; }
 class CNETMsg_SplitScreenUser : google::protobuf::Message { void* vtable[17]; }
-class CNETMsg_StringCmd : google::protobuf::Message { void* vtable[23]; }
+class CNETMsg_StringCmd : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_Tick : google::protobuf::Message { void* vtable[17]; }
 class CNavArea : CNavPoly { void* vtable[20]; }
 class CNavAreaBuildPathTest : IPathfindTest { void* vtable[6]; }
@@ -2011,15 +2016,15 @@ class CNonDamagingScan { void* vtable[2]; }
 class CNotReadyForMatchIssue : CBaseCSIssue { void* vtable[33]; }
 class CNotifyManager : CAutoGameSystem, INotify, IEntityListener { void* vtable[56]; }
 class CNullEntity : CBaseEntity { void* vtable[228]; }
-class COmniLight : CBarnLight { void* vtable[254]; }
-class COrnamentProp : CDynamicProp { void* vtable[295]; }
+class COmniLight : CBarnLight { void* vtable[257]; }
+class COrnamentProp : CDynamicProp { void* vtable[298]; }
 class CPASAttenuationFilter : CPASFilter { void* vtable[5]; }
 class CPASFilter : CRecipientFilter { void* vtable[5]; }
 class CPVSFilter : CRecipientFilter { void* vtable[5]; }
 class CPVSManager : CAutoGameSystem, IPVSManager { void* vtable[56]; }
 class CParallelProcessorAbstract<CParallelProcessor<QueryCacheUpdateRecord_t,CFuncJobItemProcessor<QueryCacheUpdateRecord_t>,1> > : CParallelProcessorAbstract_Base, IMultipleWorkerJob { void* vtable[2]; }
 class CParallelProcessorAbstract_Base {}
-class CParticleSystem : CBaseModelEntity { void* vtable[251]; }
+class CParticleSystem : CBaseModelEntity { void* vtable[254]; }
 class CParticleSystemQuery : IParticleSystemQuery { void* vtable[84]; }
 class CParticleSystemQueryGameSystem : CAutoGameSystem { void* vtable[56]; }
 class CPath : CNavPathData { void* vtable[5]; }
@@ -2041,7 +2046,7 @@ class CPauseMatchIssue : CBaseCSIssue { void* vtable[33]; }
 class CPawnListGameSystem : CAutoGameSystem { void* vtable[56]; }
 class CPerFrameConCommandSystem : CBaseEngineService<IEngineService> { void* vtable[23]; }
 class CPhysBallSocket : CPhysConstraint { void* vtable[231]; }
-class CPhysBox : CBreakable { void* vtable[252]; }
+class CPhysBox : CBreakable { void* vtable[255]; }
 class CPhysConstraint : CLogicalEntity { void* vtable[231]; }
 class CPhysExplosion : CPointEntity { void* vtable[228]; }
 class CPhysFixed : CPhysConstraint { void* vtable[231]; }
@@ -2050,7 +2055,7 @@ class CPhysHinge : CPhysConstraint, IVPhysicsWatcher { void* vtable[231]; }
 class CPhysHingeAlias_phys_hinge_local : CPhysHinge { void* vtable[231]; }
 class CPhysImpact : CPointEntity { void* vtable[228]; }
 class CPhysLength : CPhysConstraint { void* vtable[231]; }
-class CPhysMagnet : CBaseAnimGraph { void* vtable[284]; }
+class CPhysMagnet : CBaseAnimGraph { void* vtable[287]; }
 class CPhysMotor : CLogicalEntity { void* vtable[228]; }
 class CPhysObjSaveRestoreOps : CDefSaveRestoreOps { void* vtable[6]; }
 class CPhysPulley : CPhysConstraint { void* vtable[231]; }
@@ -2059,28 +2064,28 @@ class CPhysSlideConstraint : CPhysConstraint, IVPhysicsWatcher { void* vtable[23
 class CPhysThruster : CPhysForce { void* vtable[230]; }
 class CPhysTorque : CPhysForce { void* vtable[230]; }
 class CPhysWheelConstraint : CPhysConstraint { void* vtable[231]; }
-class CPhysicalButton : CBaseButton { void* vtable[261]; }
+class CPhysicalButton : CBaseButton { void* vtable[264]; }
 class CPhysicsEntitySolver : CLogicalEntity, IPhysicsEntitySolverAutoList { void* vtable[228]; }
 class CPhysicsGameSystem : IGameSystem, IPhysicsWorldEventListener { void* vtable[56]; }
 class CPhysicsGrab : IToolGameSimulationAPI_IPhysicsGrab { void* vtable[2]; }
-class CPhysicsProp : CBreakableProp, INavObstacle { void* vtable[295]; }
-class CPhysicsPropMultiplayer : CPhysicsProp { void* vtable[295]; }
-class CPhysicsPropOverride : CPhysicsProp { void* vtable[295]; }
-class CPhysicsPropRespawnable : CPhysicsProp { void* vtable[295]; }
+class CPhysicsProp : CBreakableProp, INavObstacle { void* vtable[298]; }
+class CPhysicsPropMultiplayer : CPhysicsProp { void* vtable[298]; }
+class CPhysicsPropOverride : CPhysicsProp { void* vtable[298]; }
+class CPhysicsPropRespawnable : CPhysicsProp { void* vtable[298]; }
 class CPhysicsPushedEntities { void* vtable[3]; }
 class CPhysicsShake : IMotionEvent { void* vtable[5]; }
 class CPhysicsSpring : CBaseEntity { void* vtable[228]; }
 class CPhysicsWire : CBaseEntity { void* vtable[228]; }
-class CPlantedC4 : CBaseAnimGraph, IHasAttributes { void* vtable[288]; }
+class CPlantedC4 : CBaseAnimGraph, IHasAttributes { void* vtable[291]; }
 class CPlantedC4::NetworkVar_m_AttributeManager : CAttributeContainer { void* vtable[9]; }
 class CPlantedC4::NetworkVar_m_entitySpottedState : EntitySpottedState_t { void* vtable[4]; }
-class CPlatTrigger : CBaseModelEntity { void* vtable[251]; }
+class CPlatTrigger : CBaseModelEntity { void* vtable[254]; }
 class CPlayerCommandQueue : IPlayerCommandQueue { void* vtable[8]; }
 class CPlayerControllerComponent { void* vtable[10]; }
 class CPlayerInventory : GCSDK::ISharedObjectListener { void* vtable[24]; }
 class CPlayerPawnComponent { void* vtable[17]; }
 class CPlayerPing : CBaseEntity { void* vtable[228]; }
-class CPlayerSprayDecal : CModelPointEntity { void* vtable[251]; }
+class CPlayerSprayDecal : CModelPointEntity { void* vtable[254]; }
 class CPlayerVisibility : CBaseEntity { void* vtable[228]; }
 class CPlayerVoiceListener : CAutoGameSystem { void* vtable[56]; }
 class CPlayer_CameraServices : CPlayerPawnComponent { void* vtable[27]; }
@@ -2101,10 +2106,10 @@ class CPointCamera : CBaseEntity { void* vtable[228]; }
 class CPointCameraVFOV : CPointCamera { void* vtable[228]; }
 class CPointChildModifier : CPointEntity { void* vtable[228]; }
 class CPointClientCommand : CPointEntity { void* vtable[228]; }
-class CPointClientUIDialog : CBaseClientUIEntity { void* vtable[254]; }
-class CPointClientUIWorldPanel : CBaseClientUIEntity { void* vtable[255]; }
-class CPointClientUIWorldTextPanel : CPointClientUIWorldPanel { void* vtable[255]; }
-class CPointCommentaryNode : CBaseAnimGraph { void* vtable[284]; }
+class CPointClientUIDialog : CBaseClientUIEntity { void* vtable[257]; }
+class CPointClientUIWorldPanel : CBaseClientUIEntity { void* vtable[258]; }
+class CPointClientUIWorldTextPanel : CPointClientUIWorldPanel { void* vtable[258]; }
+class CPointCommentaryNode : CBaseAnimGraph { void* vtable[287]; }
 class CPointEntity : CBaseEntity { void* vtable[228]; }
 class CPointEntityFinder : CBaseEntity { void* vtable[228]; }
 class CPointGamestatsCounter : CPointEntity { void* vtable[228]; }
@@ -2120,26 +2125,26 @@ class CPointTeleport : CServerOnlyPointEntity { void* vtable[228]; }
 class CPointTemplate : CLogicalEntity { void* vtable[230]; }
 class CPointValueRemapper : CBaseEntity { void* vtable[228]; }
 class CPointVelocitySensor : CPointEntity { void* vtable[228]; }
-class CPointWorldText : CModelPointEntity { void* vtable[251]; }
+class CPointWorldText : CModelPointEntity { void* vtable[254]; }
 class CPostConnectCallback { void* vtable[1]; }
-class CPostProcessingVolume : CBaseTrigger, CGameEventListener { void* vtable[263]; }
-class CPreMatchInfoData : google::protobuf::Message { void* vtable[23]; }
-class CPreMatchInfoData_TeamStats : google::protobuf::Message { void* vtable[23]; }
+class CPostProcessingVolume : CBaseTrigger, CGameEventListener { void* vtable[266]; }
+class CPreMatchInfoData : google::protobuf::Message { void* vtable[17]; }
+class CPreMatchInfoData_TeamStats : google::protobuf::Message { void* vtable[19]; }
 class CPrecacheRegister : CAutoGameSystem { void* vtable[56]; }
-class CPrecipitation : CBaseTrigger { void* vtable[263]; }
-class CPrecipitationBlocker : CBaseModelEntity { void* vtable[251]; }
+class CPrecipitation : CBaseTrigger { void* vtable[266]; }
+class CPrecipitationBlocker : CBaseModelEntity { void* vtable[254]; }
 class CPrecipitationVData : CEntitySubclassVDataBase { void* vtable[4]; }
-class CPredictedViewModel : CBaseViewModel { void* vtable[292]; }
+class CPredictedViewModel : CBaseViewModel { void* vtable[295]; }
 class CPredictionSuppressEffects : IPredictionSuppressEffects { void* vtable[6]; }
-class CProductInfo_SetRichPresenceLocalization_Request : google::protobuf::Message { void* vtable[19]; }
-class CProductInfo_SetRichPresenceLocalization_Request_LanguageSection : google::protobuf::Message { void* vtable[21]; }
-class CProductInfo_SetRichPresenceLocalization_Request_Token : google::protobuf::Message { void* vtable[19]; }
+class CProductInfo_SetRichPresenceLocalization_Request : google::protobuf::Message { void* vtable[31]; }
+class CProductInfo_SetRichPresenceLocalization_Request_LanguageSection : google::protobuf::Message { void* vtable[19]; }
+class CProductInfo_SetRichPresenceLocalization_Request_Token : google::protobuf::Message { void* vtable[21]; }
 class CProductInfo_SetRichPresenceLocalization_Response : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
 class CProjectedDecal : CPointEntity { void* vtable[228]; }
 class CPropData : CAutoGameSystem, IVDataResourceListener { void* vtable[56]; }
 class CPropDataComponent : CEntityComponent { void* vtable[3]; }
-class CPropDoorRotating : CBasePropDoor { void* vtable[325]; }
-class CPropDoorRotatingBreakable : CPropDoorRotating { void* vtable[325]; }
+class CPropDoorRotating : CBasePropDoor { void* vtable[328]; }
+class CPropDoorRotatingBreakable : CPropDoorRotating { void* vtable[328]; }
 class CPropsBreakableSystem : IBreakableSystem { void* vtable[2]; }
 class CPulseCell_Base { void* vtable[10]; }
 class CPulseCell_BaseFlow : CPulseCell_Base { void* vtable[10]; }
@@ -2220,23 +2225,23 @@ class CPulseSharedSchemaEnumService : IGapTypeQueriesForScope { void* vtable[6];
 class CPulseSharedTypesafeIntService : IGapTypeQueriesForScope { void* vtable[6]; }
 class CPulseTestGapTypeQueryRegistration : IGapTypeQueryRegistrationForScope { void* vtable[2]; }
 class CPulseTestHandleService : IGapTypeQueriesForScope { void* vtable[6]; }
-class CPushable : CBreakable { void* vtable[252]; }
-class CQuest_PublisherAddCommunityItemsToPlayer_Request : google::protobuf::Message { void* vtable[19]; }
-class CQuest_PublisherAddCommunityItemsToPlayer_Request_Attribute : google::protobuf::Message { void* vtable[23]; }
+class CPushable : CBreakable { void* vtable[255]; }
+class CQuest_PublisherAddCommunityItemsToPlayer_Request : google::protobuf::Message { void* vtable[17]; }
+class CQuest_PublisherAddCommunityItemsToPlayer_Request_Attribute : google::protobuf::Message { void* vtable[17]; }
 class CQuest_PublisherAddCommunityItemsToPlayer_Response : google::protobuf::Message { void* vtable[17]; }
 class CRadiusDamageInfo : CTakeDamageInfo { void* vtable[2]; }
 class CRagdollConstraint : CPhysConstraint { void* vtable[231]; }
+class CRagdollGameSystem : CAutoGameSystem { void* vtable[56]; }
 class CRagdollLRURetirement : CAutoGameSystem { void* vtable[56]; }
-class CRagdollLowViolenceManager : CAutoGameSystem { void* vtable[56]; }
 class CRagdollMagnet : CPointEntity { void* vtable[228]; }
 class CRagdollManager : CBaseEntity { void* vtable[228]; }
 class CRagdollPoseControlSystem : CAutoGameSystem { void* vtable[56]; }
-class CRagdollProp : CBaseAnimGraph, CDefaultPlayerPickupVPhysics { void* vtable[287]; }
-class CRagdollPropAlias_physics_prop_ragdoll : CRagdollProp { void* vtable[287]; }
-class CRagdollPropAttached : CRagdollProp { void* vtable[287]; }
+class CRagdollProp : CBaseAnimGraph, CDefaultPlayerPickupVPhysics { void* vtable[290]; }
+class CRagdollPropAlias_physics_prop_ragdoll : CRagdollProp { void* vtable[290]; }
+class CRagdollPropAttached : CRagdollProp { void* vtable[290]; }
 class CReadyForMatchIssue : CBaseCSIssue { void* vtable[33]; }
 class CRecipientFilter : IRecipientFilter { void* vtable[5]; }
-class CRectLight : CBarnLight { void* vtable[254]; }
+class CRectLight : CBarnLight { void* vtable[257]; }
 class CRefCountServiceBase<CRefMT> {}
 class CRefCounted1<IRefCounted,CRefCountServiceBase<CRefMT> > : IRefCounted, CRefCountServiceBase<CRefMT> {}
 class CRefCountedMemPoolObject<CAnimPose> { void* vtable[1]; }
@@ -2254,93 +2259,93 @@ class CResponseQueueManager : CAutoGameSystem { void* vtable[56]; }
 class CRestartGameIssue : CBaseCSIssue { void* vtable[33]; }
 class CRestore : CSaveRestoreShared, IRestore { void* vtable[1]; }
 class CRetakeGameRules : CGameEventListener { void* vtable[6]; }
-class CRevertSaved : CModelPointEntity { void* vtable[251]; }
-class CRopeKeyframe : CBaseModelEntity, IPositionWatcher { void* vtable[252]; }
-class CRopeKeyframeAlias_move_rope : CRopeKeyframe { void* vtable[252]; }
-class CRotButton : CBaseButton { void* vtable[261]; }
-class CRotDoor : CBaseDoor { void* vtable[254]; }
+class CRevertSaved : CModelPointEntity { void* vtable[254]; }
+class CRopeKeyframe : CBaseModelEntity, IPositionWatcher { void* vtable[255]; }
+class CRopeKeyframeAlias_move_rope : CRopeKeyframe { void* vtable[255]; }
+class CRotButton : CBaseButton { void* vtable[264]; }
+class CRotDoor : CBaseDoor { void* vtable[257]; }
 class CRoundEndReport : CGameEventListener { void* vtable[2]; }
-class CRuleBrushEntity : CRuleEntity { void* vtable[251]; }
-class CRuleEntity : CBaseModelEntity { void* vtable[251]; }
-class CRulePointEntity : CRuleEntity { void* vtable[251]; }
+class CRuleBrushEntity : CRuleEntity { void* vtable[254]; }
+class CRuleEntity : CBaseModelEntity { void* vtable[254]; }
+class CRulePointEntity : CRuleEntity { void* vtable[254]; }
 class CSGOInputHistoryEntryPB : google::protobuf::Message { void* vtable[19]; }
 class CSGOInterpolationInfoPB : google::protobuf::Message { void* vtable[19]; }
 class CSGOInterpolationInfoPB_CL : google::protobuf::Message { void* vtable[19]; }
 class CSGOUserCmdPB : google::protobuf::Message { void* vtable[17]; }
 class CSHA1 { void* vtable[1]; }
 class CSNavMesh : CNavMesh { void* vtable[28]; }
-class CSOAccountItemPersonalStore : google::protobuf::Message { void* vtable[19]; }
+class CSOAccountItemPersonalStore : google::protobuf::Message { void* vtable[21]; }
 class CSOAccountKeychainRemoveToolCharges : google::protobuf::Message { void* vtable[17]; }
 class CSOAccountRecurringSubscription : google::protobuf::Message { void* vtable[17]; }
-class CSOAccountSeasonalOperation : google::protobuf::Message { void* vtable[17]; }
-class CSOAccountXpShop : google::protobuf::Message { void* vtable[17]; }
-class CSOEconClaimCode : google::protobuf::Message { void* vtable[17]; }
-class CSOEconCoupon : google::protobuf::Message { void* vtable[21]; }
-class CSOEconDefaultEquippedDefinitionInstanceClient : google::protobuf::Message { void* vtable[17]; }
-class CSOEconEquipSlot : google::protobuf::Message { void* vtable[17]; }
+class CSOAccountSeasonalOperation : google::protobuf::Message { void* vtable[19]; }
+class CSOAccountXpShop : google::protobuf::Message { void* vtable[25]; }
+class CSOEconClaimCode : google::protobuf::Message { void* vtable[19]; }
+class CSOEconCoupon : google::protobuf::Message { void* vtable[17]; }
+class CSOEconDefaultEquippedDefinitionInstanceClient : google::protobuf::Message { void* vtable[19]; }
+class CSOEconEquipSlot : google::protobuf::Message { void* vtable[19]; }
 class CSOEconGameAccountClient : google::protobuf::Message { void* vtable[17]; }
-class CSOEconItem : google::protobuf::Message { void* vtable[19]; }
+class CSOEconItem : google::protobuf::Message { void* vtable[21]; }
 class CSOEconItemAttribute : google::protobuf::Message { void* vtable[17]; }
 class CSOEconItemDropRateBonus : google::protobuf::Message { void* vtable[17]; }
-class CSOEconItemEquipped : google::protobuf::Message { void* vtable[31]; }
+class CSOEconItemEquipped : google::protobuf::Message { void* vtable[17]; }
 class CSOEconItemEventTicket : google::protobuf::Message { void* vtable[17]; }
 class CSOEconItemLeagueViewPass : google::protobuf::Message { void* vtable[17]; }
-class CSOEconRentalHistory : google::protobuf::Message { void* vtable[17]; }
+class CSOEconRentalHistory : google::protobuf::Message { void* vtable[21]; }
 class CSOItemCriteria : google::protobuf::Message { void* vtable[17]; }
-class CSOItemCriteriaCondition : google::protobuf::Message { void* vtable[19]; }
-class CSOItemRecipe : google::protobuf::Message { void* vtable[19]; }
+class CSOItemCriteriaCondition : google::protobuf::Message { void* vtable[17]; }
+class CSOItemRecipe : google::protobuf::Message { void* vtable[17]; }
 class CSOLobbyInvite : google::protobuf::Message { void* vtable[17]; }
-class CSOPartyInvite : google::protobuf::Message { void* vtable[17]; }
-class CSOPersonaDataPublic : google::protobuf::Message { void* vtable[17]; }
-class CSOQuestProgress : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsgList_GameEvents : google::protobuf::Message { void* vtable[17]; }
+class CSOPartyInvite : google::protobuf::Message { void* vtable[19]; }
+class CSOPersonaDataPublic : google::protobuf::Message { void* vtable[21]; }
+class CSOQuestProgress : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsgList_GameEvents : google::protobuf::Message { void* vtable[21]; }
 class CSVCMsgList_GameEvents_event_t : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_BSPDecal : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_BSPDecal : google::protobuf::Message { void* vtable[21]; }
 class CSVCMsg_Broadcast_Command : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_ClassInfo : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_ClassInfo_class_t : google::protobuf::Message { void* vtable[33]; }
-class CSVCMsg_ClearAllStringTables : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_CmdKeyValues : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_ClassInfo_class_t : google::protobuf::Message { void* vtable[21]; }
+class CSVCMsg_ClearAllStringTables : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsg_CmdKeyValues : google::protobuf::Message { void* vtable[19]; }
 class CSVCMsg_CreateStringTable : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_CrosshairAngle : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_FixAngle : google::protobuf::Message { void* vtable[21]; }
-class CSVCMsg_FlattenedSerializer : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_FixAngle : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_FlattenedSerializer : google::protobuf::Message { void* vtable[25]; }
 class CSVCMsg_FullFrameSplit : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_GameEvent : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_GameEvent : google::protobuf::Message { void* vtable[23]; }
 class CSVCMsg_GameEventList : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_GameEventList_descriptor_t : google::protobuf::Message { void* vtable[25]; }
+class CSVCMsg_GameEventList_descriptor_t : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_GameEventList_key_t : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsg_GameEvent_key_t : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_GameSessionConfiguration : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_GetCvarValue : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsg_GameEvent_key_t : google::protobuf::Message { void* vtable[21]; }
+class CSVCMsg_GameSessionConfiguration : google::protobuf::Message { void* vtable[29]; }
+class CSVCMsg_GetCvarValue : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_HLTVStatus : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_HLTVStatus_t : CNetMessagePB<62,CSVCMsg_HLTVStatus,0,1,1> { void* vtable[5]; }
 class CSVCMsg_HltvFixupOperatorStatus : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_HltvReplay : google::protobuf::Message { void* vtable[19]; }
 class CSVCMsg_Menu : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_PacketEntities : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_PacketEntities : google::protobuf::Message { void* vtable[19]; }
 class CSVCMsg_PacketEntities_alternate_baseline_t : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_PacketEntities_non_transmitted_entities_t : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_PacketReliable : google::protobuf::Message { void* vtable[23]; }
-class CSVCMsg_PeerList : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsg_Prefetch : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_Print : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsg_PacketReliable : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_PeerList : google::protobuf::Message { void* vtable[23]; }
+class CSVCMsg_Prefetch : google::protobuf::Message { void* vtable[21]; }
+class CSVCMsg_Print : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_RconServerDetails : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_SendTable : google::protobuf::Message { void* vtable[23]; }
-class CSVCMsg_SendTable_sendprop_t : google::protobuf::Message { void* vtable[21]; }
-class CSVCMsg_ServerInfo : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsg_SendTable_sendprop_t : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_ServerInfo : google::protobuf::Message { void* vtable[27]; }
 class CSVCMsg_ServerSteamID : google::protobuf::Message { void* vtable[19]; }
 class CSVCMsg_SetPause : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_SetView : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsg_Sounds : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_SetView : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_Sounds : google::protobuf::Message { void* vtable[19]; }
 class CSVCMsg_Sounds_sounddata_t : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsg_SplitScreen : google::protobuf::Message { void* vtable[21]; }
+class CSVCMsg_SplitScreen : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_StopSound : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_TempEntities : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_UpdateStringTable : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_UserCommands : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_UserCommands_t : CNetMessagePB<76,CSVCMsg_UserCommands,17,1,0> { void* vtable[5]; }
-class CSVCMsg_UserMessage : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsg_UserMessage : google::protobuf::Message { void* vtable[21]; }
 class CSVCMsg_VoiceData : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_VoiceInit : google::protobuf::Message { void* vtable[19]; }
 class CSave : CSaveRestoreShared, ISave { void* vtable[1]; }
@@ -2376,39 +2381,39 @@ class CScrambleTeams : CBaseCSIssue { void* vtable[33]; }
 class CScriptAccessorT<CDefScriptAccessorBase,1> : CDefScriptAccessorBase {}
 class CScriptComponent : CEntityComponent, CScriptScopeT<CDefScriptAccessorBase,1> { void* vtable[3]; }
 class CScriptConsoleCommand : ICommandCallback { void* vtable[2]; }
-class CScriptItem : CItem { void* vtable[292]; }
-class CScriptNavBlocker : CFuncNavBlocker { void* vtable[251]; }
+class CScriptItem : CItem { void* vtable[295]; }
+class CScriptNavBlocker : CFuncNavBlocker { void* vtable[254]; }
 class CScriptScopeT<CDefScriptAccessorBase,1> : CScriptAccessorT<CDefScriptAccessorBase,1> {}
 class CScriptSpawnGroupEntityFilterProxy : ISpawnGroupEntityFilter { void* vtable[2]; }
-class CScriptTriggerHurt : CTriggerHurt { void* vtable[265]; }
-class CScriptTriggerMultiple : CTriggerMultiple { void* vtable[263]; }
-class CScriptTriggerOnce : CTriggerOnce { void* vtable[263]; }
-class CScriptTriggerPush : CTriggerPush { void* vtable[263]; }
+class CScriptTriggerHurt : CTriggerHurt { void* vtable[268]; }
+class CScriptTriggerMultiple : CTriggerMultiple { void* vtable[266]; }
+class CScriptTriggerOnce : CTriggerOnce { void* vtable[266]; }
+class CScriptTriggerPush : CTriggerPush { void* vtable[266]; }
 class CScriptUniformRandomStream { void* vtable[3]; }
 class CScriptedSequence : CBaseEntity { void* vtable[228]; }
 class CScrubEntityGameSystem : CAutoGameSystem, CScrubSystemEventListener { void* vtable[56]; }
 class CScrubSystemEventListener : IScrubSystemEventListener { void* vtable[2]; }
-class CSensorGrenade : CBaseCSGrenade { void* vtable[433]; }
-class CSensorGrenadeProjectile : CBaseCSGrenadeProjectile { void* vtable[315]; }
+class CSensorGrenade : CBaseCSGrenade { void* vtable[436]; }
+class CSensorGrenadeProjectile : CBaseCSGrenadeProjectile { void* vtable[318]; }
 class CServerEntitySubclassUtils : CGameAppSystem<IServerEntitySubclassUtils,0> { void* vtable[13]; }
 class CServerLogHTTPDispatcher : CAutoGameSystem { void* vtable[56]; }
 class CServerOnlyEntity : CBaseEntity { void* vtable[228]; }
-class CServerOnlyModelEntity : CBaseModelEntity { void* vtable[251]; }
+class CServerOnlyModelEntity : CBaseModelEntity { void* vtable[254]; }
 class CServerOnlyPointEntity : CServerOnlyEntity { void* vtable[228]; }
 class CServerPulseGameSystem : CBasePulseGameSystem { void* vtable[56]; }
-class CServerRagdollTrigger : CBaseTrigger { void* vtable[263]; }
+class CServerRagdollTrigger : CBaseTrigger { void* vtable[266]; }
 class CServerToolsInfo : CGameAppSystem<IServerToolsInfo,0> { void* vtable[12]; }
 class CSharedGapTypeQueryRegistration : IGapTypeQueryRegistrationForScope { void* vtable[2]; }
 class CShatterGlassBreakableSystem : IBreakableSystem { void* vtable[2]; }
 class CShatterGlassGameSystem : CAutoGameSystem { void* vtable[56]; }
 class CShatterGlassShard : IShardTransformPosPanelToWorld { void* vtable[3]; }
 class CShatterGlassShardMgr : CDefSaveRestoreBlockHandler, IShatterGlassShardMgr { void* vtable[9]; }
-class CShatterGlassShardPhysics : CPhysicsProp { void* vtable[295]; }
+class CShatterGlassShardPhysics : CPhysicsProp { void* vtable[298]; }
 class CShatterGlassShardPhysics::NetworkVar_m_ShardDesc : shard_model_desc_t { void* vtable[5]; }
-class CShower : CModelPointEntity { void* vtable[251]; }
+class CShower : CModelPointEntity { void* vtable[254]; }
 class CSimSequenceSetup : ISequenceSetup { void* vtable[2]; }
 class CSimThinkManager : CAutoGameSystem, ISimulationThinkManager { void* vtable[56]; }
-class CSimpleMarkupVolumeTagged : CMarkupVolumeTagged { void* vtable[252]; }
+class CSimpleMarkupVolumeTagged : CMarkupVolumeTagged { void* vtable[255]; }
 class CSingleUserPlusObserversFilter : CRecipientFilter { void* vtable[5]; }
 class CSingleUserRecipientFilter : CRecipientFilter { void* vtable[5]; }
 class CSkeletonAnimationController : ISkeletonAnimationController { void* vtable[28]; }
@@ -2417,8 +2422,8 @@ class CSkeletonInstance::NetworkVar_m_modelState : CModelState { void* vtable[4]
 class CSkyCamera : CBaseEntity { void* vtable[228]; }
 class CSkyCamera::NetworkVar_m_skyboxData : sky3dparams_t { void* vtable[4]; }
 class CSkyboxReference : CBaseEntity { void* vtable[228]; }
-class CSmokeGrenade : CBaseCSGrenade { void* vtable[432]; }
-class CSmokeGrenadeProjectile : CBaseCSGrenadeProjectile, CGameEventListener, ISmokeGrenadeList { void* vtable[315]; }
+class CSmokeGrenade : CBaseCSGrenade { void* vtable[435]; }
+class CSmokeGrenadeProjectile : CBaseCSGrenadeProjectile, CGameEventListener, ISmokeGrenadeList { void* vtable[318]; }
 class CSmokeVolumeSystem : CAutoGameSystem { void* vtable[56]; }
 class CSmoothFunc { void* vtable[2]; }
 class CSosCopyRecipientFilter : IRecipientFilter { void* vtable[6]; }
@@ -2471,17 +2476,17 @@ class CSource2EntitySystem : CAutoGameSystem { void* vtable[56]; }
 class CSource2EntitySystemDeallocator : CAutoGameSystem { void* vtable[56]; }
 class CSource2GameClients : CGameAppSystem<ISource2GameClients,0> { void* vtable[43]; }
 class CSource2GameEntities : CGameAppSystem<ISource2GameEntities,0> { void* vtable[17]; }
-class CSource2Metrics_MatchPerfSummary_Notification : google::protobuf::Message { void* vtable[17]; }
-class CSource2Metrics_MatchPerfSummary_Notification_Client : google::protobuf::Message { void* vtable[17]; }
+class CSource2Metrics_MatchPerfSummary_Notification : google::protobuf::Message { void* vtable[19]; }
+class CSource2Metrics_MatchPerfSummary_Notification_Client : google::protobuf::Message { void* vtable[19]; }
 class CSource2Server : CGameAppSystem<ISource2Server,0>, IStreamEntitiesFromFileCompletion { void* vtable[107]; }
 class CSpaceAgnosticBoneAccessor : IPoseAccessor { void* vtable[9]; }
 class CSpawnGroupCompletionCallbackGameSystem : CAutoGameSystem { void* vtable[56]; }
 class CSpawnGroupMgrGameSystem : IGameSpawnGroupMgr, CAutoGameSystem { void* vtable[22]; }
 class CSplineConstraint : CPhysConstraint { void* vtable[231]; }
-class CSpotlightEnd : CBaseModelEntity { void* vtable[251]; }
-class CSprite : CBaseModelEntity { void* vtable[251]; }
-class CSpriteAlias_env_glow : CSprite { void* vtable[251]; }
-class CSpriteOriented : CSprite { void* vtable[251]; }
+class CSpotlightEnd : CBaseModelEntity { void* vtable[254]; }
+class CSprite : CBaseModelEntity { void* vtable[254]; }
+class CSpriteAlias_env_glow : CSprite { void* vtable[254]; }
+class CSpriteOriented : CSprite { void* vtable[254]; }
 class CStartTimeOutIssue : CBaseCSIssue { void* vtable[33]; }
 class CStartupHookGameSystem<GameEvent_RegisterInternal,17408> : IGameSystem {}
 class CStatusTagProxy : CMutableRefCounted<CMutableRefCountBase<CRefMT> >, IAnimTagListener { void* vtable[1]; }
@@ -2493,7 +2498,7 @@ class CStringTableSaveRestoreOps : CDefSaveRestoreOps { void* vtable[6]; }
 class CStructuredReport<enum BhopReportField,0,int,int,Vec3D<float>,Vec3D<float>,float,float,Vec3D<float>,float,bool,bool,bool,bool,float> { void* vtable[1]; }
 class CStructuredReport<enum MoveReportField,0,int,int,Vec3D<float>,Vec3D<float>,float,Vec3D<float>,float,bool,bool,bool,bool,float> { void* vtable[1]; }
 class CSubtickMoveStep : google::protobuf::Message { void* vtable[19]; }
-class CSun : CBaseModelEntity { void* vtable[251]; }
+class CSun : CBaseModelEntity { void* vtable[254]; }
 class CSurfacePropDataTableBase {}
 class CSurfacePropReloadableDataTable<CGameSurfaceProperties> : CSurfacePropReloadableDataTableBase {}
 class CSurfacePropReloadableDataTableBase : CSurfacePropDataTableBase { void* vtable[4]; }
@@ -2526,7 +2531,7 @@ class CTEProjectedDecal : CBaseTempEntity { void* vtable[4]; }
 class CTESmoke : CBaseTempEntity { void* vtable[4]; }
 class CTESparks : CBaseTempEntity { void* vtable[4]; }
 class CTEWorldDecal : CBaseTempEntity { void* vtable[4]; }
-class CTablet : CCSWeaponBase { void* vtable[426]; }
+class CTablet : CCSWeaponBase { void* vtable[429]; }
 class CTakeDamageInfo { void* vtable[2]; }
 class CTankTargetChange : CPointEntity { void* vtable[228]; }
 class CTankTrainAI : CPointEntity { void* vtable[228]; }
@@ -2536,7 +2541,7 @@ class CTeamRecipientFilter : CRecipientFilter { void* vtable[5]; }
 class CTeamplayRules : CMultiplayRules { void* vtable[118]; }
 class CTempEntsSystem : ITempEntsSystem { void* vtable[3]; }
 class CTestEffect : CBaseEntity { void* vtable[228]; }
-class CTextureBasedAnimatable : CBaseModelEntity { void* vtable[251]; }
+class CTextureBasedAnimatable : CBaseModelEntity { void* vtable[254]; }
 class CThinkContextsSaveDataOps : CDefSaveRestoreOps { void* vtable[6]; }
 class CThread {}
 class CThreadedJob : CRefCounted1<IRefCounted,CRefCountServiceBase<CRefMT> > { void* vtable[7]; }
@@ -2581,7 +2586,7 @@ class CTier4AppSystem<IGameConfiguration,0> : CTier3AppSystem<IGameConfiguration
 class CTimerEntity : CLogicalEntity { void* vtable[228]; }
 class CTonemapController2 : CBaseEntity { void* vtable[228]; }
 class CTonemapController2Alias_env_tonemap_controller2 : CTonemapController2 { void* vtable[228]; }
-class CTonemapTrigger : CBaseTrigger { void* vtable[263]; }
+class CTonemapTrigger : CBaseTrigger { void* vtable[266]; }
 class CToolGameSimulationAPI : CAutoGameSystem, IToolGameSimulationAPI, IEntityListener { void* vtable[56]; }
 class CTouchExpansionComponent : CEntityComponent { void* vtable[3]; }
 class CTraceFilter : RnQueryAttr_t { void* vtable[2]; }
@@ -2605,51 +2610,51 @@ class CTraceFilterSkipPlayersAndNPCsAndChildren : CTraceFilterSkipPlayersAndNPCs
 class CTraceFilterSlowWithCallback : CTraceFilter {}
 class CTraceFilterTaserIgnoreTeammates : CTraceFilterSlowWithCallback { void* vtable[2]; }
 class CTraceFilterWalkableEntities : CTraceFilterSlowWithCallback { void* vtable[2]; }
-class CTriggerActiveWeaponDetect : CBaseTrigger { void* vtable[263]; }
-class CTriggerBombReset : CBaseTrigger { void* vtable[263]; }
-class CTriggerBrush : CBaseModelEntity { void* vtable[251]; }
-class CTriggerBuoyancy : CBaseTrigger { void* vtable[263]; }
-class CTriggerCallback : CBaseTrigger { void* vtable[263]; }
-class CTriggerDetectBulletFire : CBaseTrigger { void* vtable[263]; }
-class CTriggerDetectExplosion : CBaseTrigger, CUtlSlot { void* vtable[263]; }
-class CTriggerFan : CBaseTrigger { void* vtable[263]; }
-class CTriggerGameEvent : CBaseTrigger { void* vtable[263]; }
-class CTriggerGravity : CBaseTrigger { void* vtable[263]; }
-class CTriggerHostageReset : CBaseTrigger { void* vtable[263]; }
-class CTriggerHurt : CBaseTrigger { void* vtable[265]; }
-class CTriggerImpact : CTriggerMultiple { void* vtable[263]; }
-class CTriggerLerpObject : CBaseTrigger { void* vtable[263]; }
-class CTriggerLook : CTriggerOnce { void* vtable[263]; }
-class CTriggerMultiple : CBaseTrigger { void* vtable[263]; }
-class CTriggerOnce : CTriggerMultiple { void* vtable[263]; }
-class CTriggerPhysics : CBaseTrigger, IMotionEvent { void* vtable[263]; }
-class CTriggerProximity : CBaseTrigger { void* vtable[263]; }
-class CTriggerPush : CBaseTrigger { void* vtable[263]; }
-class CTriggerRemove : CBaseTrigger { void* vtable[263]; }
-class CTriggerSave : CBaseTrigger { void* vtable[263]; }
-class CTriggerSndSosOpvar : CBaseTrigger { void* vtable[263]; }
-class CTriggerSoundscape : CBaseTrigger { void* vtable[263]; }
-class CTriggerTeleport : CBaseTrigger { void* vtable[263]; }
-class CTriggerToggleSave : CBaseTrigger { void* vtable[263]; }
-class CTriggerTripWire : CBaseTrigger { void* vtable[263]; }
-class CTriggerVolume : CBaseModelEntity { void* vtable[251]; }
-class CTripWireFire : CBaseCSGrenade { void* vtable[432]; }
-class CTripWireFireProjectile : CBaseGrenade { void* vtable[311]; }
+class CTriggerActiveWeaponDetect : CBaseTrigger { void* vtable[266]; }
+class CTriggerBombReset : CBaseTrigger { void* vtable[266]; }
+class CTriggerBrush : CBaseModelEntity { void* vtable[254]; }
+class CTriggerBuoyancy : CBaseTrigger { void* vtable[266]; }
+class CTriggerCallback : CBaseTrigger { void* vtable[266]; }
+class CTriggerDetectBulletFire : CBaseTrigger { void* vtable[266]; }
+class CTriggerDetectExplosion : CBaseTrigger, CUtlSlot { void* vtable[266]; }
+class CTriggerFan : CBaseTrigger { void* vtable[266]; }
+class CTriggerGameEvent : CBaseTrigger { void* vtable[266]; }
+class CTriggerGravity : CBaseTrigger { void* vtable[266]; }
+class CTriggerHostageReset : CBaseTrigger { void* vtable[266]; }
+class CTriggerHurt : CBaseTrigger { void* vtable[268]; }
+class CTriggerImpact : CTriggerMultiple { void* vtable[266]; }
+class CTriggerLerpObject : CBaseTrigger { void* vtable[266]; }
+class CTriggerLook : CTriggerOnce { void* vtable[266]; }
+class CTriggerMultiple : CBaseTrigger { void* vtable[266]; }
+class CTriggerOnce : CTriggerMultiple { void* vtable[266]; }
+class CTriggerPhysics : CBaseTrigger, IMotionEvent { void* vtable[266]; }
+class CTriggerProximity : CBaseTrigger { void* vtable[266]; }
+class CTriggerPush : CBaseTrigger { void* vtable[266]; }
+class CTriggerRemove : CBaseTrigger { void* vtable[266]; }
+class CTriggerSave : CBaseTrigger { void* vtable[266]; }
+class CTriggerSndSosOpvar : CBaseTrigger { void* vtable[266]; }
+class CTriggerSoundscape : CBaseTrigger { void* vtable[266]; }
+class CTriggerTeleport : CBaseTrigger { void* vtable[266]; }
+class CTriggerToggleSave : CBaseTrigger { void* vtable[266]; }
+class CTriggerTripWire : CBaseTrigger { void* vtable[266]; }
+class CTriggerVolume : CBaseModelEntity { void* vtable[254]; }
+class CTripWireFire : CBaseCSGrenade { void* vtable[435]; }
+class CTripWireFireProjectile : CBaseGrenade { void* vtable[314]; }
 class CUGCDetailsRequest { void* vtable[1]; }
 class CUnpauseMatchIssue : CBaseCSIssue { void* vtable[33]; }
 class CUserCmd : CCSGOUserCmd { void* vtable[10]; }
 class CUserCmdBase { void* vtable[8]; }
 class CUserCmdBaseHost<CSGOUserCmdPB> : CUserCmdBase, CSGOUserCmdPB { void* vtable[10]; }
 class CUserCmdBasePB : google::protobuf::Message { void* vtable[17]; }
-class CUserMessageAchievementEvent : google::protobuf::Message { void* vtable[23]; }
+class CUserMessageAchievementEvent : google::protobuf::Message { void* vtable[29]; }
 class CUserMessageAchievementEvent_t : CUserMessagePB<101,CUserMessageAchievementEvent,1> { void* vtable[5]; }
-class CUserMessageAmmoDenied : google::protobuf::Message { void* vtable[17]; }
-class CUserMessageAnimStateGraphState : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageAmmoDenied : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageAnimStateGraphState : google::protobuf::Message { void* vtable[23]; }
 class CUserMessageAudioParameter : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageAudioParameter_t : CUserMessagePB<144,CUserMessageAudioParameter,1> { void* vtable[5]; }
 class CUserMessageCameraTransition : google::protobuf::Message { void* vtable[17]; }
-class CUserMessageCameraTransition_Transition_DataDriven : google::protobuf::Message { void* vtable[21]; }
-class CUserMessageCloseCaption : google::protobuf::Message { void* vtable[23]; }
+class CUserMessageCameraTransition_Transition_DataDriven : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageCloseCaption : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageCloseCaptionDirect : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageCloseCaptionPlaceholder : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageCloseCaption_t : CUserMessagePB<102,CUserMessageCloseCaption,1> { void* vtable[5]; }
@@ -2659,19 +2664,19 @@ class CUserMessageCreditsMsg : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageCreditsMsg_t : CUserMessagePB<135,CUserMessageCreditsMsg,1> { void* vtable[5]; }
 class CUserMessageCurrentTimescale : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageCurrentTimescale_t : CUserMessagePB<104,CUserMessageCurrentTimescale,1> { void* vtable[5]; }
-class CUserMessageDesiredTimescale : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageDesiredTimescale : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageDesiredTimescale_t : CUserMessagePB<105,CUserMessageDesiredTimescale,1> { void* vtable[5]; }
-class CUserMessageFade : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageFade : google::protobuf::Message { void* vtable[21]; }
 class CUserMessageFade_t : CUserMessagePB<106,CUserMessageFade,1> { void* vtable[5]; }
-class CUserMessageGameTitle : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
-class CUserMessageHapticsManagerEffect : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageGameTitle : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
+class CUserMessageHapticsManagerEffect : google::protobuf::Message { void* vtable[21]; }
 class CUserMessageHapticsManagerPulse : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageHudMsg : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageHudMsg_t : CUserMessagePB<110,CUserMessageHudMsg,1> { void* vtable[5]; }
-class CUserMessageHudText : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageHudText : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageHudText_t : CUserMessagePB<111,CUserMessageHudText,1> { void* vtable[5]; }
-class CUserMessageItemPickup : google::protobuf::Message { void* vtable[17]; }
-class CUserMessageLagCompensationError : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageItemPickup : google::protobuf::Message { void* vtable[21]; }
+class CUserMessageLagCompensationError : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageLagCompensationError_t : CUserMessagePB<155,CUserMessageLagCompensationError,1> { void* vtable[5]; }
 class CUserMessagePB<101,CUserMessageAchievementEvent,1> : CNetMessagePB<101,CUserMessageAchievementEvent,13,1,1> {}
 class CUserMessagePB<102,CUserMessageCloseCaption,1> : CNetMessagePB<102,CUserMessageCloseCaption,13,1,1> {}
@@ -2735,15 +2740,15 @@ class CUserMessagePB<380,CCSUsrMsg_CurrentRoundOdds,1> : CNetMessagePB<380,CCSUs
 class CUserMessagePB<383,CCSUsrMsg_ShootInfo,1> : CNetMessagePB<383,CCSUsrMsg_ShootInfo,13,1,1> {}
 class CUserMessagePB<385,CCSUsrMsg_CounterStrafe,1> : CNetMessagePB<385,CCSUsrMsg_CounterStrafe,13,1,1> {}
 class CUserMessageRequestDiagnostic : google::protobuf::Message { void* vtable[19]; }
-class CUserMessageRequestDiagnostic_Diagnostic : google::protobuf::Message { void* vtable[17]; }
-class CUserMessageRequestDllStatus : google::protobuf::Message { void* vtable[33]; }
+class CUserMessageRequestDiagnostic_Diagnostic : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageRequestDllStatus : google::protobuf::Message { void* vtable[27]; }
 class CUserMessageRequestInventory : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageRequestState : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
 class CUserMessageRequestState_t : CUserMessagePB<114,CUserMessageRequestState,1> { void* vtable[5]; }
-class CUserMessageRequestUtilAction : google::protobuf::Message { void* vtable[19]; }
-class CUserMessageResetHUD : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
+class CUserMessageRequestUtilAction : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageResetHUD : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
 class CUserMessageResetHUD_t : CUserMessagePB<115,CUserMessageResetHUD,1> { void* vtable[5]; }
-class CUserMessageRumble : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageRumble : google::protobuf::Message { void* vtable[21]; }
 class CUserMessageSayText : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageSayText2 : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageSayText2_t : CUserMessagePB<118,CUserMessageSayText2,1> { void* vtable[5]; }
@@ -2753,77 +2758,77 @@ class CUserMessageScreenTilt : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageScreenTilt_t : CUserMessagePB<125,CUserMessageScreenTilt,1> { void* vtable[5]; }
 class CUserMessageSendAudio : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageSendAudio_t : CUserMessagePB<130,CUserMessageSendAudio,1> { void* vtable[5]; }
-class CUserMessageServerFrameTime : google::protobuf::Message { void* vtable[25]; }
+class CUserMessageServerFrameTime : google::protobuf::Message { void* vtable[33]; }
 class CUserMessageServerFrameTime_t : CUserMessagePB<154,CUserMessageServerFrameTime,1> { void* vtable[5]; }
-class CUserMessageShake : google::protobuf::Message { void* vtable[17]; }
-class CUserMessageShakeDir : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageShake : google::protobuf::Message { void* vtable[19]; }
+class CUserMessageShakeDir : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageShake_t : CUserMessagePB<120,CUserMessageShake,1> { void* vtable[5]; }
-class CUserMessageShowMenu : google::protobuf::Message { void* vtable[17]; }
+class CUserMessageShowMenu : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageTextMsg : google::protobuf::Message { void* vtable[19]; }
 class CUserMessageTextMsg_t : CUserMessagePB<124,CUserMessageTextMsg,1> { void* vtable[5]; }
-class CUserMessageUpdateCssClasses : google::protobuf::Message { void* vtable[21]; }
+class CUserMessageUpdateCssClasses : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageUpdateCssClasses_t : CUserMessagePB<153,CUserMessageUpdateCssClasses,1> { void* vtable[5]; }
 class CUserMessageVoiceMask : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageVoiceMask_t : CUserMessagePB<128,CUserMessageVoiceMask,1> { void* vtable[5]; }
 class CUserMessageWaterShake : google::protobuf::Message { void* vtable[17]; }
 class CUserMessageWaterShake_t : CUserMessagePB<122,CUserMessageWaterShake,1> { void* vtable[5]; }
 class CUserMessage_Diagnostic_Response : google::protobuf::Message { void* vtable[17]; }
-class CUserMessage_Diagnostic_Response_Diagnostic : google::protobuf::Message { void* vtable[19]; }
+class CUserMessage_Diagnostic_Response_Diagnostic : google::protobuf::Message { void* vtable[21]; }
 class CUserMessage_DllStatus : google::protobuf::Message { void* vtable[19]; }
-class CUserMessage_DllStatus_CModule : google::protobuf::Message { void* vtable[17]; }
-class CUserMessage_DllStatus_CVDiagnostic : google::protobuf::Message { void* vtable[17]; }
+class CUserMessage_DllStatus_CModule : google::protobuf::Message { void* vtable[19]; }
+class CUserMessage_DllStatus_CVDiagnostic : google::protobuf::Message { void* vtable[21]; }
 class CUserMessage_ExtraUserData : google::protobuf::Message { void* vtable[17]; }
-class CUserMessage_Inventory_Response : google::protobuf::Message { void* vtable[23]; }
+class CUserMessage_Inventory_Response : google::protobuf::Message { void* vtable[17]; }
 class CUserMessage_Inventory_Response_InventoryDetail : google::protobuf::Message { void* vtable[17]; }
 class CUserMessage_NotifyResponseFound : google::protobuf::Message { void* vtable[17]; }
-class CUserMessage_NotifyResponseFound_Criteria : google::protobuf::Message { void* vtable[25]; }
-class CUserMessage_PlayResponseConditional : google::protobuf::Message { void* vtable[21]; }
+class CUserMessage_NotifyResponseFound_Criteria : google::protobuf::Message { void* vtable[19]; }
+class CUserMessage_PlayResponseConditional : google::protobuf::Message { void* vtable[17]; }
 class CUserMessage_PlayResponseConditional_t : CUserMessagePB<166,CUserMessage_PlayResponseConditional,1> { void* vtable[5]; }
-class CUserMessage_UtilMsg_Response : google::protobuf::Message { void* vtable[23]; }
-class CUserMessage_UtilMsg_Response_ItemDetail : google::protobuf::Message { void* vtable[19]; }
+class CUserMessage_UtilMsg_Response : google::protobuf::Message { void* vtable[21]; }
+class CUserMessage_UtilMsg_Response_ItemDetail : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_CustomGameEvent : google::protobuf::Message { void* vtable[19]; }
 class CUserMsg_CustomGameEvent_t : CUserMessagePB<148,CBaseCmdKeyValues<CUserMsg_CustomGameEvent>,1> { void* vtable[5]; }
 class CUserMsg_HudError : google::protobuf::Message { void* vtable[19]; }
-class CUserMsg_ParticleManager : google::protobuf::Message { void* vtable[19]; }
-class CUserMsg_ParticleManager_AddModellistOverrideElement : google::protobuf::Message { void* vtable[19]; }
-class CUserMsg_ParticleManager_ChangeControlPointAttachment : google::protobuf::Message { void* vtable[19]; }
+class CUserMsg_ParticleManager : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_AddModellistOverrideElement : google::protobuf::Message { void* vtable[17]; }
+class CUserMsg_ParticleManager_ChangeControlPointAttachment : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_ClearModellistOverride : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_CreateParticle : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_CreatePhysicsSim : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_DestroyParticle : google::protobuf::Message { void* vtable[17]; }
+class CUserMsg_ParticleManager_CreateParticle : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_CreatePhysicsSim : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_DestroyParticle : google::protobuf::Message { void* vtable[19]; }
 class CUserMsg_ParticleManager_DestroyParticleInvolving : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_DestroyParticleNamed : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_DestroyPhysicsSim : google::protobuf::internal::ZeroFieldsBase { void* vtable[21]; }
-class CUserMsg_ParticleManager_FreezeParticleInvolving : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_DestroyPhysicsSim : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
+class CUserMsg_ParticleManager_FreezeParticleInvolving : google::protobuf::Message { void* vtable[19]; }
 class CUserMsg_ParticleManager_ParticleCanFreeze : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_ParticleFreezeTransitionOverride : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_ParticleSkipToTime : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_ReleaseParticleIndex : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
-class CUserMsg_ParticleManager_SetControlPointModel : google::protobuf::Message { void* vtable[27]; }
-class CUserMsg_ParticleManager_SetControlPointSnapshot : google::protobuf::Message { void* vtable[21]; }
-class CUserMsg_ParticleManager_SetMaterialOverride : google::protobuf::Message { void* vtable[25]; }
+class CUserMsg_ParticleManager_ReleaseParticleIndex : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
+class CUserMsg_ParticleManager_SetControlPointModel : google::protobuf::Message { void* vtable[23]; }
+class CUserMsg_ParticleManager_SetControlPointSnapshot : google::protobuf::Message { void* vtable[17]; }
+class CUserMsg_ParticleManager_SetMaterialOverride : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_SetParticleFoWProperties : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_SetParticleNamedValueContext : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext : google::protobuf::Message { void* vtable[23]; }
-class CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue : google::protobuf::Message { void* vtable[21]; }
-class CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue : google::protobuf::Message { void* vtable[19]; }
+class CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext : google::protobuf::Message { void* vtable[17]; }
+class CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue : google::protobuf::Message { void* vtable[19]; }
+class CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_SetParticleShouldCheckFoW : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_SetParticleText : google::protobuf::Message { void* vtable[23]; }
-class CUserMsg_ParticleManager_SetSceneObjectGenericFlag : google::protobuf::Message { void* vtable[23]; }
+class CUserMsg_ParticleManager_SetParticleShouldCheckFoW : google::protobuf::Message { void* vtable[25]; }
+class CUserMsg_ParticleManager_SetParticleText : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_SetSceneObjectGenericFlag : google::protobuf::Message { void* vtable[19]; }
 class CUserMsg_ParticleManager_SetSceneObjectTintAndDesat : google::protobuf::Message { void* vtable[21]; }
-class CUserMsg_ParticleManager_SetTextureAttribute : google::protobuf::Message { void* vtable[19]; }
-class CUserMsg_ParticleManager_SetVData : google::protobuf::Message { void* vtable[25]; }
+class CUserMsg_ParticleManager_SetTextureAttribute : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_SetVData : google::protobuf::Message { void* vtable[21]; }
 class CUserMsg_ParticleManager_UpdateEntityPosition : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_UpdateParticleEnt : google::protobuf::Message { void* vtable[19]; }
-class CUserMsg_ParticleManager_UpdateParticleFallback : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_UpdateParticleEnt : google::protobuf::Message { void* vtable[17]; }
+class CUserMsg_ParticleManager_UpdateParticleFallback : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_UpdateParticleOffset : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_UpdateParticleSetFrozen : google::protobuf::Message { void* vtable[19]; }
+class CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_UpdateParticleSetFrozen : google::protobuf::Message { void* vtable[17]; }
 class CUserMsg_ParticleManager_UpdateParticleShouldDraw : google::protobuf::Message { void* vtable[17]; }
-class CUserMsg_ParticleManager_UpdateParticleTransform : google::protobuf::Message { void* vtable[21]; }
-class CUserMsg_ParticleManager_UpdateParticle_OBSOLETE : google::protobuf::Message { void* vtable[21]; }
+class CUserMsg_ParticleManager_UpdateParticleTransform : google::protobuf::Message { void* vtable[17]; }
+class CUserMsg_ParticleManager_UpdateParticle_OBSOLETE : google::protobuf::Message { void* vtable[19]; }
 class CUserMsg_ParticleManager_t : CUserMessagePB<145,CUserMsg_ParticleManager,1> { void* vtable[5]; }
 class CUtlMultiJobProcessor { void* vtable[1]; }
 class CUtlSlot {}
@@ -2876,6 +2881,7 @@ class CUtlVectorDataOps<CNetworkUtlVectorBase<unsigned short,CAnimGraphNetworked
 class CUtlVectorDataOps<CNetworkUtlVectorBase<unsigned short,CBarnLight::NetworkVar_m_VisClusters,-1,int>,58,0> : CDefSaveRestoreOps { void* vtable[6]; }
 class CUtlVectorDataOps<CUtlStringList,53,0> : CDefSaveRestoreOps { void* vtable[6]; }
 class CUtlVectorDataOps<CUtlVector<AutoRoomDoorwayPairs_t,int,CUtlMemory<AutoRoomDoorwayPairs_t,int> >,10,0> : CDefSaveRestoreOps { void* vtable[6]; }
+class CUtlVectorDataOps<CUtlVector<CDestructiblePartRuntimeData,int,CUtlMemory<CDestructiblePartRuntimeData,int> >,10,0> : CDefSaveRestoreOps { void* vtable[6]; }
 class CUtlVectorDataOps<CUtlVector<CHandle<CBaseEntity>,int,CUtlMemory<CHandle<CBaseEntity>,int> >,13,0> : CDefSaveRestoreOps { void* vtable[6]; }
 class CUtlVectorDataOps<CUtlVector<CHandle<CBaseModelEntity>,int,CUtlMemory<CHandle<CBaseModelEntity>,int> >,13,0> : CDefSaveRestoreOps { void* vtable[6]; }
 class CUtlVectorDataOps<CUtlVector<CHandle<CBasePlayerPawn>,int,CUtlMemory<CHandle<CBasePlayerPawn>,int> >,13,0> : CDefSaveRestoreOps { void* vtable[6]; }
@@ -2919,59 +2925,59 @@ class CVisibilityMonitor : CAutoGameSystem { void* vtable[57]; }
 class CVoiceGameMgr { void* vtable[1]; }
 class CVoiceGameMgrHelper : IVoiceGameMgrHelper { void* vtable[5]; }
 class CVoteController : CBaseEntity { void* vtable[228]; }
-class CWaterBullet : CBaseAnimGraph { void* vtable[284]; }
-class CWeaponAWP : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponAug : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponBaseItem : CCSWeaponBase { void* vtable[432]; }
+class CWaterBullet : CBaseAnimGraph { void* vtable[287]; }
+class CWeaponAWP : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponAug : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponBaseItem : CCSWeaponBase { void* vtable[435]; }
 class CWeaponBaseItem::NetworkVar_m_SequenceCompleteTimer : CountdownTimer { void* vtable[4]; }
-class CWeaponBizon : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponCZ75a : CCSWeaponBaseGun { void* vtable[429]; }
+class CWeaponBizon : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponCZ75a : CCSWeaponBaseGun { void* vtable[432]; }
 class CWeaponEconData : CItemDataCache { void* vtable[1]; }
-class CWeaponElite : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponFamas : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponFiveSeven : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponG3SG1 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponGalilAR : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponGlock : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponHKP2000 : CCSWeaponBaseGun { void* vtable[429]; }
+class CWeaponElite : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponFamas : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponFiveSeven : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponG3SG1 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponGalilAR : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponGlock : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponHKP2000 : CCSWeaponBaseGun { void* vtable[432]; }
 class CWeaponList : CAutoGameSystem { void* vtable[56]; }
-class CWeaponM249 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponM4A1 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponM4A1Silencer : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponMAC10 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponMP5SD : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponMP7 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponMP9 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponMag7 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponNOVA : CCSWeaponBase { void* vtable[426]; }
-class CWeaponNegev : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponP250 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponP90 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponRevolver : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponSCAR20 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponSG556 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponSSG08 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponSawedoff : CCSWeaponBase { void* vtable[426]; }
-class CWeaponShield : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponTaser : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponTec9 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponUMP45 : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponUSPSilencer : CCSWeaponBaseGun { void* vtable[429]; }
-class CWeaponXM1014 : CCSWeaponBase { void* vtable[426]; }
-class CWeaponZoneRepulsor : CCSWeaponBaseGun { void* vtable[429]; }
-class CWorkshop_AddSpecialPayment_Request : google::protobuf::Message { void* vtable[17]; }
-class CWorkshop_AddSpecialPayment_Response : google::protobuf::internal::ZeroFieldsBase { void* vtable[25]; }
+class CWeaponM249 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponM4A1 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponM4A1Silencer : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponMAC10 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponMP5SD : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponMP7 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponMP9 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponMag7 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponNOVA : CCSWeaponBase { void* vtable[429]; }
+class CWeaponNegev : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponP250 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponP90 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponRevolver : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponSCAR20 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponSG556 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponSSG08 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponSawedoff : CCSWeaponBase { void* vtable[429]; }
+class CWeaponShield : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponTaser : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponTec9 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponUMP45 : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponUSPSilencer : CCSWeaponBaseGun { void* vtable[432]; }
+class CWeaponXM1014 : CCSWeaponBase { void* vtable[429]; }
+class CWeaponZoneRepulsor : CCSWeaponBaseGun { void* vtable[432]; }
+class CWorkshop_AddSpecialPayment_Request : google::protobuf::Message { void* vtable[25]; }
+class CWorkshop_AddSpecialPayment_Response : google::protobuf::internal::ZeroFieldsBase { void* vtable[21]; }
 class CWorkshop_GetContributors_Request : google::protobuf::Message { void* vtable[17]; }
-class CWorkshop_GetContributors_Response : google::protobuf::Message { void* vtable[21]; }
-class CWorkshop_PopulateItemDescriptions_Request : google::protobuf::Message { void* vtable[19]; }
-class CWorkshop_PopulateItemDescriptions_Request_ItemDescriptionsLanguageBlock : google::protobuf::Message { void* vtable[19]; }
+class CWorkshop_GetContributors_Response : google::protobuf::Message { void* vtable[27]; }
+class CWorkshop_PopulateItemDescriptions_Request : google::protobuf::Message { void* vtable[17]; }
+class CWorkshop_PopulateItemDescriptions_Request_ItemDescriptionsLanguageBlock : google::protobuf::Message { void* vtable[17]; }
 class CWorkshop_PopulateItemDescriptions_Request_SingleItemDescription : google::protobuf::Message { void* vtable[17]; }
 class CWorkshop_SetItemPaymentRules_Request : google::protobuf::Message { void* vtable[17]; }
-class CWorkshop_SetItemPaymentRules_Request_PartnerItemPaymentRule : google::protobuf::Message { void* vtable[21]; }
-class CWorkshop_SetItemPaymentRules_Request_WorkshopDirectPaymentRule : google::protobuf::Message { void* vtable[17]; }
-class CWorkshop_SetItemPaymentRules_Request_WorkshopItemPaymentRule : google::protobuf::Message { void* vtable[21]; }
-class CWorkshop_SetItemPaymentRules_Response : google::protobuf::internal::ZeroFieldsBase { void* vtable[19]; }
-class CWorld : CBaseModelEntity { void* vtable[251]; }
+class CWorkshop_SetItemPaymentRules_Request_PartnerItemPaymentRule : google::protobuf::Message { void* vtable[19]; }
+class CWorkshop_SetItemPaymentRules_Request_WorkshopDirectPaymentRule : google::protobuf::Message { void* vtable[25]; }
+class CWorkshop_SetItemPaymentRules_Request_WorkshopItemPaymentRule : google::protobuf::Message { void* vtable[17]; }
+class CWorkshop_SetItemPaymentRules_Response : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
+class CWorld : CBaseModelEntity { void* vtable[254]; }
 class CWorldGameSystem : CAutoGameSystem { void* vtable[56]; }
 class ChangeLogger : CAutoGameSystem { void* vtable[56]; }
 class ChickenPathCost : CNavPathCost { void* vtable[10]; }
@@ -2986,8 +2992,8 @@ class CountdownTimer { void* vtable[4]; }
 class DNameNode {}
 class DNameStatusNode : DNameNode { void* vtable[4]; }
 class DataCenterPing : google::protobuf::Message { void* vtable[17]; }
-class DeepPlayerMatchEvent : google::protobuf::Message { void* vtable[19]; }
-class DeepPlayerStatsEntry : google::protobuf::Message { void* vtable[17]; }
+class DeepPlayerMatchEvent : google::protobuf::Message { void* vtable[17]; }
+class DeepPlayerStatsEntry : google::protobuf::Message { void* vtable[19]; }
 class DefuseBombState : BotState { void* vtable[4]; }
 class DetailedSearchStatistic : google::protobuf::Message { void* vtable[17]; }
 class EBoneSetup {}
@@ -3255,43 +3261,43 @@ class IdleState : BotState { void* vtable[4]; }
 class IntervalTimer { void* vtable[4]; }
 class InvestigateNoiseState : BotState { void* vtable[4]; }
 class IpAddressMask : google::protobuf::Message { void* vtable[17]; }
-class MLDemoHeader : google::protobuf::Message { void* vtable[17]; }
+class MLDemoHeader : google::protobuf::Message { void* vtable[23]; }
 class MLDict : google::protobuf::Message { void* vtable[17]; }
-class MLEvent : google::protobuf::Message { void* vtable[21]; }
-class MLGameState : google::protobuf::Message { void* vtable[17]; }
+class MLEvent : google::protobuf::Message { void* vtable[19]; }
+class MLGameState : google::protobuf::Message { void* vtable[21]; }
 class MLMatchState : google::protobuf::Message { void* vtable[17]; }
 class MLPlayerState : google::protobuf::Message { void* vtable[17]; }
-class MLRoundState : google::protobuf::Message { void* vtable[19]; }
-class MLTick : google::protobuf::Message { void* vtable[19]; }
-class MLWeaponState : google::protobuf::Message { void* vtable[19]; }
+class MLRoundState : google::protobuf::Message { void* vtable[21]; }
+class MLTick : google::protobuf::Message { void* vtable[17]; }
+class MLWeaponState : google::protobuf::Message { void* vtable[17]; }
 class MatchEndItemUpdates : google::protobuf::Message { void* vtable[19]; }
 class MoveToPlayAreaState : BotState { void* vtable[4]; }
 class MoveToState : BotState { void* vtable[4]; }
 class OpenDoorState : BotState { void* vtable[4]; }
-class OperationalStatisticDescription : google::protobuf::Message { void* vtable[27]; }
+class OperationalStatisticDescription : google::protobuf::Message { void* vtable[17]; }
 class OperationalStatisticElement : google::protobuf::Message { void* vtable[17]; }
 class OperationalStatisticsPacket : google::protobuf::Message { void* vtable[17]; }
-class OperationalVarValue : google::protobuf::Message { void* vtable[19]; }
+class OperationalVarValue : google::protobuf::Message { void* vtable[17]; }
 class PathCost : CNavPathCost { void* vtable[10]; }
 class PickupHostageState : BotState { void* vtable[4]; }
 class PlantBombState : BotState { void* vtable[4]; }
-class PlayerCommendationInfo : google::protobuf::Message { void* vtable[19]; }
+class PlayerCommendationInfo : google::protobuf::Message { void* vtable[17]; }
 class PlayerDecalDigitalSignature : google::protobuf::Message { void* vtable[19]; }
 class PlayerMedalsInfo : google::protobuf::Message { void* vtable[17]; }
 class PlayerQuestData : google::protobuf::Message { void* vtable[19]; }
-class PlayerQuestData_QuestItemData : google::protobuf::Message { void* vtable[17]; }
+class PlayerQuestData_QuestItemData : google::protobuf::Message { void* vtable[21]; }
 class PlayerRankingInfo : google::protobuf::Message { void* vtable[17]; }
 class PlayerRankingInfo_PerMapRank : google::protobuf::Message { void* vtable[17]; }
-class ProtoFlattenedSerializerField_t : google::protobuf::Message { void* vtable[19]; }
-class ProtoFlattenedSerializerField_t_polymorphic_field_t : google::protobuf::Message { void* vtable[19]; }
-class ProtoFlattenedSerializer_t : google::protobuf::Message { void* vtable[23]; }
+class ProtoFlattenedSerializerField_t : google::protobuf::Message { void* vtable[35]; }
+class ProtoFlattenedSerializerField_t_polymorphic_field_t : google::protobuf::Message { void* vtable[17]; }
+class ProtoFlattenedSerializer_t : google::protobuf::Message { void* vtable[21]; }
 class RR::CApplyContextOperator { void* vtable[1]; }
 class RR::CDecrementOperator : RR::CApplyContextOperator { void* vtable[1]; }
 class RR::CIncrementOperator : RR::CApplyContextOperator { void* vtable[1]; }
 class RR::CToggleOperator : RR::CApplyContextOperator { void* vtable[1]; }
 class ScoreLeaderboardData : google::protobuf::Message { void* vtable[17]; }
 class ScoreLeaderboardData_AccountEntries : google::protobuf::Message { void* vtable[17]; }
-class ScoreLeaderboardData_Entry : google::protobuf::Message { void* vtable[17]; }
+class ScoreLeaderboardData_Entry : google::protobuf::Message { void* vtable[21]; }
 class ServerHltvInfo : google::protobuf::Message { void* vtable[17]; }
 class Source1LegacyGameEventList_t : CNetMessagePB<205,CMsgSource1LegacyGameEventList,10,1,1> { void* vtable[5]; }
 class Source1LegacyGameEvent_t : CNetMessagePB<207,CMsgSource1LegacyGameEvent,5,1,1> { void* vtable[5]; }
@@ -3322,15 +3328,15 @@ class TEProjectedDecal_GameEvent_t : CNetMessagePB<425,CMsgTEProjectedDecal,5,0,
 class TESmoke_GameEvent_t : CNetMessagePB<426,CMsgTESmoke,5,0,1> { void* vtable[5]; }
 class TESparks_GameEvent_t : CNetMessagePB<422,CMsgTESparks,5,0,1> { void* vtable[5]; }
 class TEWorldDecal_GameEvent_t : CNetMessagePB<411,CMsgTEWorldDecal,5,0,1> { void* vtable[5]; }
-class TournamentEvent : google::protobuf::Message { void* vtable[21]; }
+class TournamentEvent : google::protobuf::Message { void* vtable[17]; }
 class TournamentMatchSetup : google::protobuf::Message { void* vtable[17]; }
-class TournamentPlayer : google::protobuf::Message { void* vtable[29]; }
-class TournamentTeam : google::protobuf::Message { void* vtable[19]; }
+class TournamentPlayer : google::protobuf::Message { void* vtable[21]; }
+class TournamentTeam : google::protobuf::Message { void* vtable[21]; }
 class UseEntityState : BotState { void* vtable[4]; }
-class VacNetShot : google::protobuf::Message { void* vtable[27]; }
-class WatchableMatchInfo : google::protobuf::Message { void* vtable[21]; }
+class VacNetShot : google::protobuf::Message { void* vtable[23]; }
+class WatchableMatchInfo : google::protobuf::Message { void* vtable[19]; }
 class WeaponPurchaseTracker_t { void* vtable[4]; }
-class XpProgressData : google::protobuf::Message { void* vtable[19]; }
+class XpProgressData : google::protobuf::Message { void* vtable[17]; }
 class charNode : DNameNode { void* vtable[4]; }
 class pDNameNode : DNameNode { void* vtable[4]; }
 class pairNode : DNameNode { void* vtable[4]; }
