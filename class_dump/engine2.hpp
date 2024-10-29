@@ -67,7 +67,7 @@ class CBaseSpawnGroup : ISpawnGroup, IComputeWorldOriginCallback, IGameResourceM
 class CBenchmarkService : CBaseEngineService<IBenchmarkService> { void* vtable[24]; }
 class CBidirMsg_RebroadcastGameEvent : google::protobuf::Message { void* vtable[17]; }
 class CBidirMsg_RebroadcastGameEvent_t : CNetMessagePB<16,CBidirMsg_RebroadcastGameEvent,5,1,1> { void* vtable[5]; }
-class CBidirMsg_RebroadcastSource : google::protobuf::Message { void* vtable[23]; }
+class CBidirMsg_RebroadcastSource : google::protobuf::Message { void* vtable[17]; }
 class CBidirMsg_RebroadcastSource_t : CNetMessagePB<17,CBidirMsg_RebroadcastSource,5,1,1> { void* vtable[5]; }
 class CBreakpadPassiveAssertionFailureListener : IAssertionFailureListener { void* vtable[3]; }
 class CBroadcastPlayer : IDemoPlayer, IBroadcastPlayer { void* vtable[42]; }
@@ -84,7 +84,7 @@ class CCLCMsg_FileCRCCheck : google::protobuf::Message { void* vtable[17]; }
 class CCLCMsg_FileCRCCheck_t : CNetMessagePB<26,CCLCMsg_FileCRCCheck,10,1,0> { void* vtable[5]; }
 class CCLCMsg_HltvFixupOperatorTick : google::protobuf::Message { void* vtable[17]; }
 class CCLCMsg_HltvReplay : google::protobuf::Message { void* vtable[17]; }
-class CCLCMsg_ListenEvents : google::protobuf::Message { void* vtable[27]; }
+class CCLCMsg_ListenEvents : google::protobuf::Message { void* vtable[17]; }
 class CCLCMsg_LoadingProgress : google::protobuf::Message { void* vtable[17]; }
 class CCLCMsg_LoadingProgress_t : CNetMessagePB<27,CCLCMsg_LoadingProgress,10,1,0> { void* vtable[5]; }
 class CCLCMsg_Move : google::protobuf::Message { void* vtable[17]; }
@@ -237,7 +237,7 @@ class CDemoStreamHttp::CPendingRequest : CCallbackBase { void* vtable[7]; }
 class CDemoStreamHttp::CStartRequest : CDemoStreamHttp::CPendingRequest { void* vtable[7]; }
 class CDemoStreamHttp::CSyncRequest : CDemoStreamHttp::CPendingRequest { void* vtable[7]; }
 class CDemoStringTables : google::protobuf::Message { void* vtable[17]; }
-class CDemoStringTables_items_t : google::protobuf::Message { void* vtable[23]; }
+class CDemoStringTables_items_t : google::protobuf::Message { void* vtable[17]; }
 class CDemoStringTables_table_t : google::protobuf::Message { void* vtable[17]; }
 class CDemoSyncTick : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
 class CDemoUserCmd : google::protobuf::Message { void* vtable[17]; }
@@ -262,7 +262,7 @@ class CEntityComponentHelperT<CScriptComponent,CEntityComponentHelperReferenced<
 class CEntityInfo { void* vtable[2]; }
 class CEntityMETAAutoCompletionFunctor : ICommandCompletionCallback, ICommandCallback {}
 class CEntityMETASpewFunctor : CEntityMETAAutoCompletionFunctor { void* vtable[1]; }
-class CEntityMsg : google::protobuf::Message { void* vtable[19]; }
+class CEntityMsg : google::protobuf::Message { void* vtable[17]; }
 class CEntityReadInfo : CEntityInfo { void* vtable[2]; }
 class CEntityReport : IEntityReport { void* vtable[6]; }
 class CEntityResourceManifest : IEntityResourceManifest { void* vtable[12]; }
@@ -276,11 +276,11 @@ class CFrameSnapshotManager : CRefCounted<CRefCountServiceBase<CRefMT> > { void*
 class CGameClientConnectPrerequisite : CSequentialPrerequisite { void* vtable[8]; }
 class CGameEventDispatcher : INetMessageDispatcher { void* vtable[1]; }
 class CGameEventSystem : CTier4AppSystem<IGameEventSystem,0> { void* vtable[21]; }
-class CGameInfo : google::protobuf::Message { void* vtable[23]; }
+class CGameInfo : google::protobuf::Message { void* vtable[17]; }
 class CGameInfo_CCSGameInfo : google::protobuf::Message { void* vtable[17]; }
-class CGameInfo_CDotaGameInfo : google::protobuf::Message { void* vtable[25]; }
-class CGameInfo_CDotaGameInfo_CHeroSelectEvent : google::protobuf::Message { void* vtable[27]; }
-class CGameInfo_CDotaGameInfo_CPlayerInfo : google::protobuf::Message { void* vtable[21]; }
+class CGameInfo_CDotaGameInfo : google::protobuf::Message { void* vtable[17]; }
+class CGameInfo_CDotaGameInfo_CHeroSelectEvent : google::protobuf::Message { void* vtable[17]; }
+class CGameInfo_CDotaGameInfo_CPlayerInfo : google::protobuf::Message { void* vtable[17]; }
 class CGameResourceManifestPrerequisite : IPrerequisite { void* vtable[7]; }
 class CGameResourceService : CBaseEngineService<IGameResourceService> { void* vtable[44]; }
 class CGameUIFuncs : CTier3AppSystem<IGameUIFuncs,0> { void* vtable[17]; }
@@ -346,21 +346,21 @@ class CMovieRecorder : IMovieRecorder, IScreenshotCallback, IAudioStreamRecorder
 class CMsgConvarsWriter : IPrintChangedConvarsWriter { void* vtable[2]; }
 class CMsgIPCAddress : google::protobuf::Message { void* vtable[17]; }
 class CMsgPlayerInfo : google::protobuf::Message { void* vtable[17]; }
-class CMsgQAngle : google::protobuf::Message { void* vtable[19]; }
-class CMsgQuaternion : google::protobuf::Message { void* vtable[23]; }
-class CMsgRGBA : google::protobuf::Message { void* vtable[27]; }
+class CMsgQAngle : google::protobuf::Message { void* vtable[17]; }
+class CMsgQuaternion : google::protobuf::Message { void* vtable[17]; }
+class CMsgRGBA : google::protobuf::Message { void* vtable[17]; }
 class CMsgServerNetworkStats : google::protobuf::Message { void* vtable[17]; }
-class CMsgServerNetworkStats_Player : google::protobuf::Message { void* vtable[23]; }
-class CMsgServerNetworkStats_Port : google::protobuf::Message { void* vtable[25]; }
+class CMsgServerNetworkStats_Player : google::protobuf::Message { void* vtable[17]; }
+class CMsgServerNetworkStats_Port : google::protobuf::Message { void* vtable[17]; }
 class CMsgServerPeer : google::protobuf::Message { void* vtable[17]; }
-class CMsgServerUserCmd : google::protobuf::Message { void* vtable[21]; }
+class CMsgServerUserCmd : google::protobuf::Message { void* vtable[17]; }
 class CMsgSource2SystemSpecs : google::protobuf::Message { void* vtable[17]; }
-class CMsgSource2VProfLiteReport : google::protobuf::Message { void* vtable[19]; }
-class CMsgSource2VProfLiteReportItem : google::protobuf::Message { void* vtable[19]; }
-class CMsgTransform : google::protobuf::Message { void* vtable[21]; }
+class CMsgSource2VProfLiteReport : google::protobuf::Message { void* vtable[17]; }
+class CMsgSource2VProfLiteReportItem : google::protobuf::Message { void* vtable[17]; }
+class CMsgTransform : google::protobuf::Message { void* vtable[17]; }
 class CMsgVector : google::protobuf::Message { void* vtable[17]; }
-class CMsgVector2D : google::protobuf::Message { void* vtable[29]; }
-class CMsgVoiceAudio : google::protobuf::Message { void* vtable[25]; }
+class CMsgVector2D : google::protobuf::Message { void* vtable[17]; }
+class CMsgVoiceAudio : google::protobuf::Message { void* vtable[17]; }
 class CMsg_CVars : google::protobuf::Message { void* vtable[17]; }
 class CMsg_CVars_CVar : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_DebugOverlay : google::protobuf::Message { void* vtable[17]; }
@@ -380,7 +380,7 @@ class CNETMsg_SpawnGroup_SetCreationTick : google::protobuf::Message { void* vta
 class CNETMsg_SpawnGroup_SetCreationTick_t : CNetMessagePB<11,CNETMsg_SpawnGroup_SetCreationTick,15,1,0> { void* vtable[5]; }
 class CNETMsg_SpawnGroup_Unload : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_SpawnGroup_Unload_t : CNetMessagePB<12,CNETMsg_SpawnGroup_Unload,15,1,0> { void* vtable[5]; }
-class CNETMsg_SplitScreenUser : google::protobuf::Message { void* vtable[19]; }
+class CNETMsg_SplitScreenUser : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_StringCmd : google::protobuf::Message { void* vtable[17]; }
 class CNETMsg_StringCmd_t : CNetMessagePB<5,CNETMsg_StringCmd,9,1,0> { void* vtable[5]; }
 class CNETMsg_Tick : google::protobuf::Message { void* vtable[17]; }
@@ -579,9 +579,9 @@ class CRenderDevicePresentCallbackClientServer : IRenderDevicePresentCallback { 
 class CRenderService : CBaseEngineService<IRenderService>, IToolsResourceListener { void* vtable[37]; }
 class CRenderingWorldSession : ISource2WorldSession, IWorldLoadUnloadCallback { void* vtable[43]; }
 class CResourceManifestPrerequisite : IPrerequisite { void* vtable[6]; }
-class CSVCMsgList_GameEvents : google::protobuf::Message { void* vtable[21]; }
-class CSVCMsgList_GameEvents_event_t : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsg_BSPDecal : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsgList_GameEvents : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsgList_GameEvents_event_t : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_BSPDecal : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_Broadcast_Command : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_Broadcast_Command_t : CNetMessagePB<74,CSVCMsg_Broadcast_Command,17,1,0> { void* vtable[5]; }
 class CSVCMsg_ClassInfo : google::protobuf::Message { void* vtable[17]; }
@@ -593,28 +593,28 @@ class CSVCMsg_CmdKeyValues : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_CmdKeyValues_t : CNetMessagePB<52,CBaseCmdKeyValues<CSVCMsg_CmdKeyValues>,9,1,0> { void* vtable[5]; }
 class CSVCMsg_CreateStringTable : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_CreateStringTable_t : CNetMessagePB<44,CSVCMsg_CreateStringTable,10,1,0> { void* vtable[5]; }
-class CSVCMsg_CrosshairAngle : google::protobuf::Message { void* vtable[21]; }
+class CSVCMsg_CrosshairAngle : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_FixAngle : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_FlattenedSerializer : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_FlattenedSerializerWrapper : CSVCMsg_FlattenedSerializer { void* vtable[17]; }
 class CSVCMsg_FlattenedSerializer_t : CNetMessagePB<41,CSVCMsg_FlattenedSerializerWrapper,10,1,0> { void* vtable[5]; }
 class CSVCMsg_FullFrameSplit : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_FullFrameSplit_t : CNetMessagePB<70,CSVCMsg_FullFrameSplit,0,1,0> { void* vtable[5]; }
-class CSVCMsg_GameEvent : google::protobuf::Message { void* vtable[19]; }
-class CSVCMsg_GameEventList : google::protobuf::Message { void* vtable[23]; }
+class CSVCMsg_GameEvent : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_GameEventList : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_GameEventList_descriptor_t : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_GameEventList_key_t : google::protobuf::Message { void* vtable[29]; }
-class CSVCMsg_GameEvent_key_t : google::protobuf::Message { void* vtable[19]; }
+class CSVCMsg_GameEventList_key_t : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_GameEvent_key_t : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_GameSessionConfiguration : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_GetCvarValue : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_HLTVStatus : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_HltvFixupOperatorStatus : google::protobuf::Message { void* vtable[23]; }
+class CSVCMsg_HltvFixupOperatorStatus : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_HltvReplay : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_HltvReplay_t : CNetMessagePB<74,CSVCMsg_HltvReplay,17,1,0> { void* vtable[5]; }
 class CSVCMsg_Menu : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_PacketEntities : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_PacketEntities_alternate_baseline_t : google::protobuf::Message { void* vtable[21]; }
-class CSVCMsg_PacketEntities_non_transmitted_entities_t : google::protobuf::Message { void* vtable[29]; }
+class CSVCMsg_PacketEntities_alternate_baseline_t : google::protobuf::Message { void* vtable[17]; }
+class CSVCMsg_PacketEntities_non_transmitted_entities_t : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_PacketEntities_t : CNetMessagePB<55,CSVCMsg_PacketEntities,-1,1,0> { void* vtable[5]; }
 class CSVCMsg_PacketReliable : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_PacketReliable_t : CNetMessagePB<61,CSVCMsg_PacketReliable,0,1,0> { void* vtable[5]; }
@@ -625,7 +625,7 @@ class CSVCMsg_Print : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_Print_t : CNetMessagePB<48,CSVCMsg_Print,0,1,0> { void* vtable[5]; }
 class CSVCMsg_RconServerDetails : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_RconServerDetails_t : CNetMessagePB<71,CSVCMsg_RconServerDetails,0,1,0> { void* vtable[5]; }
-class CSVCMsg_SendTable : google::protobuf::Message { void* vtable[21]; }
+class CSVCMsg_SendTable : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_SendTable_sendprop_t : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_ServerInfo : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_ServerInfo_t : CNetMessagePB<40,CSVCMsg_ServerInfo,10,1,0> { void* vtable[5]; }
@@ -639,7 +639,7 @@ class CSVCMsg_Sounds_sounddata_t : google::protobuf::Message { void* vtable[17];
 class CSVCMsg_SplitScreen : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_SplitScreen_t : CNetMessagePB<54,CSVCMsg_SplitScreen,10,1,0> { void* vtable[5]; }
 class CSVCMsg_StopSound : google::protobuf::Message { void* vtable[17]; }
-class CSVCMsg_TempEntities : google::protobuf::Message { void* vtable[23]; }
+class CSVCMsg_TempEntities : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_UpdateStringTable : google::protobuf::Message { void* vtable[17]; }
 class CSVCMsg_UpdateStringTable_t : CNetMessagePB<45,CSVCMsg_UpdateStringTable,7,1,0> { void* vtable[5]; }
 class CSVCMsg_UserCommands : google::protobuf::Message { void* vtable[17]; }
@@ -675,8 +675,8 @@ class CSoundService : CBaseEngineService<ISoundService> { void* vtable[37]; }
 class CSource1InputHandlerPostClientHandler : IInputHandler { void* vtable[1]; }
 class CSource1InputHandlerPreClientHandler : IInputHandler { void* vtable[1]; }
 class CSource1InputHandler_Client : IInputHandler { void* vtable[1]; }
-class CSource2Metrics_MatchPerfSummary_Notification : google::protobuf::Message { void* vtable[21]; }
-class CSource2Metrics_MatchPerfSummary_Notification_Client : google::protobuf::Message { void* vtable[19]; }
+class CSource2Metrics_MatchPerfSummary_Notification : google::protobuf::Message { void* vtable[17]; }
+class CSource2Metrics_MatchPerfSummary_Notification_Client : google::protobuf::Message { void* vtable[17]; }
 class CSpawnServerPrerequisite : IPrerequisite { void* vtable[6]; }
 class CSplitScreenService : CBaseEngineService<ISplitScreenService>, IMobileEventListener { void* vtable[43]; }
 class CStatsService : CBaseEngineService<IStatsService>, IDebugVisualizer { void* vtable[27]; }
@@ -973,8 +973,8 @@ class NetMessagePacketEnd : google::protobuf::internal::ZeroFieldsBase { void* v
 class NetMessagePacketStart : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; }
 class NetMessageSplitscreenUserChanged : google::protobuf::Message { void* vtable[17]; }
 class PacketEntitiesFilter : INetworkMessageProcessingPreFilter { void* vtable[1]; }
-class ProtoFlattenedSerializerField_t : google::protobuf::Message { void* vtable[19]; }
-class ProtoFlattenedSerializerField_t_polymorphic_field_t : google::protobuf::Message { void* vtable[19]; }
-class ProtoFlattenedSerializer_t : google::protobuf::Message { void* vtable[33]; }
+class ProtoFlattenedSerializerField_t : google::protobuf::Message { void* vtable[17]; }
+class ProtoFlattenedSerializerField_t_polymorphic_field_t : google::protobuf::Message { void* vtable[17]; }
+class ProtoFlattenedSerializer_t : google::protobuf::Message { void* vtable[17]; }
 struct CGameResourceManifest::CCallbackInternal_Steam_OnUGCDownload : CCallbackImpl<24> { void* vtable[4]; }
 struct ISocketCreatorListener {}
