@@ -1637,6 +1637,7 @@ class CMsgSource1LegacyGameEventList_descriptor_t : google::protobuf::Message { 
 class CMsgSource1LegacyGameEventList_key_t : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource1LegacyGameEvent_key_t : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource1LegacyListenEvents : google::protobuf::Message { void* vtable[17]; };
+class CMsgSource2NetworkFlowQuality : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2SystemSpecs : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2VProfLiteReport : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2VProfLiteReportItem : google::protobuf::Message { void* vtable[17]; };

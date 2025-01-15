@@ -1,4 +1,4 @@
-virtual uint64_t unk_5147659e4f855677() = 0;
+virtual uint64_t unk_bdd49c0e399dc486() = 0;
 virtual uint64_t unk_1d887725b5581759() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_d4059864021b2f64() = 0;
@@ -6,7 +6,7 @@ virtual uint64_t unk_f14a77def19559ee() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_905aa1fe545b7500() = 0;
 virtual uint64_t unk_bad_sig() = 0;
-virtual uint64_t unk_cbd246d4b0426260() = 0;
+virtual uint64_t unk_5704d6874c9d5ebd() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_8fb1f6e7750ac7a2() = 0;
