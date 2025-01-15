@@ -1,16 +1,18 @@
-Offsets: 
+Offsets:
 [CBaseCSGrenade] 435
 [CBaseEntity] 228
 [CBaseModelEntity] 254
 [CBasePlayerController] 257
-[CBasePlayerPawn] 392
+[CBasePlayerPawn] 393
 [CBasePlayerWeapon] 347
+[CBaseTrigger] 266
 [CCSGameRules] 129
-[CCSPlayerController] 259
-[CCSPlayerPawnBase] 405
-[CCSPlayerPawn] 405
+[CCSPlayerController] 260
+[CCSPlayerPawn] 407
+[CCSPlayerPawnBase] 407
 [CCSPlayer_ItemServices] 22
 [CCSPlayer_WeaponServices] 30
+[CCSWeaponBase] 429
 [CCSWeaponBaseGun] 432
 [CCvar] 42
 [CEconItemSchema] 64
@@ -18,6 +20,7 @@ Offsets:
 [CEngineServer] 120
 [CGameEntitySystem] 23
 [CGameEventManager] 16
+[CGameEventSystem] 21
 [CNetworkGameServer] 74
 [CNetworkServerService] 46
 [CNetworkSystem] 55

@@ -1,0 +1,9 @@
+virtual uint64_t unk_425d3f69835cd489() = 0;
+virtual uint64_t unk_bad_sig() = 0;
+virtual uint64_t unk_a368c7ac3913d0cb() = 0;
+virtual uint64_t unk_bad_sig() = 0;
+virtual uint64_t unk_c5511c75eaec762b() = 0;
+virtual uint64_t unk_bad_sig() = 0;
+virtual uint64_t unk_ec9b49a3ae774945() = 0;
+virtual uint64_t unk_b8f530f20eea7d7f() = 0;
+virtual uint64_t unk_b8f530f20eea7d7f() = 0;
