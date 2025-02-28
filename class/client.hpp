@@ -2254,6 +2254,7 @@ class CSGOUserCmdPB : google::protobuf::Message { void* vtable[17]; };
 class CSGO_AudioMeter : panorama::CPanel2D, IVoiceTarget { void* vtable[81]; };
 class CSGO_BaseSlider : panorama::CPanel2D { void* vtable[87]; };
 class CSGO_ContextMenu_CustomLayout : CUI_ContextMenu_Base { void* vtable[82]; };
+class CSGO_HudCameraGraph : panorama::CPanel2D, CCSGOHudElement { void* vtable[80]; };
 class CSGO_SettingsSlider : CSGO_BaseSlider, CCSGO_iConvarPanoramaSetter { void* vtable[87]; };
 class CSHA1 { void* vtable[1]; };
 class CSOAccountItemPersonalStore : google::protobuf::Message { void* vtable[17]; };
