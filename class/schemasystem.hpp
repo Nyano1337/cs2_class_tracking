@@ -1,10 +1,12 @@
 class CBaseAppSystem<ISchemaSystem> : ISchemaSystem {};
+class CBaseVModuleMetadataProvider { void* vtable[1]; };
 class CConCommandMemberAccessor<CSchemaSystem> : ConCommand, ICommandCallback, ICommandCompletionCallback { void* vtable[1]; };
 class CExampleSchemaVData_PolymorphicBase { void* vtable[4]; };
 class CExampleSchemaVData_PolymorphicDerivedA : CExampleSchemaVData_PolymorphicBase { void* vtable[4]; };
 class CExampleSchemaVData_PolymorphicDerivedB : CExampleSchemaVData_PolymorphicBase { void* vtable[4]; };
 class CKV3TransferContextBase : IErrorListener { void* vtable[6]; };
 class CKV3TransferSaveContext : CKV3TransferContextBase { void* vtable[6]; };
+class CModuleMetadataProvider_ResourceManifests : CBaseVModuleMetadataProvider { void* vtable[1]; };
 class CPostConnectCallback { void* vtable[1]; };
 class CSchemaInstallCallback : CPostConnectCallback { void* vtable[1]; };
 class CSchemaRegistration {};
