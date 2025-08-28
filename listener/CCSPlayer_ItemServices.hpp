@@ -1,6 +1,6 @@
 virtual uint64_t unk_ea5e1517bdf87f9a() = 0;
 virtual uint64_t unk_905aa1fe545b7500() = 0;
-virtual uint64_t unk_f90b107bc45d121d() = 0;
+virtual uint64_t unk_b4b0a5005cc34f08() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_bad_sig() = 0;

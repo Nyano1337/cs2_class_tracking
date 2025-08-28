@@ -1,4 +1,4 @@
-virtual uint64_t unk_5921e42f8d48a31e() = 0;
+virtual uint64_t unk_82db728d4f9823c7() = 0;
 virtual uint64_t unk_bad_sig() = 0;
 virtual uint64_t unk_4b8ca42b4235f0a3() = 0;
 virtual uint64_t unk_bad_sig() = 0;
