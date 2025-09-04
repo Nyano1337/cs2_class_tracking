@@ -356,7 +356,7 @@ class CCSHitboxSystem : CHitboxSystem { void* vtable[3]; };
 class CCSInventoryManager : CInventoryManager { void* vtable[64]; };
 class CCSMapEntityFilter : ISpawnGroupEntityFilter { void* vtable[2]; };
 class CCSMinimapBoundary : CBaseEntity { void* vtable[240]; };
-class CCSNavArea : CNavAreaExtended { void* vtable[26]; };
+class CCSNavArea : CNavAreaExtended { void* vtable[25]; };
 class CCSObserverPawn : CCSPlayerPawnBase { void* vtable[429]; };
 class CCSObserverStatePickingTeam : CCSPlayerState { void* vtable[3]; };
 class CCSObserver_CameraServices : CCSPlayerBase_CameraServices { void* vtable[29]; };

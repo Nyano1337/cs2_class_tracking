@@ -52,4 +52,4 @@ virtual uint64_t unk_cbe93f72b19a7abd() = 0;
 virtual uint64_t unk_9cb7cd5f188f0569() = 0;
 virtual uint64_t unk_1240a7fda1104b25() = 0;
 virtual uint64_t unk_7a56f13f58084e72() = 0;
-virtual uint64_t unk_f87b5e22058f966c() = 0;
+virtual uint64_t unk_cb341186573ef4be() = 0;

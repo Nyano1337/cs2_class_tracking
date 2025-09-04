@@ -1,9 +1,9 @@
-virtual uint64_t unk_f6027fa1c3ca56e5() = 0;
+virtual uint64_t unk_6ec4bf2846cc6171() = 0;
 virtual uint64_t unk_ad67418cd17658e1() = 0;
 virtual uint64_t unk_fb474cd4c2d8be0b() = 0;
 virtual uint64_t unk_b3ffbb3a009600f3() = 0;
 virtual uint64_t unk_63528af61557faae() = 0;
-virtual uint64_t unk_21fa39fba71ec9e8() = 0;
+virtual uint64_t unk_a8ad5d6c3fbdc5ff() = 0;
 virtual uint64_t unk_e879a239a7553ddf() = 0;
 virtual uint64_t unk_9e057ca575b78d12() = 0;
 virtual uint64_t unk_6dfbd457b2bad5eb() = 0;
