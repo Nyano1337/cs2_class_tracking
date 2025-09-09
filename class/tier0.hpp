@@ -26,7 +26,7 @@ class CKeyValuesDumpContextToLoggingChannel : IKeyValuesDumpContextAsText { void
 class CKeyValuesSystem : CKeyValuesSystemBase { void* vtable[23]; };
 class CKeyValuesSystemBase : IKeyValuesSystem { void* vtable[23]; };
 class CLoadKV3FromText : IErrorListener { void* vtable[6]; };
-class CMemPassAllocT<LLA_AddAlignedSelectors<struct LowLevelAllocationScheme_mimalloc> > : IMemAlloc_Internal {};
+class CMemPassAllocT<LLA_AddAlignedSelectors<struct LowLevelAllocationScheme_mimalloc> > : IMemAlloc_Internal { void* vtable[44]; };
 class CMemStdPurePassThroughAlloc : CMemPassAllocT<LLA_AddAlignedSelectors<LowLevelAllocationScheme_mimalloc> > { void* vtable[44]; };
 class CMiniDumpCommentBuilderBase { void* vtable[3]; };
 class COneTimeEvent : IRefCounted { void* vtable[3]; };
