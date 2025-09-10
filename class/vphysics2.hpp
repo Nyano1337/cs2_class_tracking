@@ -187,16 +187,16 @@ class CTypesafeIntrospectedToKV3TypeManager<495958126710,VPhysXAggregateData_t>:
 class CTypesafeIntrospectedToKV3TypeManager<495958126710,VPhysXAggregateData_t>::IKV3ResourceDeallocatorUtils {};
 class CVPhys2DebugShape : IRnDebugShape { void* vtable[17]; };
 class CVPhys2HandleInterfaceImpl : CTier2AppSystem<VPhys2HandleInterface,0> { void* vtable[12]; };
-class CVPhys2World : IPhysReflContext { void* vtable[4]; };
 class CVPhys2World : IVPhysics2World, IPhysReflContext { void* vtable[259]; };
+class CVPhys2World : IPhysReflContext { void* vtable[4]; };
 class CVPhysKV3TransferLoadContext : CKV3TransferLoadContext { void* vtable[6]; };
 class CVPhysKV3TransferSaveContext : CKV3TransferSaveContext { void* vtable[6]; };
 class CVPhysPtrSaveRestoreOps : CDefSaveRestoreOps { void* vtable[6]; };
 class CVPhysPtrUtlVectorSaveRestoreOps : CVPhysPtrSaveRestoreOps { void* vtable[6]; };
 class CVPhysics2ConComm : IVConCommDataReceived { void* vtable[1]; };
 class CVPhysics2Interface : CTier2AppSystem<IVPhysics2,0> { void* vtable[128]; };
-class CVPhysics2SurfaceProperyManager : IPhysSurfacePropertyController { void* vtable[8]; };
 class CVPhysics2SurfaceProperyManager : CDefaultKV3TransferResourceTypeManager<440006964086>, IPhysSurfacePropertyController { void* vtable[24]; };
+class CVPhysics2SurfaceProperyManager : IPhysSurfacePropertyController { void* vtable[8]; };
 class CWorldStepJob : CThreadedJob, CRefCountServiceBase<CRefMT> { void* vtable[7]; };
 class IAppSystem {};
 class IAsyncProcessedDataResult { void* vtable[1]; };

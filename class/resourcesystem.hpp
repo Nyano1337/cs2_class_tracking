@@ -24,8 +24,8 @@ class CRD_RegisterResourceDataUtils : IRD_RegisterResourceDataUtils { void* vtab
 class CResourceConstructor : ITSHashConstructor<ResourceBindingBase_t> { void* vtable[1]; };
 class CResourceDeallocatorUtils : IResourceDeallocatorUtils { void* vtable[7]; };
 class CResourceManifestTypeManager : IResourceTypeManager { void* vtable[20]; };
-class CResourceSystem : IResourceHandleUtils { void* vtable[8]; };
 class CResourceSystem : CTier2AppSystem<IResourceSystem,0>, IResourceSystemUtils, IResourceHandleUtils, IResourceManifestRegistry { void* vtable[82]; };
+class CResourceSystem : IResourceHandleUtils { void* vtable[8]; };
 class CResourceSystem : IResourceSystemUtils { void* vtable[5]; };
 class CResourceSystem : IResourceManifestRegistry { void* vtable[4]; };
 class CResourceSystemLeakTracker : IResourceSystemLeakTracker { void* vtable[4]; };

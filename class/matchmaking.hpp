@@ -102,8 +102,8 @@ class CMatchSessionOnlineSearch::CServerListListener : ISteamMatchmakingServerLi
 class CMatchSessionOnlineTeamSearch : CMatchSessionOnlineSearch, IMatchEventsSink { void* vtable[17]; };
 class CMatchSessionOnlineTeamSearch : IMatchEventsSink { void* vtable[1]; };
 class CMatchSystem : IMatchSystem { void* vtable[5]; };
-class CMatchTitle : IGameEventListener2 { void* vtable[2]; };
 class CMatchTitle : IMatchTitle, IMatchEventsSink, IGameEventListener2 { void* vtable[13]; };
+class CMatchTitle : IGameEventListener2 { void* vtable[2]; };
 class CMatchTitle : IMatchEventsSink { void* vtable[1]; };
 class CMatchTitleGameSettingsMgr : IMatchTitleGameSettingsMgr { void* vtable[22]; };
 class CMatchVoice : IMatchVoice { void* vtable[6]; };
