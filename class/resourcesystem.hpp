@@ -1,14 +1,14 @@
 class CAsyncResourceDataRequest : IAsyncResourceDataRequest { void* vtable[10]; };
-class CAsyncResourceDataRequest::CAsyncProcessDataThread : CThread { void* vtable[7]; };
+class CAsyncResourceDataRequest::CAsyncProcessDataThread : CThread { void* vtable[6]; };
 class CBaseAppSystem<class IResourceSystem> : IResourceSystem {};
 class CBaseVModuleMetadataProvider { void* vtable[1]; };
 class CCodeResourceManifestManager : ICodeResourceManifestManager { void* vtable[7]; };
 class CConCommandMemberAccessor<class CResourceSystemProfiler> : ICommandCompletionCallback { void* vtable[1]; };
 class CConCommandMemberAccessor<class CResourceSystemProfiler> : ConCommand, ICommandCallback, ICommandCompletionCallback { void* vtable[1]; };
 class CDefaultKV3TransferResourceTypeManager<500152235126> : CKV3ResourceTypeManager<500152235126> {};
-class CExampleSchemaVData_PolymorphicBase { void* vtable[4]; };
-class CExampleSchemaVData_PolymorphicDerivedA : CExampleSchemaVData_PolymorphicBase { void* vtable[4]; };
-class CExampleSchemaVData_PolymorphicDerivedB : CExampleSchemaVData_PolymorphicBase { void* vtable[4]; };
+class CExampleSchemaVData_PolymorphicBase { void* vtable[5]; };
+class CExampleSchemaVData_PolymorphicDerivedA : CExampleSchemaVData_PolymorphicBase { void* vtable[5]; };
+class CExampleSchemaVData_PolymorphicDerivedB : CExampleSchemaVData_PolymorphicBase { void* vtable[5]; };
 class CKV3ResourceBlockHelper : IAsyncProcessedDataResult { void* vtable[1]; };
 class CKV3ResourceTypeManager<418564367478> : IResourceTypeManager {};
 class CKV3ResourceTypeManager<500152235126> : IResourceTypeManager {};

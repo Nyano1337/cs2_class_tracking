@@ -239,7 +239,7 @@ class GCSDK::CProtoBufMsgMemoryPool<class CMsgSOSingleObject> : GCSDK::CProtoBuf
 class GCSDK::CProtoBufMsgMemoryPoolBase { void* vtable[4]; };
 class GCSDK::CSharedObjectCache { void* vtable[9]; };
 class GCSDK::CSharedObjectTypeCache { void* vtable[7]; };
-class GCSDK::CWorkThread : CThread { void* vtable[9]; };
+class GCSDK::CWorkThread : CThread { void* vtable[8]; };
 class GCSDK::CWorkThreadPool { void* vtable[2]; };
 class GameTypes : CGameAppSystem<IGameTypes,0> { void* vtable[76]; };
 class IAppSystem {};

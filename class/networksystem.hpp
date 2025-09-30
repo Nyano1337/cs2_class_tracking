@@ -7,7 +7,6 @@ class CCLCMsg_BaselineAck : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_ClientInfo : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_CmdKeyValues : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_Diagnostic : google::protobuf::Message { void* vtable[17]; };
-class CCLCMsg_FileCRCCheck : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_HltvFixupOperatorTick : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_HltvReplay : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_ListenEvents : google::protobuf::Message { void* vtable[17]; };
@@ -52,6 +51,8 @@ class CMsgServerNetworkStats_Port : google::protobuf::Message { void* vtable[17]
 class CMsgServerPeer : google::protobuf::Message { void* vtable[17]; };
 class CMsgServerUserCmd : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2NetworkFlowQuality : google::protobuf::Message { void* vtable[17]; };
+class CMsgSource2PerfIntervalSample : google::protobuf::Message { void* vtable[17]; };
+class CMsgSource2PerfIntervalSample_Tag : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2SystemSpecs : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2VProfLiteReport : google::protobuf::Message { void* vtable[17]; };
 class CMsgSource2VProfLiteReportItem : google::protobuf::Message { void* vtable[17]; };

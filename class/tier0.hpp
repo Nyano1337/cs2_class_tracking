@@ -19,7 +19,7 @@ class CExecMultiWorkerJob : CThreadedJob, CRefCountServiceBase<CRefMT> { void* v
 class CFiberJobPool : IFiberJobPool { void* vtable[6]; };
 class CGlobalThreadPool : CThreadPool, CRefCountServiceBase<CRefMT> { void* vtable[22]; };
 class CHeapMemAlloc : IMemAlloc_Internal { void* vtable[44]; };
-class CJobThread : CThread { void* vtable[7]; };
+class CJobThread : CThread { void* vtable[6]; };
 class CKeyValuesDumpContextAsDevMsg : IKeyValuesDumpContextAsText { void* vtable[5]; };
 class CKeyValuesDumpContextToBufferString : IKeyValuesDumpContextAsText { void* vtable[5]; };
 class CKeyValuesDumpContextToLoggingChannel : IKeyValuesDumpContextAsText { void* vtable[5]; };
@@ -44,7 +44,7 @@ class CStdFunctionJob : CThreadedJob, CRefCountServiceBase<CRefMT> { void* vtabl
 class CStdIOFormatOutputStream : IFormatOutputStream { void* vtable[16]; };
 class CStdMemAlloc<MemConfig_t> : IMemAlloc_Internal { void* vtable[44]; };
 class CTestScriptMgr : CTier0AppSystem<ITestScriptMgr,0> { void* vtable[18]; };
-class CThread { void* vtable[7]; };
+class CThread { void* vtable[6]; };
 class CThreadPool : CRefCounted1<IThreadPool,CRefCountServiceBase<CRefMT> >, CRefCountServiceBase<CRefMT> { void* vtable[22]; };
 class CThreadedJob : CRefCounted1<IRefCounted,CRefCountServiceBase<CRefMT> >, CRefCountServiceBase<CRefMT> { void* vtable[7]; };
 class CThreadedTraverseJob_FastWin32 : CThreadedJob, CRefCountServiceBase<CRefMT> { void* vtable[7]; };
