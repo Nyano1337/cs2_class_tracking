@@ -6,7 +6,7 @@ nullsub(); // CAimTargetManager, CAnchorList, CAnimGraphGameSystem, CAvatarOverr
 nullsub(); // CCSPlayerControllerGameSystem, CCameraManagerGameSystem, CGameRulesGameSystem, CRadioStatus, CRagdollPoseControlSystem, CWorldGameSystem
 nullsub(); // CCompositeMaterialGameSystem, CRadioStatus, CRagdollPoseControlSystem
 nullsub(); // CCSInventoryManager, CDecalEmitterSystem, CDefaultResponseSystem, CGameRulesGameSystem
-nullsub(); // CCSClientGameStats, CCSInventoryManager, CCSPortraitWorldSystem, CCameraManagerGameSystem, CClientModeGameSystem, CCompositeMaterialDebugWindow, CDebugOverlayBullets, CDebugOverlayGameSystem, CDebugOverlayGrenades, CDebugOverlayRecorderBase, CDebugOverlayWindow, CDebugOverlayWorldModel, CDecalGameSystem, CEntityDebugGameSystem, CGamePortraitWorldSystem, CGameRulesGameSystem, CInventoryManager, CMapAnNodeManager, CNotifyManager, CPhysicsGameSystem, CRenderGameSystem, CServerLogHTTPDispatcher, CSoundOpGameSystem, CUIRootGameSystem
+nullsub(); // CCSClientGameStats, CCSInventoryManager, CCSPortraitWorldSystem, CCamPathfindGameSystem, CCameraManagerGameSystem, CClientModeGameSystem, CCompositeMaterialDebugWindow, CDebugOverlayBullets, CDebugOverlayGameSystem, CDebugOverlayGrenades, CDebugOverlayRecorderBase, CDebugOverlayWindow, CDebugOverlayWorldModel, CDecalGameSystem, CEntityDebugGameSystem, CGamePortraitWorldSystem, CGameRulesGameSystem, CInventoryManager, CMapAnNodeManager, CNotifyManager, CPhysicsGameSystem, CRenderGameSystem, CServerLogHTTPDispatcher, CSoundOpGameSystem, CUIRootGameSystem
 nullsub(); // CDefaultResponseSystem, CPredictionGameSystem, CUIRootGameSystem
 nullsub(); // CPredictionGameSystem
 nullsub(); // CBaseGameStats_Driver, CCSAddonManager, CCSInventoryManager, CCSItemIconGeneratorGameSystem, CCSPortraitWorldSystem, CCameraManagerGameSystem, CClientModeGameSystem, CCommentarySystem, CCompositeMaterialDebugWindow, CDebugOverlayBullets, CDebugOverlayGameSystem, CDebugOverlayGrenades, CDebugOverlayRecorderBase, CDebugOverlayWindow, CDebugOverlayWorldModel, CDecalGameSystem, CGamePortraitWorldSystem, CGameRulesGameSystem, CInventoryManager, CMapAnNodeManager, CNotifyManager, CPhysicsGameSystem, CResponseQueueManager, CServerLogHTTPDispatcher, CSoundControllerImp, CSoundOpGameSystem, CSoundOpvarSetPointManager, CUIRootGameSystem, CUtilRemoveDeferralGameSystem
@@ -34,7 +34,7 @@ nullsub(); // CCSGameStats, CCheckClient, CGameRulesGameSystem, CPhysicsGameSyst
 nullsub(); // CSendPlayerLoadoutHelper
 nullsub();
 nullsub(); // CCSChickenManager, CCSGOVScriptGameSystem, CCommandQueueTester, CDebugOverlayBullets, CDedicatedServerWorkshopManager, CEntityDebugGameSystem, CLightQueryGameSystem, CShatterGlassGameSystem, CVScriptGameSystem
-nullsub(); // CEntityDebugGameSystem, CLightQueryGameSystem, CSmokeVolumeSystem
+nullsub(); // CCamPathfindGameSystem, CEntityDebugGameSystem, CLightQueryGameSystem, CSmokeVolumeSystem
 nullsub(); // CDebugOverlayBullets, CDebugOverlayGrenades, CDebugOverlayRecorderBase, CDebugOverlayWindow, CDebugOverlayWorldModel
 nullsub(); // CGameJobSystem, CNavSpaceBuildLocker, CPhysicsGameSystem
 nullsub(); // CGameJobSystem, CNavSpaceBuildLocker, CPhysicsGameSystem
