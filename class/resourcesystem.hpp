@@ -3,8 +3,8 @@ class CAsyncResourceDataRequest::CAsyncProcessDataThread : CThread { void* vtabl
 class CBaseAppSystem<class IResourceSystem> : IResourceSystem {};
 class CBaseVModuleMetadataProvider { void* vtable[1]; };
 class CCodeResourceManifestManager : ICodeResourceManifestManager { void* vtable[7]; };
-class CConCommandMemberAccessor<class CResourceSystemProfiler> : ICommandCompletionCallback { void* vtable[1]; };
 class CConCommandMemberAccessor<class CResourceSystemProfiler> : ConCommand, ICommandCallback, ICommandCompletionCallback { void* vtable[1]; };
+class CConCommandMemberAccessor<class CResourceSystemProfiler> : ICommandCompletionCallback { void* vtable[1]; };
 class CDefaultKV3TransferResourceTypeManager<500152235126> : CKV3ResourceTypeManager<500152235126> {};
 class CExampleSchemaVData_PolymorphicBase { void* vtable[5]; };
 class CExampleSchemaVData_PolymorphicDerivedA : CExampleSchemaVData_PolymorphicBase { void* vtable[5]; };
