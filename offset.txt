@@ -1,4 +1,5 @@
 Offsets:
+[CBaseAnimGraph] 308
 [CBaseCSGrenade] 456
 [CBaseEntity] 243
 [CBaseModelEntity] 271
