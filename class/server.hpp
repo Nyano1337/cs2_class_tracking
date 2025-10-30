@@ -925,6 +925,7 @@ class CEmptyPhysicsBodyList : IPhysicsBodyList { void* vtable[4]; };
 class CEmptySequence : ISequence { void* vtable[61]; };
 class CEmptyWorldService : CBaseEngineService<IEngineService> { void* vtable[23]; };
 class CEnableMotionFixup : CBaseEntity { void* vtable[243]; };
+class CEnduringClassMemoryPool<class CAnimPose> { void* vtable[1]; };
 class CEngineGotvSyncPacket : google::protobuf::Message { void* vtable[17]; };
 class CEntFireAutoCompletionFunctor : CEntityAutoCompletionFunctor, ICommandCallback { void* vtable[4]; };
 class CEntFireAutoCompletionFunctor : ICommandCallback { void* vtable[1]; };
