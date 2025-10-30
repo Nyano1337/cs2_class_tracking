@@ -39,6 +39,7 @@ virtual void 5bf683ee5c8b1ff0() = 0;
 virtual void 3cac3cc820963f7b() = 0;
 virtual void 2b859018416d1ab2() = 0;
 virtual void 78dd436f25adac7b() = 0;
+virtual void dbef6ca73aab74b1() = 0;
 virtual void 24c72becfce59cfc() = 0;
 virtual void 5c11b473686f46a1() = 0;
 virtual void 5c11b473686f46a1() = 0;
