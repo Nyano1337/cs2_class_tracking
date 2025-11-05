@@ -139,6 +139,7 @@ class CSVCMsg_HLTVStatus : google::protobuf::Message { void* vtable[17]; };
 class CSVCMsg_HltvFixupOperatorStatus : google::protobuf::Message { void* vtable[17]; };
 class CSVCMsg_HltvReplay : google::protobuf::Message { void* vtable[17]; };
 class CSVCMsg_Menu : google::protobuf::Message { void* vtable[17]; };
+class CSVCMsg_NextMsgPredicted : google::protobuf::Message { void* vtable[17]; };
 class CSVCMsg_PacketEntities : google::protobuf::Message { void* vtable[17]; };
 class CSVCMsg_PacketEntities_alternate_baseline_t : google::protobuf::Message { void* vtable[17]; };
 class CSVCMsg_PacketEntities_non_transmitted_entities_t : google::protobuf::Message { void* vtable[17]; };
