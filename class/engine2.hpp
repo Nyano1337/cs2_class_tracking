@@ -1166,6 +1166,7 @@ class IFlattenedSerializerSpewFunc { void* vtable[3]; };
 class IFlattenedSerializerSpewListener { void* vtable[6]; };
 class IGameEventSystem : IAppSystem {};
 class IGameEventWatcher {};
+class IGameResourceManifestLoadCompletionCallback {};
 class IGameResourceService : IEngineService {};
 class IGameServerData : IBaseInterface {};
 class IGameUIFuncs : IAppSystem {};
