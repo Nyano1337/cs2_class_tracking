@@ -193,7 +193,7 @@ class CVPhys2World : IPhysReflContext { void* vtable[2]; };
 class CVPhysKV3TransferLoadContext : CKV3TransferLoadContext { void* vtable[6]; };
 class CVPhysKV3TransferSaveContext : CKV3TransferSaveContext { void* vtable[6]; };
 class CVPhysPtrSaveRestoreOps : CDefSaveRestoreOps { void* vtable[6]; };
-class CVPhysPtrUtlVectorSaveRestoreOps : CVPhysPtrSaveRestoreOps { void* vtable[6]; };
+class CVPhysPtrUtlVectorSaveRestoreOps : CVPhysPtrSaveRestoreOps { void* vtable[12]; };
 class CVPhysics2ConComm : IVConCommDataReceived { void* vtable[1]; };
 class CVPhysics2Interface : CTier2AppSystem<IVPhysics2,0> { void* vtable[133]; };
 class CVPhysics2SurfaceProperyManager : CDefaultKV3TransferResourceTypeManager<440006964086>, IPhysSurfacePropertyController { void* vtable[24]; };
