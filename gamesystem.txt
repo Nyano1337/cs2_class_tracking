@@ -37,6 +37,7 @@ nullsub();
 nullsub(); // CCSChickenManager, CCSGOVScriptGameSystem, CCommandQueueTester, CDebugOverlayBullets, CDedicatedServerWorkshopManager, CEntityDebugGameSystem, CLightQueryGameSystem, CShatterGlassGameSystem, CVScriptGameSystem
 nullsub(); // CCamPathfindGameSystem, CEntityDebugGameSystem, CLightQueryGameSystem, CSmokeVolumeSystem
 nullsub(); // CDebugOverlayBullets, CDebugOverlayGrenades, CDebugOverlayRecorderBase, CDebugOverlayWindow, CDebugOverlayWorldModel
+nullsub();
 nullsub(); // CGameJobSystem, CNavSpaceBuildLocker, CPhysicsGameSystem
 nullsub(); // CGameJobSystem, CNavSpaceBuildLocker, CPhysicsGameSystem
 nullsub(); // CPhysicsGameSystem
