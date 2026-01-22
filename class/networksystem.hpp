@@ -102,8 +102,6 @@ class CNetMessagePB<3,class CNETMsg_SplitScreenUser,11,1,0>::CProtobufBinding : 
 class CNetMessagePB<35,class CCLCMsg_RconServerDetails,0,1,0> : CCLCMsg_RconServerDetails { void* vtable[17]; };
 class CNetMessagePB<35,class CCLCMsg_RconServerDetails,0,1,0> : CNetMessage, CCLCMsg_RconServerDetails { void* vtable[5]; };
 class CNetMessagePB<35,class CCLCMsg_RconServerDetails,0,1,0>::CProtobufBinding : IProtobufBinding { void* vtable[9]; };
-class CNetWhyFieldExcludedFunctor : ICommandCallback, ICommandCompletionCallback { void* vtable[1]; };
-class CNetWhyFieldExcludedFunctor : ICommandCompletionCallback { void* vtable[1]; };
 class CNetworkEncodingStats : INetworkEncodingStats, IVConCommDataReceived { void* vtable[6]; };
 class CNetworkEncodingStats : IVConCommDataReceived { void* vtable[1]; };
 class CNetworkFieldChangedEventQueue : INetworkFieldChangedEventQueue { void* vtable[13]; };
