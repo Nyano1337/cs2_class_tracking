@@ -6,7 +6,7 @@ Offsets:
 [CBasePlayerPawn] 413
 [CBasePlayerWeapon] 368
 [CBaseTrigger] 274
-[CCSGameRules] 128
+[CCSGameRules] 129
 [CCSPlayerController] 275
 [CCSPlayerPawn] 426
 [CCSPlayerPawnBase] 426
