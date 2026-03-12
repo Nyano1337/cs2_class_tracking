@@ -3277,6 +3277,7 @@ class CPulseInterfaceHelpers_Save_NoOp : CKV3TransferInterface_Worldspace_Save_N
 class CPulseInterfaceHelpers_Save_NoOp : CKV3TransferInterface_EHandle_Save_NoOp { void* vtable[1]; };
 class CPulseInterfaceHelpers_Save_NoOp : CKV3TransferInterface_GameTime_Save_NoOp { void* vtable[1]; };
 class CPulseInterfaceHelpers_Save_NoOp : CPulseInstanceSaveAPI_NoOp, CKV3TransferInterface_GameTime_Save_NoOp, CKV3TransferInterface_EHandle_Save_NoOp, CKV3TransferInterface_Worldspace_Save_NoOp { void* vtable[1]; };
+class CPulseModuleRegistrationHook<class CPulseDomainScopeLoader> {};
 class CPulseModuleRegistrationHook<class IPulseTypeQueriesForScope> {};
 class CPulseScopeEnumeratingTypeService : IPulseTypeQueriesForScope { void* vtable[8]; };
 class CPulseSharedEHandleService : IPulseTypeQueriesForScope { void* vtable[8]; };

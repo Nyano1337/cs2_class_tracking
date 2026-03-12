@@ -455,7 +455,7 @@ class CMetaDuplicationAutoCompletionFunctor : ICommandCallback { void* vtable[1]
 class CMiniDumpCommentBuilderBase {};
 class CMiniDumpCommentConvarsWriter : IPrintChangedConvarsWriter { void* vtable[2]; };
 class CModuleMetadataProvider_ResourceManifests : CBaseVModuleMetadataProvider { void* vtable[1]; };
-class CMovieRecorder : IMovieRecorder, IScreenshotCallback, IAudioStreamRecorder { void* vtable[12]; };
+class CMovieRecorder : IMovieRecorder, IScreenshotCallback, IAudioStreamRecorder { void* vtable[15]; };
 class CMovieRecorder : IScreenshotCallback { void* vtable[5]; };
 class CMovieRecorder : IAudioStreamRecorder { void* vtable[3]; };
 class CMsgConvarsWriter : IPrintChangedConvarsWriter { void* vtable[2]; };
