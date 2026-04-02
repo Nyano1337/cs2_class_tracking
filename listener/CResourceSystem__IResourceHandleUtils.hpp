@@ -6,3 +6,6 @@ virtual void f6f064fa596cf5bf() = 0;
 virtual void f6f064fa596cf5bf() = 0;
 virtual void d90713ab541a121e() = 0;
 virtual void d90713ab541a121e() = 0;
+virtual void 4fbf09138a02000b() = 0;
+virtual void c682560c3ccad1e9() = 0;
+virtual void 9ea68c40041f2679() = 0;

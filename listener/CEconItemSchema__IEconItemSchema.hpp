@@ -1,5 +1,5 @@
 virtual void 6da3efb99f072100() = 0;
-virtual void 25747206c47e5f09() = 0;
+virtual void e07d13abc048826b() = 0;
 virtual void 38b34dc4eb1bbd01() = 0;
 virtual void 2522efaa61fff53c() = 0;
 virtual void 1d7ff93d536fc51d() = 0;
@@ -36,7 +36,7 @@ virtual void 2522efaa61fff53c() = 0;
 virtual void 47530a48f3000699() = 0;
 virtual void 4e73f67824a42761() = 0;
 virtual void 2823d4ac38151344() = 0;
-virtual void 30fa5740bec1c7() = 0;
+virtual void f835c4c1aa1eaf77() = 0;
 virtual void c5f42e6822ad6fc1() = 0;
 virtual void cf4831ad88f5385c() = 0;
 virtual void b8d17e32e87cbdb9() = 0;

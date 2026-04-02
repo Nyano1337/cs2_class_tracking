@@ -1,5 +1,6 @@
-virtual void 2db502ab7110f881() = 0;
-virtual void cdf5230042032da5() = 0;
+virtual void 9d191cb50fdeb010() = 0;
+virtual void 276ab84d7f1ca658() = 0;
+virtual void eccc2cda64a960dc() = 0;
 virtual void 9e66066eeb116350() = 0;
 virtual void 48c55d0f8985fd1() = 0;
 virtual void 9055936d58009021() = 0;
@@ -11,4 +12,4 @@ virtual void 64683751e10254da() = 0;
 virtual void 3eb47bf522ec9ebf() = 0;
 virtual void b7a801e7b33139cc() = 0;
 virtual void 72220dd2c6f9f49f() = 0;
-virtual void de30bdb311871def() = 0;
+virtual void f58a292da4a9c328() = 0;

@@ -1,5 +1,6 @@
 virtual void 910843c4d874de64() = 0;
 virtual void 905aa1fe545b7500() = 0;
+virtual void 66bcab91a6817e22() = 0;
 virtual void 72f7f0d51ba06a84() = 0;
 virtual void nullsub() = 0;
 virtual void nullsub() = 0;
@@ -21,4 +22,4 @@ virtual void a482133e5c98f692() = 0;
 virtual void 9b8935849b12a4d4() = 0;
 virtual void a482133e5c98f692() = 0;
 virtual void c62ce8feb4ef0495() = 0;
-virtual void ce641647fbb75928() = 0;
+virtual void 8c3be10ffb50cd86() = 0;

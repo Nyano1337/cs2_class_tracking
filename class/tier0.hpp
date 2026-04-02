@@ -72,7 +72,7 @@ class CVProfileOutputColumn_AverageTimePerFrame : CVProfileOutputColumn_Base { v
 class CVProfileOutputColumn_Base {};
 class CVProfileOutputColumn_Count : CVProfileOutputColumn_Base { void* vtable[2]; };
 class CVProfileOutputColumn_Name : CVProfileOutputColumn_Base { void* vtable[2]; };
-class CVProfileOutputColumn_Peak : CVProfileOutputColumn_Base { void* vtable[6]; };
+class CVProfileOutputColumn_Peak : CVProfileOutputColumn_Base { void* vtable[2]; };
 class CVProfileOutputColumn_Sum : CVProfileOutputColumn_Base { void* vtable[2]; };
 class CVSymbolModule { void* vtable[21]; };
 class ConCommand : ConCommandRef {};
@@ -111,3 +111,5 @@ class TSListTests::CListOps : TSListTests::CTestOps { void* vtable[4]; };
 class TSListTests::CQueueOps : TSListTests::CTestOps { void* vtable[4]; };
 class TSListTests::CTestOps {};
 class ThreadPoolTest::CCountJob : CThreadedJob, CRefCountServiceBase<CRefMT> { void* vtable[7]; };
+class ThreadPoolTest::CPerFrameTestJob : CThreadedJob, CRefCountServiceBase<CRefMT> { void* vtable[7]; };
+class ThreadPoolTest::CSpawningPerFrameTestJob : CThreadedJob, CRefCountServiceBase<CRefMT> { void* vtable[7]; };
