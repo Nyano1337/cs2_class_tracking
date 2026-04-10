@@ -4680,7 +4680,7 @@ struct AI_Motor_DebugSnapshotData_t : DebugSnapshotBaseStructuredData_t { void* 
 struct AI_Navigator_DebugSnapshotData_t : DebugSnapshotBaseStructuredData_t { void* vtable[6]; };
 struct ActiveModelConfig_t { void* vtable[6]; };
 struct AmmoTypeInfo_t { void* vtable[4]; };
-struct AnimGraph2SerializedPoseRecipe_t { void* vtable[6]; };
+struct AnimGraph2SerializedPoseRecipeSlot_t { void* vtable[6]; };
 struct CDebugSnapshotFrame_t::MapStructedDataByEntity_t : CRefCounted<CRefCountServiceBase<CRefMT> > { void* vtable[1]; };
 struct CNmAimCSNode::CDefinition : CNmPassthroughNode::CDefinition { void* vtable[7]; };
 struct CNmAndNode::CDefinition : CNmBoolValueNode::CDefinition { void* vtable[7]; };
@@ -4796,7 +4796,6 @@ struct EntityRenderAttribute_t { void* vtable[6]; };
 struct GameAmmoTypeInfo_t : AmmoTypeInfo_t { void* vtable[4]; };
 struct IVTableIndexCalculator { void* vtable[65]; };
 struct PhysicsRagdollPose_t { void* vtable[5]; };
-struct PredictedDamageTag_t { void* vtable[6]; };
 struct RnQueryAttr_t : RnQueryShapeAttr_t {};
 struct RnQueryShapeAttr_t {};
 struct SellbackPurchaseEntry_t { void* vtable[6]; };
