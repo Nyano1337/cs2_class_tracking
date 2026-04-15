@@ -59,6 +59,7 @@ class IRD_RegisterResourceDataUtils {};
 class IRefCounted {};
 class IResourceDeallocatorUtils {};
 class IResourceHandleUtils {};
+class IResourceManifestRegistry {};
 class IResourceSystem : IAppSystem {};
 class IResourceSystemLeakTracker {};
 class IResourceSystemProfiler {};

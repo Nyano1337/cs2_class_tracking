@@ -1407,6 +1407,9 @@ class CEnvBeverage : CBaseEntity { void* vtable[239]; };
 class CEnvCombinedLightProbeVolume : CBaseEntity, CBaseCubemap, CBaseLightProbeVolume { void* vtable[239]; };
 class CEnvCombinedLightProbeVolume : CBaseCubemap { void* vtable[8]; };
 class CEnvCombinedLightProbeVolume : CBaseLightProbeVolume { void* vtable[8]; };
+class CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : CEnvCombinedLightProbeVolume, CBaseCubemap, CBaseLightProbeVolume { void* vtable[239]; };
+class CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : CBaseCubemap { void* vtable[8]; };
+class CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : CBaseLightProbeVolume { void* vtable[8]; };
 class CEnvCubemap : CBaseEntity, CBaseCubemap { void* vtable[239]; };
 class CEnvCubemap : CBaseCubemap { void* vtable[8]; };
 class CEnvCubemapBox : CEnvCubemap, CBaseCubemap { void* vtable[239]; };
@@ -3973,6 +3976,7 @@ class CUtlVectorAbstract<class CUtlVectorFixedGrowable<SpaceBlockAdj_t,16,int> >
 class CUtlVectorAllocateSaveRestoreOps<class CDebugDrawHistoryData> : IKV3TransferSaveRestoreOps { void* vtable[4]; };
 class CUtlVectorDataOps<class CNetworkUtlVectorBase<bool,class CPathParticleRope::NetworkVar_m_PathNodes_PinEnabled,-1,int>,6,0> : CDefSaveRestoreOps { void* vtable[5]; };
 class CUtlVectorDataOps<class CNetworkUtlVectorBase<bool,class CRagdollProp::NetworkVar_m_ragEnabled,-1,int>,6,0> : CDefSaveRestoreOps { void* vtable[5]; };
+class CUtlVectorDataOps<class CNetworkUtlVectorBase<class CGlobalSymbol,class CBaseAnimGraphController::NetworkVar_m_vecSecondarySkeletonSlotIDs,-1,int>,79,0> : CDefSaveRestoreOps { void* vtable[5]; };
 class CUtlVectorDataOps<class CNetworkUtlVectorBase<class CHandle<class CBaseAnimGraph>,class CBaseAnimGraphController::NetworkVar_m_vecSecondarySkeletons,-1,int>,13,0> : CDefSaveRestoreOps { void* vtable[5]; };
 class CUtlVectorDataOps<class CNetworkUtlVectorBase<class CHandle<class CBaseEntity>,class CFuncConveyor::NetworkVar_m_hConveyorModels,-1,int>,13,0> : CDefSaveRestoreOps { void* vtable[5]; };
 class CUtlVectorDataOps<class CNetworkUtlVectorBase<class CHandle<class CBaseModelEntity>,class CBarnLight::NetworkVar_m_LightStyleTargets,-1,int>,13,0> : CDefSaveRestoreOps { void* vtable[5]; };
