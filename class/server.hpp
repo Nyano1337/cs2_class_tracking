@@ -391,8 +391,8 @@ class CCLCMsg_SplitPlayerConnect : google::protobuf::Message { void* vtable[17];
 class CCLCMsg_SplitPlayerDisconnect : google::protobuf::Message { void* vtable[17]; };
 class CCLCMsg_VoiceData : google::protobuf::Message { void* vtable[17]; };
 class CCS2ChickenGraphController : CAnimGraphControllerBase { void* vtable[19]; };
-class CCS2PawnGraphController : CCS2WeaponGraphController { void* vtable[19]; };
-class CCS2WeaponGraphController : CAnimGraphControllerBase { void* vtable[19]; };
+class CCS2PawnGraphController : CCS2WeaponGraphController { void* vtable[20]; };
+class CCS2WeaponGraphController : CAnimGraphControllerBase { void* vtable[20]; };
 class CCSAddonManager : CAutoGameSystem { void* vtable[64]; };
 class CCSAmmoDef : CAmmoDefTyped<GameAmmoTypeInfo_t> { void* vtable[12]; };
 class CCSBaseScript : IEntityListener, CUtlAutoList<CCSBaseScript> { void* vtable[23]; };
@@ -2012,7 +2012,6 @@ class CMsgGCCStrike15_v2_ClientPollState : google::protobuf::Message { void* vta
 class CMsgGCCStrike15_v2_ClientReportPlayer : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientReportResponse : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientReportServer : google::protobuf::Message { void* vtable[17]; };
-class CMsgGCCStrike15_v2_ClientReportValidation : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientRequestJoinFriendData : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientRequestJoinServerData : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientRequestOffers : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; };

@@ -285,7 +285,6 @@ class CBombTarget : CBombTargetShim, IBoneTransformOverride, CCompositeMaterialO
 class CBombTarget : CCompositeMaterialOwner { void* vtable[6]; };
 class CBombTarget : IBoneTransformOverride { void* vtable[4]; };
 class CBombTarget : ISceneObjectRenderNotifier { void* vtable[1]; };
-class CBombTargetShim : C_BaseTrigger, IBoneTransformOverride, CCompositeMaterialOwner, ISceneObjectRenderNotifier {};
 class CBoneBindSpacePosRenderAttribCallback : IEntityRenderAttributeCallback { void* vtable[1]; };
 class CBoneSetup : EBoneSetup { void* vtable[6]; };
 class CBoneUpVectorRenderAttribCallback : IEntityRenderAttributeCallback { void* vtable[1]; };
@@ -318,9 +317,9 @@ class CCLCMsg_VoiceData_t : CCLCMsg_VoiceData { void* vtable[17]; };
 class CCLCMsg_VoiceData_t : CNetMessagePB<22,CCLCMsg_VoiceData,6,0,0>, CCLCMsg_VoiceData { void* vtable[5]; };
 class CCMAA2ComputeRenderer : IProceduralLayerRenderer { void* vtable[3]; };
 class CCS2ChickenGraphController : CAnimGraphControllerBase { void* vtable[19]; };
-class CCS2PawnGraphController : CCS2WeaponGraphController { void* vtable[19]; };
+class CCS2PawnGraphController : CCS2WeaponGraphController { void* vtable[20]; };
 class CCS2UIPawnGraphController : CAnimGraphControllerBase { void* vtable[19]; };
-class CCS2WeaponGraphController : CAnimGraphControllerBase { void* vtable[19]; };
+class CCS2WeaponGraphController : CAnimGraphControllerBase { void* vtable[20]; };
 class CCSAddonManager : CAutoGameSystem { void* vtable[64]; };
 class CCSAmmoDef : CAmmoDefTyped<GameAmmoTypeInfo_t> { void* vtable[12]; };
 class CCSCameraManager : CBaseCameraManager, CGameEventListener { void* vtable[50]; };
@@ -2269,7 +2268,6 @@ class CMsgGCCStrike15_v2_ClientPollState : google::protobuf::Message { void* vta
 class CMsgGCCStrike15_v2_ClientReportPlayer : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientReportResponse : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientReportServer : google::protobuf::Message { void* vtable[17]; };
-class CMsgGCCStrike15_v2_ClientReportValidation : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientRequestJoinFriendData : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientRequestJoinServerData : google::protobuf::Message { void* vtable[17]; };
 class CMsgGCCStrike15_v2_ClientRequestOffers : google::protobuf::internal::ZeroFieldsBase { void* vtable[17]; };
