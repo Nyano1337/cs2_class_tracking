@@ -137,7 +137,6 @@ class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_BaseLocalEvent> : CBase
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_EXTERNAL_ANIMGRAPH> : CBaseConcreteToolAttr<bool,CChoreoEvent_EXTERNAL_ANIMGRAPH>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_GESTURE> : CBaseConcreteToolAttr<bool,CChoreoEvent_GESTURE>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_LOCATOR> : CBaseConcreteToolAttr<bool,CChoreoEvent_LOCATOR>, IToolAttr_TypedValue<bool> {};
-class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_LOOKAT> : CBaseConcreteToolAttr<bool,CChoreoEvent_LOOKAT>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_REQUIREMENTS> : CBaseConcreteToolAttr<bool,CChoreoEvent_REQUIREMENTS>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_SEQUENCE> : CBaseConcreteToolAttr<bool,CChoreoEvent_SEQUENCE>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_SPEAK> : CBaseConcreteToolAttr<bool,CChoreoEvent_SPEAK>, IToolAttr_TypedValue<bool> {};
@@ -531,6 +530,7 @@ class CCSPlayerTakeDamageListenerEnemiesCount : CCSPlayer_DamageReactServices::I
 class CCSPlayer_ActionTrackingServices : CPlayerPawnComponent { void* vtable[20]; };
 class CCSPlayer_ActionTrackingServices::NetworkVar_m_weaponPurchasesThisMatch : WeaponPurchaseTracker_t { void* vtable[5]; };
 class CCSPlayer_ActionTrackingServices::NetworkVar_m_weaponPurchasesThisRound : WeaponPurchaseTracker_t { void* vtable[5]; };
+class CCSPlayer_AimPunchServices : CPlayerPawnComponent { void* vtable[20]; };
 class CCSPlayer_BulletServices : CPlayerPawnComponent { void* vtable[20]; };
 class CCSPlayer_BuyServices : CPlayerPawnComponent { void* vtable[20]; };
 class CCSPlayer_CameraServices : CCSPlayerBase_CameraServices { void* vtable[31]; };
@@ -552,7 +552,6 @@ class CCSPointPulseSystem : CAutoGameSystem, CGameEventListener { void* vtable[6
 class CCSPointPulseSystem : CGameEventListener { void* vtable[2]; };
 class CCSPointScriptEntity : CBaseEntity, IToolsResourceListener { void* vtable[239]; };
 class CCSPointScriptEntity : IToolsResourceListener { void* vtable[2]; };
-class CCSPredictionEvent_AddAimPunch : google::protobuf::Message { void* vtable[17]; };
 class CCSPredictionEvent_DamageTag : google::protobuf::Message { void* vtable[17]; };
 class CCSPredictionEvent_DamageTag_t : CPredictionEventPB<1,CCSPredictionEvent_DamageTag,CCSPredictionEvent_DamageTag> { void* vtable[17]; };
 class CCSScriptSystem : CAutoGameSystem, IAddonListChangeNotify { void* vtable[64]; };
