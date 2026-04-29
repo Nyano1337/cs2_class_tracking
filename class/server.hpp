@@ -137,6 +137,7 @@ class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_BaseLocalEvent> : CBase
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_EXTERNAL_ANIMGRAPH> : CBaseConcreteToolAttr<bool,CChoreoEvent_EXTERNAL_ANIMGRAPH>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_GESTURE> : CBaseConcreteToolAttr<bool,CChoreoEvent_GESTURE>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_LOCATOR> : CBaseConcreteToolAttr<bool,CChoreoEvent_LOCATOR>, IToolAttr_TypedValue<bool> {};
+class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_LOOKAT> : CBaseConcreteToolAttr<bool,CChoreoEvent_LOOKAT>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_REQUIREMENTS> : CBaseConcreteToolAttr<bool,CChoreoEvent_REQUIREMENTS>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_SEQUENCE> : CBaseConcreteToolAttr<bool,CChoreoEvent_SEQUENCE>, IToolAttr_TypedValue<bool> {};
 class CBaseConcreteToolAttrValue<bool,class CChoreoEvent_SPEAK> : CBaseConcreteToolAttr<bool,CChoreoEvent_SPEAK>, IToolAttr_TypedValue<bool> {};
@@ -4542,7 +4543,6 @@ class IToolAttrConcreteDataAccess<float> {};
 class IToolAttrConcreteDataAccess<int> {};
 class IToolAttr_Array {};
 class IToolAttr_Table {};
-class IToolAttr_TypedValue<bool> : IToolAttr_Value {};
 class IToolAttr_TypedValue<class CUtlString> : IToolAttr_Value {};
 class IToolAttr_TypedValue<class QAngle> : IToolAttr_Value {};
 class IToolAttr_TypedValue<class Vec3D<float> > : IToolAttr_Value {};

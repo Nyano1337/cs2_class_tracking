@@ -3635,6 +3635,7 @@ class CSubtickMoveStep : google::protobuf::Message { void* vtable[17]; };
 class CSurfacePropDataTableBase {};
 class CSurfacePropReloadableDataTable<class CExplosionDebrisEffectElement> : CSurfacePropReloadableDataTableBase {};
 class CSurfacePropReloadableDataTable<class CGameSurfaceProperties> : CSurfacePropReloadableDataTableBase {};
+class CSurfacePropReloadableDataTable<class CImpactEffectElement> : CSurfacePropReloadableDataTableBase {};
 class CSurfacePropReloadableDataTableBase : CSurfacePropDataTableBase { void* vtable[4]; };
 class CTEArmorRicochet : CBaseTempEntity { void* vtable[4]; };
 class CTEBaseBeam : CBaseTempEntity {};
