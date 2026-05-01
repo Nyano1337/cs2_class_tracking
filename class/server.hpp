@@ -4543,6 +4543,7 @@ class IToolAttrConcreteDataAccess<float> {};
 class IToolAttrConcreteDataAccess<int> {};
 class IToolAttr_Array {};
 class IToolAttr_Table {};
+class IToolAttr_TypedValue<bool> : IToolAttr_Value {};
 class IToolAttr_TypedValue<class CUtlString> : IToolAttr_Value {};
 class IToolAttr_TypedValue<class QAngle> : IToolAttr_Value {};
 class IToolAttr_TypedValue<class Vec3D<float> > : IToolAttr_Value {};
