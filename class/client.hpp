@@ -5692,7 +5692,6 @@ class IAnimGraphSequenceFinishedListener {};
 class IAppSystem {};
 class IAssertionFailureListener { void* vtable[3]; };
 class IAsyncProcessedDataResult { void* vtable[1]; };
-class IAttachmentOverride {};
 class IBaseInterface { void* vtable[1]; };
 class IBaseSequence {};
 class IBaseToolAttr { void* vtable[52]; };

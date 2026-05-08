@@ -1272,6 +1272,7 @@ class IUGCAddonPathResolver {};
 class IVConCommDataReceived {};
 class IVConsole2FlattenedSerializerListener : IFlattenedSerializerSpewListener {};
 class IVEngineClient2 : ISource2Engine {};
+class IVEngineServer2 : ISource2Engine {};
 class IVProfData {};
 class IVProfExport : IAppSystem {};
 class IVProfService : IEngineService {};
