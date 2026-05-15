@@ -96,3 +96,4 @@ virtual void f12815aafbcc2fe() = 0;
 virtual void bf736c6878e62bba() = 0;
 virtual void 9cdc2b7355de8eb6() = 0;
 virtual void 4f330861284f0f4c() = 0;
+virtual void nullsub() = 0;

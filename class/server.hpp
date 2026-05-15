@@ -3520,7 +3520,7 @@ class CSource2Metrics_FetchMapData_Response_MapData : google::protobuf::Message 
 class CSource2Metrics_MatchPerfSummary_Notification : google::protobuf::Message { void* vtable[17]; };
 class CSource2Metrics_MatchPerfSummary_Notification_Client : google::protobuf::Message { void* vtable[17]; };
 class CSource2Metrics_RecordPlayStats_Notification : google::protobuf::Message { void* vtable[17]; };
-class CSource2Server : CGameAppSystem<ISource2Server,0>, IStreamEntitiesFromFileCompletion { void* vtable[98]; };
+class CSource2Server : CGameAppSystem<ISource2Server,0>, IStreamEntitiesFromFileCompletion { void* vtable[99]; };
 class CSource2Server : IStreamEntitiesFromFileCompletion { void* vtable[1]; };
 class CSpaceAgnosticBoneAccessor : IPoseAccessor { void* vtable[9]; };
 class CSpawnGroupCompletionCallbackGameSystem : CAutoGameSystem { void* vtable[64]; };
@@ -3902,6 +3902,7 @@ class CUserMessage_NotifyResponseFound_Criteria : google::protobuf::Message { vo
 class CUserMessage_PlayResponseConditional : google::protobuf::Message { void* vtable[17]; };
 class CUserMessage_PlayResponseConditional_t : CUserMessage_PlayResponseConditional { void* vtable[17]; };
 class CUserMessage_PlayResponseConditional_t : CUserMessagePB<166,CUserMessage_PlayResponseConditional,1>, CUserMessage_PlayResponseConditional { void* vtable[5]; };
+class CUserMessage_UserSentBugBug : google::protobuf::Message { void* vtable[17]; };
 class CUserMessage_UtilMsg_Response : google::protobuf::Message { void* vtable[17]; };
 class CUserMessage_UtilMsg_Response_ItemDetail : google::protobuf::Message { void* vtable[17]; };
 class CUserMsg_CustomGameEvent : google::protobuf::Message { void* vtable[17]; };
@@ -4250,7 +4251,6 @@ class ClientJob_EMsgGCCStrike15_v2_GC2ServerReservationUpdate : GCSDK::CGCClient
 class ClientJob_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification : GCSDK::CGCClientJob { void* vtable[6]; };
 class ClientJob_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty : GCSDK::CGCClientJob { void* vtable[6]; };
 class ClientJob_EMsgGCGiftedItems : GCSDK::CGCClientJob { void* vtable[6]; };
-class ConCommand : ConCommandRef {};
 class ConCommandRef {};
 class ConstraintSoundInfo { void* vtable[1]; };
 class CountdownTimer { void* vtable[8]; };

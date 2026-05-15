@@ -2184,6 +2184,7 @@ class CLocVariableSet : CLocVariableSetBase, ILocVariableSource { void* vtable[2
 class CLocVariableSetBase {};
 class CLocalPlayerFilter : CRecipientFilter { void* vtable[5]; };
 class CLocatorTarget { void* vtable[3]; };
+class CLogForBugBug : ILoggingListener { void* vtable[5]; };
 class CLogicRelay : CLogicalEntity { void* vtable[215]; };
 class CLogicalEntity : C_BaseEntity { void* vtable[215]; };
 class CLoopModeBase : ILoopMode {};
@@ -4128,6 +4129,7 @@ class CUserMessage_NotifyResponseFound_t : CUserMessagePB<165,CUserMessage_Notif
 class CUserMessage_PlayResponseConditional : google::protobuf::Message { void* vtable[17]; };
 class CUserMessage_PlayResponseConditional_t : CUserMessage_PlayResponseConditional { void* vtable[17]; };
 class CUserMessage_PlayResponseConditional_t : CUserMessagePB<166,CUserMessage_PlayResponseConditional,1>, CUserMessage_PlayResponseConditional { void* vtable[5]; };
+class CUserMessage_UserSentBugBug : google::protobuf::Message { void* vtable[17]; };
 class CUserMessage_UtilMsg_Response : google::protobuf::Message { void* vtable[17]; };
 class CUserMessage_UtilMsg_Response_ItemDetail : google::protobuf::Message { void* vtable[17]; };
 class CUserMsg_CustomGameEvent : google::protobuf::Message { void* vtable[17]; };
@@ -5692,6 +5694,7 @@ class IAnimGraphSequenceFinishedListener {};
 class IAppSystem {};
 class IAssertionFailureListener { void* vtable[3]; };
 class IAsyncProcessedDataResult { void* vtable[1]; };
+class IAttachmentOverride {};
 class IBaseInterface { void* vtable[1]; };
 class IBaseSequence {};
 class IBaseToolAttr { void* vtable[52]; };
@@ -6389,7 +6392,7 @@ class panorama::CVerticalScrollForwardingPanel : panorama::CPanel2D { void* vtab
 class panorama::CVerticalSplitter : panorama::CPanel2D { void* vtable[84]; };
 class panorama::CVideoPlayerAudioRenderer : IVideoPlayerAudioCallback { void* vtable[13]; };
 class panorama::CVideoPlayerEventDispatcher : IVideoPlayerEventCallback { void* vtable[1]; };
-class panorama::CVideoPlayerVideoRenderer : IVideoPlayerVideoCallback { void* vtable[2]; };
+class panorama::CVideoPlayerVideoRenderer : IVideoPlayerVideoCallback { void* vtable[1]; };
 class panorama::CVolumeSliderPopup : panorama::CMovieControlPopupBase { void* vtable[84]; };
 class panorama::IInputCapture {};
 class panorama::ITextInputControl { void* vtable[14]; };

@@ -185,6 +185,7 @@ class CSource2Metrics_RecordPlayStats_Notification : google::protobuf::Message {
 class CTier0AppSystem<class INetworkSystem,0> : CBaseAppSystem<INetworkSystem> {};
 class CTier1AppSystem<class INetworkSystem,0> : CTier0AppSystem<INetworkSystem,0> {};
 class CTier2AppSystem<class INetworkSystem,0> : CTier1AppSystem<INetworkSystem,0> {};
+class CUserMessage_UserSentBugBug : google::protobuf::Message { void* vtable[17]; };
 class CUtlSlot {};
 class ConCommand : ConCommandRef {};
 class ConCommandRef {};

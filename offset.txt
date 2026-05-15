@@ -31,5 +31,5 @@ Offsets:
 [CServerSideClient] 79
 [CServerToolsInfo] 12
 [CSource2GameEntities] 18
-[CSource2Server] 98
+[CSource2Server] 99
 [GameTypes] 76
