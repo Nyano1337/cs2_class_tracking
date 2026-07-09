@@ -440,7 +440,8 @@ class CCSGO_HudWeaponSelectionDebug : CCSGO_WeaponSelectionView { void* vtable[8
 class CCSGO_HudWinPanel : panorama::CPanel2D, CCSGOHudElement { void* vtable[84]; };
 class CCSGO_HudWinPanel : CCSGOHudElement { void* vtable[11]; };
 class CCSGO_IntroMovie : panorama::CPanel2D { void* vtable[84]; };
-class CCSGO_InventoryItemList : panorama::CDelayLoadList { void* vtable[84]; };
+class CCSGO_InventoryItemList : panorama::CDelayLoadList, panorama::CDefaultInputCapture { void* vtable[84]; };
+class CCSGO_InventoryItemList : panorama::CDefaultInputCapture { void* vtable[14]; };
 class CCSGO_InventoryRadial : CCSGO_RadialMenuBase, CCSGOHudElement, panorama::CDefaultInputCapture { void* vtable[103]; };
 class CCSGO_InventoryRadial : panorama::CDefaultInputCapture { void* vtable[14]; };
 class CCSGO_InventoryRadial : CCSGOHudElement { void* vtable[11]; };
