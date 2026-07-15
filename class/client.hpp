@@ -5849,6 +5849,7 @@ class ISchemaAttributeTypeBase<unsigned int> : ISchemaAttributeType { void* vtab
 class ISchemaReservationListener {};
 class IScrubSystemEventListener {};
 class ISequence : IBaseSequence {};
+class ISequenceSetup {};
 class ISerializerMatchToMetaReplayCompatHelper {};
 class ISimulationThinkManager {};
 class ISkeletonAnimationController {};
