@@ -321,7 +321,6 @@ class CCompressedAnim<class QuaternionStorage> : ICompressorService {};
 class CCompressedAnim<class Vec2D<float> > : ICompressorService {};
 class CCompressedAnim<class Vec3D<float> > : ICompressorService {};
 class CCompressedAnim<class Vec4D<float> > : ICompressorService {};
-class CCompressedAnim<float> : ICompressorService {};
 class CCompressedAnim<int> : ICompressorService {};
 class CCompressedAnimQuaternion : CCompressedAnim<QuaternionStorage> { void* vtable[12]; };
 class CCompressedAnimVector3 : CCompressedAnim<Vec3D<float> > { void* vtable[12]; };

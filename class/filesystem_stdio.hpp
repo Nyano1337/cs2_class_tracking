@@ -11,12 +11,12 @@ class CAsyncFileSystem2::CWriteRequestHandle : CAsyncFileSystem2::IRequest { voi
 class CAsyncFileSystem2::IRequest {};
 class CBaseAppSystem<class IAsyncFileSystem2> : IAsyncFileSystem2 {};
 class CBaseAppSystem<class IFileSystem> : IFileSystem {};
-class CBaseFileSystem : CTier2AppSystem<IFileSystem,0> { void* vtable[129]; };
+class CBaseFileSystem : CTier2AppSystem<IFileSystem,0> { void* vtable[131]; };
 class CBaseVModuleMetadataProvider { void* vtable[1]; };
 class CBufferStream : IWriteStream { void* vtable[2]; };
 class CFileHandle { void* vtable[1]; };
 class CFileStream : IWriteStream { void* vtable[2]; };
-class CFileSystem_Stdio : CBaseFileSystem { void* vtable[129]; };
+class CFileSystem_Stdio : CBaseFileSystem { void* vtable[131]; };
 class CFioReadOnlyFile : CStdFilesystemFile { void* vtable[11]; };
 class CFioReadOnlyMemoryMappedFile : IMemoryMappedFile { void* vtable[3]; };
 class CIODelayAlarmThread : CThread { void* vtable[6]; };
