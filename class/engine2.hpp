@@ -198,6 +198,7 @@ class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsy
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::DumpMemCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::OnStartedRecordingReverseCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::PrintBroadcastTVStatusCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
+class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::StartBroadcastCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::WriteDemoMessageCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,ITvStreamSource::StartAutoRecordingCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,ITvStreamSource::StartRecordingCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> { void* vtable[2]; };
@@ -1220,7 +1221,6 @@ class INetPacketMemoryCustomAlloc { void* vtable[2]; };
 class INetSupport : CBaseAppSystem<IAppSystem> {};
 class INetworkChannelNotify {};
 class INetworkClientService : IEngineService {};
-class INetworkGameClient {};
 class INetworkGameServer {};
 class INetworkMessageProcessingPreFilter {};
 class INetworkP2PService : IEngineService {};

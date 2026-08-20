@@ -5894,7 +5894,6 @@ class IToolAttrConcreteDataAccess<class CUtlVector<CompositeMaterial_t,int,class
 class IToolAttrConcreteDataAccess<class CUtlVector<GeneratedTextureHandle_t,int,class CUtlVectorMemory_Growable<struct GeneratedTextureHandle_t,int,0> > > {};
 class IToolAttrConcreteDataAccess<class CUtlVector<class CResourceNameTyped<class CWeakHandle<InfoForResourceTypeCCompositeMaterialKit> >,int,class CUtlVectorMemory_Growable<class CResourceNameTyped<class CWeakHandle<struct InfoForResourceTypeCCompositeMaterialKit> >,int,0> > > {};
 class IToolAttrConcreteDataAccess<class CUtlVector<class CUtlString,int,class CUtlVectorMemory_Growable<class CUtlString,int,0> > > {};
-class IToolAttrConcreteDataAccess<class Color> {};
 class IToolAttrConcreteDataAccess<class KeyValues3> {};
 class IToolAttrConcreteDataAccess<class QAngle> {};
 class IToolAttrConcreteDataAccess<class Vec2D<float> > {};
