@@ -198,7 +198,6 @@ class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsy
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::DumpMemCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::OnStartedRecordingReverseCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::PrintBroadcastTVStatusCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
-class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::StartBroadcastCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,CHLTVServerAsync::WriteDemoMessageCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,ITvStreamSource::StartAutoRecordingCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> {};
 class CDelayedCall2<class CHLTVServerAsync,class CHLTVServerAsync,ITvStreamSource::StartRecordingCall_t,struct empty_t> : CDelayedCallBase<CHLTVServerAsync> { void* vtable[2]; };
@@ -458,7 +457,7 @@ class CMetaDuplicationAutoCompletionFunctor : ICommandCallback { void* vtable[1]
 class CMiniDumpCommentBuilderBase {};
 class CMiniDumpCommentConvarsWriter : IPrintChangedConvarsWriter { void* vtable[2]; };
 class CModuleMetadataProvider_ResourceManifests : CBaseVModuleMetadataProvider { void* vtable[1]; };
-class CMovieRecorder : IMovieRecorder, IScreenshotCallback, IAudioStreamRecorder { void* vtable[15]; };
+class CMovieRecorder : IMovieRecorder, IScreenshotCallback, IAudioStreamRecorder { void* vtable[17]; };
 class CMovieRecorder : IScreenshotCallback { void* vtable[5]; };
 class CMovieRecorder : IAudioStreamRecorder { void* vtable[3]; };
 class CMsgConvarsWriter : IPrintChangedConvarsWriter { void* vtable[2]; };
@@ -1221,6 +1220,7 @@ class INetPacketMemoryCustomAlloc { void* vtable[2]; };
 class INetSupport : CBaseAppSystem<IAppSystem> {};
 class INetworkChannelNotify {};
 class INetworkClientService : IEngineService {};
+class INetworkGameClient {};
 class INetworkGameServer {};
 class INetworkMessageProcessingPreFilter {};
 class INetworkP2PService : IEngineService {};
