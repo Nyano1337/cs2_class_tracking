@@ -255,3 +255,4 @@ class Player<class IPlayerLocal> : IPlayerLocal { void* vtable[9]; };
 class PlayerFriend : Player<IPlayerFriend> { void* vtable[14]; };
 class PlayerLocal : Player<IPlayerLocal> { void* vtable[9]; };
 class PlayerManager : IPlayerManager { void* vtable[8]; };
+class QuantizedFloatEncoderAlias_t : google::protobuf::Message { void* vtable[17]; };
