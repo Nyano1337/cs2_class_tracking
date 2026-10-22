@@ -235,3 +235,8 @@ class ProtoFlattenedSerializerField_t_proto_enum_info_t : google::protobuf::Mess
 class ProtoFlattenedSerializer_t : google::protobuf::Message { void* vtable[17]; };
 class QuantizedFloatEncoderAlias_t : google::protobuf::Message { void* vtable[17]; };
 class vcon_NetworkEncodingStats_t : CRefCounted<CRefCountServiceBase<CRefMT> > { void* vtable[1]; };
+struct CNetChan::NetFlowBase_t {};
+struct CNetChan::NetFlowIn_t : CNetChan::NetFlow_t<CNetChan::NetFrameIn_t> { void* vtable[1]; };
+struct CNetChan::NetFlowOut_t : CNetChan::NetFlow_t<CNetChan::NetFrameOut_t> { void* vtable[1]; };
+struct CNetChan::NetFlow_t<struct CNetChan::NetFrameIn_t> : CNetChan::NetFlowBase_t {};
+struct CNetChan::NetFlow_t<struct CNetChan::NetFrameOut_t> : CNetChan::NetFlowBase_t {};
