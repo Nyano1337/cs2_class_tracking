@@ -183,7 +183,7 @@ class CTypesafeIntrospectedToKV3TypeManager<495958126710,VPhysXAggregateData_t>:
 class CVPhys2DebugShape : IRnDebugShape { void* vtable[17]; };
 class CVPhys2World : IVPhysics2World, IPhysReflContext { void* vtable[251]; };
 class CVPhys2World : IPhysReflContext { void* vtable[2]; };
-class CVPhysPtrSaveRestoreOps : IKV3TransferSaveRestoreOps { void* vtable[12]; };
+class CVPhysPtrSaveRestoreOps : IKV3TransferSaveRestoreOps { void* vtable[5]; };
 class CVPhysPtrUtlVectorSaveRestoreOps : IKV3TransferSaveRestoreOps { void* vtable[5]; };
 class CVPhysics2ConComm : IVConCommDataReceived { void* vtable[1]; };
 class CVPhysics2Interface : CTier2AppSystem<IVPhysics2,0> { void* vtable[147]; };

@@ -2139,7 +2139,6 @@ class CInterpolatedVarAutoCompletionFunctor : ICommandCallback, ICommandCompleti
 class CInterpolatedVarAutoCompletionFunctor : ICommandCompletionCallback { void* vtable[1]; };
 class CInterpolatedVarBase<EnableRenderingInfo_t,0,1,class CGlobalInterpolationLerpFuncs<struct EnableRenderingInfo_t> > : CInterpolatedVarProceduralBase<EnableRenderingInfo_t,0,1,CGlobalInterpolationLerpFuncs<EnableRenderingInfo_t> > {};
 class CInterpolatedVarBase<InterpolatedAnimGraph2State_t,0,1,class CGlobalInterpolationLerpFuncs<struct InterpolatedAnimGraph2State_t> > : CInterpolatedVarProceduralBase<InterpolatedAnimGraph2State_t,0,1,CGlobalInterpolationLerpFuncs<InterpolatedAnimGraph2State_t> > {};
-class CInterpolatedVarBase<MeshGroupMaskInfo_t,0,1,class CGlobalInterpolationLerpFuncs<struct MeshGroupMaskInfo_t> > : CInterpolatedVarProceduralBase<MeshGroupMaskInfo_t,0,1,CGlobalInterpolationLerpFuncs<MeshGroupMaskInfo_t> > {};
 class CInterpolatedVarBase<TransformHistory_t,0,1,class COwnerInterpolationLerpFuncs<struct TransformHistory_t,class CGameSceneNode> > : CInterpolatedVarProceduralBase<TransformHistory_t,0,1,COwnerInterpolationLerpFuncs<TransformHistory_t,CGameSceneNode> > {};
 class CInterpolatedVarBase<class CClothSnapshotState,0,1,class COwnerInterpolationLerpFuncs<class CClothSnapshotState,class CModelState> > : CInterpolatedVarProceduralBase<CClothSnapshotState,0,1,COwnerInterpolationLerpFuncs<CClothSnapshotState,CModelState> > {};
 class CInterpolatedVarBase<class CCompositeParentSpaceState,0,1,class CGlobalInterpolationLerpFuncs<class CCompositeParentSpaceState> > : CInterpolatedVarProceduralBase<CCompositeParentSpaceState,0,1,CGlobalInterpolationLerpFuncs<CCompositeParentSpaceState> > {};
@@ -3632,7 +3631,6 @@ class CSchemaRegistration_mathlib_extended : CSchemaRegistration { void* vtable[
 class CSchemaRegistration_pulse_runtime_lib : CSchemaRegistration { void* vtable[1]; };
 class CSchemaRegistration_tier2 : CSchemaRegistration { void* vtable[1]; };
 class CSchemaReservationListener : ISchemaReservationListener { void* vtable[1]; };
-class CScriptAccessorT<class CDefScriptAccessorBase,1> : CDefScriptAccessorBase {};
 class CScriptComponent : CEntityComponent, CScriptScopeT<CDefScriptAccessorBase,1> { void* vtable[7]; };
 class CScriptConsoleCommand : ICommandCallback { void* vtable[2]; };
 class CScriptScopeT<class CDefScriptAccessorBase,1> : CScriptAccessorT<CDefScriptAccessorBase,1> {};
@@ -4119,6 +4117,7 @@ class CUserMessagePB<118,class CUserMessageSayText2,1> : CNetMessagePB<118,CUser
 class CUserMessagePB<120,class CUserMessageShake,1> : CNetMessagePB<120,CUserMessageShake,13,1,1>, CUserMessageShake {};
 class CUserMessagePB<121,class CUserMessageShakeDir,1> : CNetMessagePB<121,CUserMessageShakeDir,13,1,1>, CUserMessageShakeDir {};
 class CUserMessagePB<124,class CUserMessageTextMsg,1> : CNetMessagePB<124,CUserMessageTextMsg,13,1,1>, CUserMessageTextMsg {};
+class CUserMessagePB<128,class CUserMessageVoiceMask,1> : CNetMessagePB<128,CUserMessageVoiceMask,13,1,1>, CUserMessageVoiceMask {};
 class CUserMessagePB<130,class CUserMessageSendAudio,1> : CNetMessagePB<130,CUserMessageSendAudio,13,1,1>, CUserMessageSendAudio {};
 class CUserMessagePB<142,class CUserMessageCloseCaptionPlaceholder,1> : CNetMessagePB<142,CUserMessageCloseCaptionPlaceholder,13,1,1>, CUserMessageCloseCaptionPlaceholder {};
 class CUserMessagePB<143,class CUserMessageCameraTransition,1> : CNetMessagePB<143,CUserMessageCameraTransition,13,1,1>, CUserMessageCameraTransition {};
@@ -4132,6 +4131,7 @@ class CUserMessagePB<318,class CCSUsrMsg_RawAudio,1> : CNetMessagePB<318,CCSUsrM
 class CUserMessagePB<321,class CCSUsrMsg_Damage,1> : CNetMessagePB<321,CCSUsrMsg_Damage,13,1,1>, CCSUsrMsg_Damage {};
 class CUserMessagePB<322,class CCSUsrMsg_RadioText,1> : CNetMessagePB<322,CCSUsrMsg_RadioText,13,1,1>, CCSUsrMsg_RadioText {};
 class CUserMessagePB<323,class CCSUsrMsg_HintText,1> : CNetMessagePB<323,CCSUsrMsg_HintText,13,1,1>, CCSUsrMsg_HintText {};
+class CUserMessagePB<324,class CCSUsrMsg_KeyHintText,1> : CNetMessagePB<324,CCSUsrMsg_KeyHintText,13,1,1>, CCSUsrMsg_KeyHintText {};
 class CUserMessagePB<325,class CCSUsrMsg_ProcessSpottedEntityUpdate,1> : CNetMessagePB<325,CCSUsrMsg_ProcessSpottedEntityUpdate,13,1,1>, CCSUsrMsg_ProcessSpottedEntityUpdate {};
 class CUserMessagePB<330,class CCSUsrMsg_KillCam,1> : CNetMessagePB<330,CCSUsrMsg_KillCam,13,1,1>, CCSUsrMsg_KillCam {};
 class CUserMessagePB<334,class CCSUsrMsg_MatchEndConditions,1> : CNetMessagePB<334,CCSUsrMsg_MatchEndConditions,13,1,1>, CCSUsrMsg_MatchEndConditions {};
@@ -6007,7 +6007,6 @@ class ICompositeMaterialManager {};
 class ICompressorService { void* vtable[9]; };
 class IConVarListener {};
 class ICurveDataAccessor {};
-class IDataDrivenCameraLoaderObserver {};
 class IDebugVisualizer { void* vtable[6]; };
 class IDecoratedPlayerNameProvider {};
 class IDemoPlaybackController {};

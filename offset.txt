@@ -18,7 +18,7 @@ Offsets:
 [CCvar] 46
 [CEconItemSchema] 61
 [CEconItemView] 33
-[CEngineServer] 122
+[CEngineServer] 123
 [CGameEntitySystem] 24
 [CGameEventManager] 16
 [CGameEventSystem] 21
